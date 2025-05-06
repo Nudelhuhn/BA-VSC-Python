@@ -9,4 +9,5 @@ visualization:
   min_dist: 0.1
 
 data:
-  input_path: "data/student_solutions/"
+  input_path: "C:/Users/grego/Desktop/Loesungen"
+  output_path: "C:/Users/grego/Documents/GitHub/BA-VSC-Python/output"

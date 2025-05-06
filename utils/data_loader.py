@@ -6,8 +6,12 @@ class DataLoader:
 
     def load_code_files(self):
         code_snippets = []
-        for file in os.listdir(self.data_path):
-            if file.endswith(".java"):
-                with open(os.path.join(self.data_path, file), "r", encoding="utf-8") as f:
-                    code_snippets.append(f.read())
+        # os.walk() geht rekursiv durch alle Verzeichnisse und Unterverzeichnisse
+        for root, dirs, files in os.walk(self.data_path):
+            for file in files:
+                if file.endswith(".java"):  # nur Java-Dateien
+                    file_path = os.path.join(root, file)
+                    print(f"Finde Java-Datei: {file_path}")  # Ausgabe der gefundenen Datei
+                    with open(file_path, "r", encoding="utf-8", errors="ignore") as f:  # errors="ignore" ignores chars which cant be coded in utf-8
+                        code_snippets.append(f.read())
         return code_snippets
