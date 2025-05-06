@@ -1,0 +1,17 @@
+from Hund import Hund
+from Katze import Katze
+from Tierverwaltung import Tierverwaltung
+
+def main():
+    verwaltung = Tierverwaltung()
+
+    hund = Hund("Bello", 5, "Labrador")
+    katze = Katze("Fred", 10, "Braun")
+
+    verwaltung.tier_hinzufügen(hund)
+    verwaltung.tier_hinzufügen(katze)
+
+    verwaltung.alle_Tiere_anzeigen()
+
+if __name__ == "__main__":
+    main()
