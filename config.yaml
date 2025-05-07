@@ -1,6 +1,10 @@
 embedding_model: "microsoft/codebert-base"
 clustering_method: "hdbscan"
 
+dim_red_params:
+  n_components: 2
+  n_neighbors: 10
+
 clustering_params:
   min_cluster_size: 5
 
@@ -9,5 +13,5 @@ visualization:
   min_dist: 0.1
 
 data:
-  input_path: "C:/Users/grego/Desktop/Loesungen"
+  input_path: "C:/Users/grego/Desktop/Loesungen/00B8A219"
   output_path: "C:/Users/grego/Documents/GitHub/BA-VSC-Python/output"
