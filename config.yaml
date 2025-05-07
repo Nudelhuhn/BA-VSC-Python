@@ -1,17 +1,28 @@
-embedding_model: "microsoft/codebert-base"
-clustering_method: "hdbscan"
+embedding:
+  model: "microsoft/codebert-base"
 
-dim_red_params:
+dim_reduction:
   n_components: 2
   n_neighbors: 10
 
-clustering_params:
-  min_cluster_size: 5
+clustering:
+  method: "hdbscan"
+  params:
+    min_cluster_size: 2          # minimal 2 Punkte für ein Cluster
+    min_samples: 1               # wie „empfindlich“ Outlier erkannt werden
+    cluster_selection_epsilon: 0.5  # optional, kann helfen bei dünner Dichte
+    metric: "euclidean"
+
+
+# clustering:
+#   method: "kmeans"
+#   params:
+#     n_clusters: 5
 
 visualization:
   n_neighbors: 15
   min_dist: 0.1
 
 data:
-  input_path: "C:/Users/grego/Desktop/Loesungen/00B8A219"
+  input_path: "C:/Users/grego/Desktop/Loesungen"
   output_path: "C:/Users/grego/Documents/GitHub/BA-VSC-Python/output"

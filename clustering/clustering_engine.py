@@ -1,6 +1,3 @@
-from sklearn.cluster import KMeans
-import hdbscan
-
 class ClusteringEngine:
     def __init__(self, method, params):
         self.method = method
@@ -8,8 +5,10 @@ class ClusteringEngine:
 
     def cluster(self, embeddings):
         if self.method == "kmeans":
+            from sklearn.cluster import KMeans
             model = KMeans(**self.params)
         elif self.method == "hdbscan":
+            import hdbscan
             model = hdbscan.HDBSCAN(**self.params)
         else:
             raise ValueError("Unsupported clustering method.")

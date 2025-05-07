@@ -31,52 +31,57 @@ def run_pipeline():
     print(f"data_loader {end - start:.2f} Sekunden")
 
     # Embeddings erzeugen
-    model = EmbeddingModel(config['embedding_model'])
-    # start = time.time()
-    # embeddings = [model.get_embedding(code) for code in code_snippets]
-    # end = time.time()
-    # print(f"embedding_model {end - start:.2f} Sekunden")
+    model = EmbeddingModel(config['embedding']['model'])
+    start = time.time()
+    embeddings = [model.get_embedding(code) for code in code_snippets]
+    end = time.time()
+    print(f"embedding_model {end - start:.2f} Sekunden")
 
-    # # Caching: existiert eine Cache-Datei?
-    # cache_path = "cached_embeddings.npy"
-    # if os.path.exists(cache_path):
-    #     embeddings = np.load(cache_path)
-    #     print("✅ Embeddings aus Cache geladen.")
-    # else:
-    #     # Embeddings berechnen (Batch-Verarbeitung)
-    #     print("⏳ Embeddings werden berechnet...")
-    #     start = time.time()
-    #     embeddings = model.get_embedding(code_snippets)
-    #     end = time.time()
-    #     print(f"✅ Embedding-Dauer (Batch): {end - start:.2f} Sekunden")
+    # Caching: existiert eine Cache-Datei?
+    cache_path = "cached_embeddings.npy"
+    if os.path.exists(cache_path):
+        embeddings = np.load(cache_path)
+        print("✅ Embeddings aus Cache geladen.")
+    else:
+        # Embeddings berechnen (Batch-Verarbeitung)
+        # print("⏳ Embeddings werden berechnet...")
+        start = time.time()
+        embeddings = model.get_embedding(code_snippets)
+        end = time.time()
+        print(f"✅ Embedding-Dauer (Batch): {end - start:.2f} Sekunden")
 
-    #     # In Cache speichern
-    #     np.save(cache_path, embeddings)
-    #     print("💾 Embeddings im Cache gespeichert.")
+        # In Cache speichern
+        np.save(cache_path, embeddings)
+        # print("💾 Embeddings im Cache gespeichert.")
 
     # Dimensionality Reduction
-    embeddings = np.random.rand(16, 768)
+    # embeddings = np.random.rand(16, 768)
     start = time.time()
-    reducer = DimensionalityReducer(method="umap", params={"n_components": config['dim_red_params']['n_components']})
-    print("Shape der Embeddings vor der Dimensionsreduktion:", embeddings.shape)
+    reducer = DimensionalityReducer(method="umap", params={"n_components": config['dim_reduction']['n_components']})
+    # print("Shape der Embeddings vor der Dimensionsreduktion:", embeddings.shape)
     reduced_embeddings = reducer.reduce(embeddings)
-    print("Shape der Embeddings nach der Dimensionsreduktion:", reduced_embeddings.shape)
+    # print("Shape der Embeddings nach der Dimensionsreduktion:", reduced_embeddings.shape)
     print(f"reducer {time.time() - start:.2f} Sekunden")
 
-    # # Clustering auf den reduzierten Embeddings
-    # clusterer = ClusteringEngine("hdbscan", config['clustering_params'])
-    # labels = clusterer.cluster(reduced_embeddings)
+    # Clustering auf den reduzierten Embeddings
+    start = time.time()
+    clusterer = ClusteringEngine(config['clustering']['method'], config['clustering']['params'])
+    labels = clusterer.cluster(reduced_embeddings)
+    unique_labels, counts = np.unique(labels, return_counts=True)
+    # print("Cluster-Labels:", labels)
+    # print("Anzahl Cluster:", len(set(labels)) - (1 if -1 in labels else 0))
+    # print("Label-Verteilung:", dict(zip(unique_labels, counts)))
+    print(f"clustering {time.time() - start:.2f} Sekunden")
 
+    # Visualisierung
+    start = time.time()
+    plotter = ClusterPlotter()
+    plotter.plot(reduced_embeddings, labels)
+    print(f"visualization {time.time() - start:.2f} Sekunden")
+    
     # # Evaluation
     # results = EvaluationMetrics.evaluate(embeddings, labels)
     # print("Evaluationsergebnisse:", results)
-
-    # # Visualisierung
-    # plotter = ClusterPlotter(
-    #     n_neighbors=config['visualization']['n_neighbors'],
-    #     min_dist=config['visualization']['min_dist']
-    # )
-    # plotter.plot(embeddings, labels)
 
 if __name__ == "__main__":
     run_pipeline()
