@@ -1,35 +1,52 @@
 embedding:
-  model: "microsoft/codebert-base"
+  model: "microsoft/codebert-base"  # embedding model for code snippets
 
 dim_reduction:
+# --- umap ---
   method: "umap"
   params:
-    n_components: 2
-    n_neighbors: 10
-    random_state: 42  # prevent parallelism for constant solution, but processing time is higher
+    n_components: 2         # target dimensions after reduction; default: 2
+    n_neighbors: 15         # number of local neighbors considered; default: 15
+    min_dist: 0.1           # minimum distance between points in low-dimensional space; default: 0.1
+    metric: "euclidean"     # distance metric; options: 'euclidean', 'cosine', 'manhattan'; default: 'euclidean'
+    random_state: 42        # ensures reproducible results; default: None
+    spread: 1.0             # maximum effective cluster spread; default: 1.0
+    learning_rate: 1.0      # learning rate for optimization process; default: 1.0
+    init: "spectral"        # initialization method; options: 'spectral', 'random'; default: 'spectral'
+
+# --- pca ---
   # method: "pca"
   # params:
-  #   n_components: 2
-  #   random_state: 42
+  #   n_components: 2        # target dimensions after reduction; default: all
+  #   svd_solver: "auto"     # singular value decomposition method; options: 'auto', 'full', 'arpack', 'randomized'; default: 'auto'
+  #   random_state: 42       # ensures reproducible results; default: None
 
 clustering:
-# hdbscan algorithm
+# --- hdbscan ---
   method: "hdbscan"
   params:
-    min_cluster_size: 2 # minimal 2 Punkte für ein Cluster
-    min_samples: 1  # wie „empfindlich“ Outlier erkannt werden
-    cluster_selection_epsilon: 0.5  # optional, kann helfen bei dünner Dichte
-    metric: "euclidean"
-# k-means algorithm
+    min_cluster_size: 2             # minimum number of points to form a cluster; default: 5
+    min_samples: 1                  # sensitivity for identifying outliers; default: None
+    cluster_selection_epsilon: 0.5  # tolerance parameter for cluster density; default: 0.0
+    metric: "euclidean"             # distance metric for clustering; options: 'euclidean', 'manhattan', 'cosine', etc.; default: 'euclidean'
+    cluster_selection_method: "eom" # method for selecting clusters; options: 'eom', 'leaf'; default: 'eom'
+    alpha: 1.0                      # relative weight of minimum spanning tree edge weight for cluster stability; default: 1.0
+    allow_single_cluster: false     # whether to allow only a single cluster; default: false
+
+# --- k-means ---
   # method: "kmeans"
   # params:
-  #   n_clusters: 5
+  #   n_clusters: 5             # number of clusters; required for k-means
+  #   init: "k-means++"         # initialization method; options: 'k-means++', 'random'; default: 'k-means++'
+  #   n_init: 10                # number of time the k-means algorithm will be run with different centroid seeds; default: 10
+  #   max_iter: 300             # maximum number of iterations for a single run; default: 300
+  #   random_state: 42          # ensures reproducible clustering results; default: None
 
 visualization:
-  n_neighbors: 15
-  min_dist: 0.1
+  n_neighbors: 15                # number of neighbors considered for UMAP-based visualization layout
+  min_dist: 0.1                  # minimum distance between points in the visualization layout
 
 data:
-  file_name: ".java"
-  input_path: "C:/Users/grego/Desktop/Loesungen/AATEST"
-  output_path: "C:/Users/grego/Documents/GitHub/BA-VSC-Python/output"
+  file_name: ".java"             # file extension of code files to load
+  input_path: "C:/Users/grego/Desktop/Loesungen/AATEST"  # input data directory
+  output_path: "C:/Users/grego/Documents/GitHub/BA-VSC-Python/output"  # output directory for generated results
