@@ -2,14 +2,17 @@ embedding:
   model: "microsoft/codebert-base"
 
 dim_reduction:
-  n_components: 2
-  n_neighbors: 10
+  method: "umap"
+  params:
+    n_components: 2
+    n_neighbors: 10
+    random_state: 42  # prevent parallelism for constant solution, but processing time is higher
 
 clustering:
   method: "hdbscan"
   params:
-    min_cluster_size: 2          # minimal 2 Punkte für ein Cluster
-    min_samples: 1               # wie „empfindlich“ Outlier erkannt werden
+    min_cluster_size: 2 # minimal 2 Punkte für ein Cluster
+    min_samples: 1  # wie „empfindlich“ Outlier erkannt werden
     cluster_selection_epsilon: 0.5  # optional, kann helfen bei dünner Dichte
     metric: "euclidean"
 
@@ -24,5 +27,6 @@ visualization:
   min_dist: 0.1
 
 data:
-  input_path: "C:/Users/grego/Desktop/Loesungen"
+  file_name: "Miniprojekt1.java"
+  input_path: "C:/Users/grego/Desktop/Loesungen/AATEST"
   output_path: "C:/Users/grego/Documents/GitHub/BA-VSC-Python/output"
