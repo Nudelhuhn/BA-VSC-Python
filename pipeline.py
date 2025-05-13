@@ -7,9 +7,7 @@ import warnings
 from utils.data_loader import DataLoader
 from embeddings.embedding_model import EmbeddingModel
 from dimReducer.dimensionality_reducer import DimensionalityReducer
-from clusterVisualizer.test_hdbscan_cluster_counts import ClusterVisualizer
 from clustering.clustering_engine import ClusteringEngine
-from interactivePlot.interactive_plot import InteractivePlot
 from evaluation.evaluation_metrics import EvaluationMetrics
 from visualization.cluster_plotter import ClusterPlotter
 print(f"imports {time.time() - start:.2f} Sekunden")
@@ -52,13 +50,6 @@ def run_pipeline():
     # print("Shape der Embeddings nach der Dimensionsreduktion:", reduced_embeddings.shape)
     print(f"reducer {time.time() - start:.2f} Sekunden")
 
-    # different cluster sizes testing
-    start = time.time()
-    min_cluster_sizes = range(2, 15)
-    visualizer = ClusterVisualizer()
-    visualizer.test_hdbscan_cluster_counts(reduced_embeddings, min_cluster_sizes)
-    print(f"test_hdbscan_cluster_counts {time.time() - start:.2f} Sekunden")
-
     # Clustering on the reduced Embeddings
     start = time.time()
     clusterer = ClusteringEngine(config['clustering']['method'], config['clustering']['params'])
@@ -68,12 +59,6 @@ def run_pipeline():
     # print("Anzahl Cluster:", len(set(labels)) - (1 if -1 in labels else 0))
     # print("Label-Verteilung:", dict(zip(unique_labels, counts)))
     print(f"clustering {time.time() - start:.2f} Sekunden")
-
-    # interactive plotting (show file name by hovering)
-    start = time.time()
-    int_plot = InteractivePlot()
-    int_plot.interactive_plot(reduced_embeddings, labels, loader.get_filenames())
-    print(f"interactive_plot {time.time() - start:.2f} Sekunden")
 
     # Visualisierung
     start = time.time()
