@@ -2,7 +2,7 @@ embedding:
   model: "microsoft/codebert-base"  # embedding model for code snippets
 
 dim_reduction:
-# --- umap ---
+## --- umap ---
   method: "umap"
   params:
     n_components: 2         # target dimensions after reduction; default: 2
@@ -14,15 +14,30 @@ dim_reduction:
     learning_rate: 1.0      # learning rate for optimization process; default: 1.0
     init: "spectral"        # initialization method; options: 'spectral', 'random'; default: 'spectral'
 
-# --- pca ---
+## --- pca ---
   # method: "pca"
   # params:
   #   n_components: 2        # target dimensions after reduction; default: all
   #   svd_solver: "auto"     # singular value decomposition method; options: 'auto', 'full', 'arpack', 'randomized'; default: 'auto'
   #   random_state: 42       # ensures reproducible results; default: None
 
+## --- t-sne ---
+  # method: "tsne"
+  # params:
+  #   n_components: 2           # target dimensions after reduction; default: 2
+  #   perplexity: 30.0          # number of effective nearest neighbors; typical between 5 and 50; default: 30.0
+  #   learning_rate: 200.0      # learning rate for t-SNE optimization; typical: 10-1000; default: 200.0
+  #   n_iter: 1000              # number of optimization iterations; default: 1000
+  #   metric: "euclidean"       # distance metric for pairwise distances; options: 'euclidean', 'cosine', 'manhattan'; default: 'euclidean'
+  #   random_state: 42          # ensures reproducible results; default: None
+  #   init: "random"            # initialization method; options: 'random', 'pca'; default: 'random'
+  #   early_exaggeration: 12.0  # controls how tight clusters are in early stages; default: 12.0
+  #   angle: 0.5                # trade-off between speed and accuracy (Barnes-Hut only); default: 0.5
+  #   verbose: 0                # verbosity level; 0 = silent, 1 = progress messages
+
+
 clustering:
-# --- hdbscan ---
+## --- hdbscan ---
   method: "hdbscan"
   params:
     min_cluster_size: 2             # minimum number of points to form a cluster; default: 5
@@ -33,7 +48,7 @@ clustering:
     alpha: 1.0                      # relative weight of minimum spanning tree edge weight for cluster stability; default: 1.0
     allow_single_cluster: false     # whether to allow only a single cluster; default: false
 
-# --- k-means ---
+## --- k-means ---
   # method: "kmeans"
   # params:
   #   n_clusters: 5             # number of clusters; required for k-means
