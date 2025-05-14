@@ -13,3 +13,8 @@ class EvaluationMetrics:
             results['calinski_harabasz'] = None
             results['davies_bouldin'] = None
         return results
+
+# good evaluation scores:
+ # silhouette: 0.5 or higher
+ # calinski_harabasz: highest compared to the others
+ # davies_bouldin: between 0.3 and 0.7

@@ -1,7 +1,6 @@
-#debugging
 import time
 start = time.time()
-#debugging
+import numpy as np
 import yaml
 import warnings
 from utils.data_loader import DataLoader
@@ -41,26 +40,16 @@ def run_pipeline():
     print("⏳ Embeddings werden berechnet...")
     start = time.time()
     model = EmbeddingModel(config['embedding']['model'])
-    embeddings = [model.get_embedding(code) for code in code_snippets]
+    embeddings = np.array([model.get_embedding(code) for code in code_snippets])    # np.array needed for .shape method of pca and in general more universal than normal lists
+    if len(embeddings) - 1 <= 2:                                                    # more than three files have to be embedded
+        print("please choose at least four files")
+        return
     print(f"embedding_model {time.time() - start:.2f} Sekunden")
 
 
     # Dimensionality reduction
     start = time.time()
-    method = config['dim_reduction']['method']
-    n_components = min(config['dim_reduction']['params']['n_components'], len(embeddings) - 1)
-    random_state = config['dim_reduction']['params']['random_state']
-
-    reducer_params = {
-        "n_components": n_components,
-        "random_state": random_state
-    }
-
-    if method == "umap":
-        n_neighbors = min(config['dim_reduction']['params']['n_neighbors'], len(embeddings) - 1)
-        reducer_params["n_neighbors"] = n_neighbors
-
-    reducer = DimensionalityReducer(method, params=reducer_params)
+    reducer = DimensionalityReducer(config['dim_reduction']['method'], config['dim_reduction']['params'])
     reduced_embeddings = reducer.reduce(embeddings)
     print(f"Reducer {time.time() - start:.2f} Sekunden")
 
@@ -89,10 +78,7 @@ def run_pipeline():
     # Evaluation
     start = time.time()
     results = EvaluationMetrics.evaluate(embeddings, labels)
-    print("Evaluationsergebnisse:", results)
-    print("silhouette ab 0.5 und höher gut")
-    print("calinski_harabasz je höher desto besser, Vgl. mit anderen Algorithmen nötig")
-    print("davies_bouldin zwischen 0.3 und 0.7 gut")
+    print("results:", results)
     print(f"Evaluation {time.time() - start:.2f} Sekunden")
 
 
