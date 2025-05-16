@@ -1,7 +1,7 @@
-import time
 import yaml
 import os
 import pandas as pd
+import warnings
 from utils.data_loader import DataLoader
 from embeddings.embedding_model import EmbeddingModel
 from dimReducer.dimensionality_reducer import DimensionalityReducer
@@ -16,10 +16,13 @@ def load_config(path="config.yaml"):
 def run_experiments():
     config = load_config()
 
+    # ignore some unimportant warnings
+    warnings.filterwarnings("ignore", category=FutureWarning)
+    warnings.filterwarnings("ignore", category=UserWarning)
+
     # Load data
-    loader = DataLoader(config['data']['file_name'], config['data']['input_path'])
+    loader = DataLoader(config['data']['file_name'], config['data']['input_path'], config['data']['exclude_files'])
     code_snippets = loader.load_code_files()
-    filenames = loader.get_filenames()
 
     # Embedding
     model = EmbeddingModel(config['embedding']['model'])
@@ -30,7 +33,7 @@ def run_experiments():
         "umap": {
             "params": {
                 "n_components": 2,
-                "n_neighbors": 10,
+                "n_neighbors": 15,
                 "random_state": 42
             }
         },
@@ -69,7 +72,6 @@ def run_experiments():
     }
 
     results = []
-    cluster_assignments = []  # To store filenames + their cluster label
 
     for dr_method, dr_config in dim_reduction_methods.items():
         # Dimensionality Reduction
@@ -101,42 +103,23 @@ def run_experiments():
             results.append(result)
             print(f"✔️ {dr_method} + {cluster_method} done.")
 
-            # Track filenames and their assigned cluster for this combination
-            for filename, label in zip(filenames, labels):
-                cluster_assignments.append({
-                    "filename": filename,
-                    "dim_reduction": dr_method,
-                    "clustering": cluster_method,
-                    "cluster_label": label
-                })
-
     # ensure output path exists, if not it´s created
     os.makedirs(config['data']['output_path'], exist_ok=True)
 
     # Save evaluation results
-    output_path = os.path.join(config['data']['output_path'], "experiment_results.csv")
     df_results = pd.DataFrame(results)
-    df_results.to_csv(output_path, index=False)
-
-    # Save cluster assignments
-    cluster_path = os.path.join(config['data']['output_path'], "cluster_assignments.csv")
-    df_clusters = pd.DataFrame(cluster_assignments)
-    df_clusters.to_csv(cluster_path, index=False)
-
-    # Drop Zeilen mit fehlenden Werten
-    clean_df = df_results.dropna()
 
     # Normalize Scores für Ranking-Berechnung
     for metric in ['silhouette', 'calinski_harabasz']:
-        clean_df[f"{metric}_norm"] = (clean_df[metric] - clean_df[metric].min()) / (clean_df[metric].max() - clean_df[metric].min())
+        df_results[f"{metric}_norm"] = (df_results[metric] - df_results[metric].min()) / (df_results[metric].max() - df_results[metric].min())
 
-    clean_df['davies_bouldin_norm'] = (clean_df['davies_bouldin'].max() - clean_df['davies_bouldin']) / (clean_df['davies_bouldin'].max() - clean_df['davies_bouldin'].min())
+    df_results['davies_bouldin_norm'] = (df_results['davies_bouldin'].max() - df_results['davies_bouldin']) / (df_results['davies_bouldin'].max() - df_results['davies_bouldin'].min())
 
     # Gesamt-Score berechnen
-    clean_df['total_score'] = clean_df[['silhouette_norm', 'calinski_harabasz_norm', 'davies_bouldin_norm']].mean(axis=1)
+    df_results['total_score'] = df_results[['silhouette_norm', 'calinski_harabasz_norm', 'davies_bouldin_norm']].mean(axis=1)
 
     # Ranking anhand des Gesamt-Scores
-    ranking = clean_df.sort_values('total_score', ascending=False).reset_index(drop=True)
+    ranking = df_results.sort_values('total_score', ascending=False).reset_index(drop=True)
     ranking['rank'] = ranking.index + 1
 
     # Nur gewünschte Spalten für das finale Ranking-CSV
@@ -146,11 +129,8 @@ def run_experiments():
     # Exportieren
     final_ranking.to_csv(os.path.join(config['data']['output_path'], "clustering_ranking_final.csv"), index=False)
 
-    print("\n")
-    print("✔️ Clean Ranking saved.")
+    print(f"\n✔️ Final Ranking saved to {config['data']['output_path']}")
     print(f"Beste Kombination: {final_ranking.iloc[0]['dim_reduction']} + {final_ranking.iloc[0]['clustering']} (Rank 1)")
-    print(f"📄 Evaluation results saved to: {output_path}")
-    print(f"📄 Cluster assignments saved to: {cluster_path}")
 
 if __name__ == "__main__":
     run_experiments()

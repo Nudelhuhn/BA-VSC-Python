@@ -1,7 +1,9 @@
 embedding:
   model: "microsoft/codebert-base"  # embedding model for code snippets
 
+
 dim_reduction:
+
 # --- umap ---
   method: "umap"
   params:
@@ -37,6 +39,7 @@ dim_reduction:
 
 
 clustering:
+
 # --- hdbscan ---
   method: "hdbscan"
   params:
@@ -57,11 +60,14 @@ clustering:
 #     max_iter: 300             # maximum number of iterations for a single run; default: 300
 #     random_state: 42          # ensures reproducible clustering results; default: None
 
+
 visualization:
   n_neighbors: 15                # number of neighbors considered for UMAP-based visualization layout
   min_dist: 0.1                  # minimum distance between points in the visualization layout
 
+
 data:
-  file_name: ".java"             # file extension of code files to load
+  file_names: ["Point.java", "Circle.java"]             # file extension of code files to load
+  exclude_files: ["Miniprojekt1.java"]  # no clustering needed because they are always the same
   input_path: "C:/Users/grego/Desktop/Loesungen/AATEST"  # input data directory
   output_path: "C:/Users/grego/Documents/GitHub/BA-VSC-Python/output"  # output directory for generated results
