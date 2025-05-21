@@ -1,13 +1,13 @@
 class DimensionalityReducer:
-    def __init__(self, method="pca", params=None):
+    def __init__(self, method="pca", params=None):  # pca as default value and optional params
         self.method = method.lower()
-        self.params = params if params is not None else {}
-        self.model = None  # Modell wird erst in _initialize_model() erzeugt
+        self.params = params if params is not None else {}  # if no params given, use empty dictionary
+        self.model = None  # assign model in initialize method
 
     def _initialize_model(self):
         if self.method == "pca":
-            from sklearn.decomposition import PCA
-            return PCA(**self.params)
+            from sklearn.decomposition import PCA   # only import if necessary
+            return PCA(**self.params)   # create object with given params
         elif self.method == "tsne":
             from sklearn.manifold import TSNE
             return TSNE(**self.params)
@@ -20,4 +20,4 @@ class DimensionalityReducer:
     def reduce(self, embeddings):
         if self.model is None:
             self.model = self._initialize_model()
-        return self.model.fit_transform(embeddings)
+        return self.model.fit_transform(embeddings) # fit model to data, then transform it; combination of fit() and transform()
