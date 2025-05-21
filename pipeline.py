@@ -1,5 +1,5 @@
 import time
-complete_start = time.time()
+complete_time = time.time()
 start = time.time()
 import numpy as np
 import yaml
@@ -8,8 +8,8 @@ from utils.data_loader import DataLoader
 from embeddings.embedding_model import EmbeddingModel
 from dimReducer.dimensionality_reducer import DimensionalityReducer
 from clustering.clustering_engine import ClusteringEngine
-from interactivePlot.interactive_plot import InteractivePlot
-from visualization.cluster_plotter import ClusterPlotter
+from visualization.advanced_interactive_plot import AdvancedInteractivePlot
+# from visualization.cluster_plotter import ClusterPlotter
 from evaluation.evaluation_metrics import EvaluationMetrics
 print(f"imports {time.time() - start:.2f} Sekunden")
 
@@ -64,16 +64,14 @@ def run_pipeline():
 
         # interactive plotting (show file name by hovering)
         start = time.time()
-        int_plot = InteractivePlot()
-        int_plot.interactive_plot(reduced_embeddings, labels, loader.get_filenames(), loader.get_parent_dirs())
+        AdvancedInteractivePlot.ad_int_plot(reduced_embeddings, labels, loader.get_filenames(), loader.get_parent_dirs())
         print(f"interactive_plot {time.time() - start:.2f} Sekunden")
 
 
-        # Visualization
-        start = time.time()
-        plotter = ClusterPlotter()
-        plotter.plot(reduced_embeddings, labels)
-        print(f"Visualization {time.time() - start:.2f} Sekunden")
+        # # Visualization   # currently not needed if the interactive plotting is used
+        # start = time.time()
+        # ClusterPlotter.plot(reduced_embeddings, labels)
+        # print(f"Visualization {time.time() - start:.2f} Sekunden")
         
 
         # Evaluation
@@ -82,7 +80,7 @@ def run_pipeline():
         print("Evaluation results:", results)
         print(f"Evaluation {time.time() - start:.2f} Sekunden")
 
-        print(f"Komplett {time.time() - complete_start} Sekunden")
+        print(f"Komplett {time.time() - complete_time} Sekunden")
 
 if __name__ == "__main__":
     run_pipeline()

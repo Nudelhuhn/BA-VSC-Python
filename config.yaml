@@ -7,7 +7,7 @@ dim_reduction:
 # --- umap ---
   method: "umap"
   params:
-    n_components: 2         # target dimensions after reduction; default: 2
+    n_components: 3         # target dimensions after reduction; default: 2
     n_neighbors: 15         # number of local neighbors considered; default: 15
     min_dist: 0.1           # minimum distance between points in low-dimensional space; default: 0.1
     metric: "euclidean"     # distance metric; options: 'euclidean', 'cosine', 'manhattan'; default: 'euclidean'
