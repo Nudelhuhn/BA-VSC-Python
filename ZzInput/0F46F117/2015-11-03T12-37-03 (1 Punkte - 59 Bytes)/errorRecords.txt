@@ -1,0 +1,38 @@
+DYNAMISCHER TEST (ERGEBNIS): 0 Punkte
+Test konnte nicht gestartet werden:
+	Der Test konnte nicht gestartet werden. Liegen im statischen Test Compilerfehler vor? Wurden alle Klassen richtig benannt und (sofern vorgegeben) im richtigen Package abgelegt?
+
+STATISCHER TEST (ERGEBNIS): 6 Punkte
+Signaturcheck:
+	Der Konstruktor "public Point(double initX, double initY)" in der Klasse "Point" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public double getX()" in der Klasse "Point" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public void setX(double newX)" in der Klasse "Point" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public double getY()" in der Klasse "Point" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public void setY(double newY)" in der Klasse "Point" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public double getDiameter()" in der Klasse "Circle" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public boolean containsPoint(Point point)" in der Klasse "Circle" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public static Circle fromPoints(Point center, Point p)" in der Klasse "Circle" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public double getDistance(Point p)" in der Klasse "Point" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Der Konstruktor "public Circle(Point initLocation, double initRadius)" in der Klasse "Circle" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public double getRadius()" in der Klasse "Circle" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public void setRadius(double newRadius)" in der Klasse "Circle" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public Point getLocation()" in der Klasse "Circle" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public void setLocation(Point newLocation)" in der Klasse "Circle" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public double getCircumference()" in der Klasse "Circle" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+Signaturcheck:
+	Die Methode "public double getArea()" in der Klasse "Circle" fehlt. Hast du die vorgegebene Methodensignatur veraendert?
+

@@ -20,8 +20,13 @@ def run_experiments():
     warnings.filterwarnings("ignore", category=FutureWarning)
     warnings.filterwarnings("ignore", category=UserWarning)
 
+    # dynamically determine current path
+    base_path = os.path.dirname(os.path.abspath(__file__))  # os.path.abspath(__file__): absoluate path of __file__ (variable with current path), os.path.dirname(): path to parent folder
+    input_path = os.path.join(base_path, config['data']['input_path'])
+    output_path = os.path.join(base_path, config['data']['output_path'])
+
     # Load data
-    loader = DataLoader(config['data']['file_name'], config['data']['input_path'], config['data']['exclude_files'])
+    loader = DataLoader(config['data']['file_names'][0], input_path, config['data']['exclude_files'])
     code_snippets = loader.load_code_files()
 
     # Embedding
@@ -86,10 +91,6 @@ def run_experiments():
             # Evaluation
             metrics = EvaluationMetrics.evaluate(reduced_embeddings, labels)
 
-            # Cluster count
-            n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
-            n_noise = list(labels).count(-1)
-
             # Collect result
             result = {
                 "dim_reduction": dr_method,
@@ -97,40 +98,37 @@ def run_experiments():
                 "silhouette": metrics['silhouette'],
                 "calinski_harabasz": metrics['calinski_harabasz'],
                 "davies_bouldin": metrics['davies_bouldin'],
-                "n_clusters": n_clusters,
-                "n_noise": n_noise
             }
             results.append(result)
             print(f"✔️ {dr_method} + {cluster_method} done.")
 
     # ensure output path exists, if not it´s created
-    os.makedirs(config['data']['output_path'], exist_ok=True)
+    os.makedirs(output_path, exist_ok=True)
 
-    # Save evaluation results
+    # save evaluation results
     df_results = pd.DataFrame(results)
 
-    # Normalize Scores für Ranking-Berechnung
+    # normalize Scores for ranking calculation
     for metric in ['silhouette', 'calinski_harabasz']:
         df_results[f"{metric}_norm"] = (df_results[metric] - df_results[metric].min()) / (df_results[metric].max() - df_results[metric].min())
-
     df_results['davies_bouldin_norm'] = (df_results['davies_bouldin'].max() - df_results['davies_bouldin']) / (df_results['davies_bouldin'].max() - df_results['davies_bouldin'].min())
 
-    # Gesamt-Score berechnen
+    # mean value of the normalized metrics as total score
     df_results['total_score'] = df_results[['silhouette_norm', 'calinski_harabasz_norm', 'davies_bouldin_norm']].mean(axis=1)
 
-    # Ranking anhand des Gesamt-Scores
+    # sort all results by total score and assign ranks
     ranking = df_results.sort_values('total_score', ascending=False).reset_index(drop=True)
     ranking['rank'] = ranking.index + 1
 
-    # Nur gewünschte Spalten für das finale Ranking-CSV
-    final_cols = ['dim_reduction', 'clustering', 'silhouette', 'calinski_harabasz', 'davies_bouldin', 'n_clusters', 'n_noise', 'rank']
+    # only desired columns for final ranking csv
+    final_cols = ['dim_reduction', 'clustering', 'silhouette', 'calinski_harabasz', 'davies_bouldin', 'rank']
     final_ranking = ranking[final_cols]
 
-    # Exportieren
-    final_ranking.to_csv(os.path.join(config['data']['output_path'], "clustering_ranking_final.csv"), index=False)
+    # export
+    final_ranking.to_csv(os.path.join(output_path, "clustering_ranking.csv"), index=False)
 
-    print(f"\n✔️ Final Ranking saved to {config['data']['output_path']}")
-    print(f"Beste Kombination: {final_ranking.iloc[0]['dim_reduction']} + {final_ranking.iloc[0]['clustering']} (Rank 1)")
+    print(f"\nFinal Ranking saved to {output_path}")
+    print(f"Best combination: {final_ranking.iloc[0]['dim_reduction']} + {final_ranking.iloc[0]['clustering']} (Rank 1)")
 
 if __name__ == "__main__":
     run_experiments()

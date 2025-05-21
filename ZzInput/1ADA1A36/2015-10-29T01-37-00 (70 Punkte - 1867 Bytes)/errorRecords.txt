@@ -1,0 +1,18 @@
+DYNAMISCHER TEST (ERGEBNIS): 65 Punkte
+Fehler in Miniprojekt 1 - Circle.containsPoint() #2::
+	Fehler in der Methode Circle.containsPoint(): Ein Kreis mit Mittelpunkt (3,500000|1,000000) und Radius (4,000000) enth�lt den Punkt (-1,000000|-1,000000) nicht, deine Methode liefert jedoch 'true' zur�ck<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.containsPoint()_#2.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Circle.containsPoint() #3::
+	Fehler in der Methode Circle.containsPoint(): Ein Kreis mit Mittelpunkt (-12,000000|10,000000) und Radius (1,000000) enth�lt den Punkt (2,500000|10,000000), deine Methode liefert jedoch 'false' zur�ck<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.containsPoint()_#3.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Circle.containsPoint() #4::
+	Fehler in der Methode Circle.containsPoint(): Ein Kreis mit Mittelpunkt (-12,000000|10,000000) und Radius (1,000000) enth�lt den Punkt (-11,000000|9,000000) nicht, deine Methode liefert jedoch 'true' zur�ck<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.containsPoint()_#4.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Circle.fromPoints() #1::
+	Fehler in der Methode Circle.fromPoints(): Das Feld Circle.location des zur�ckgegebenen Circle-Objekts hat den Wert null<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.fromPoints()_#1.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Circle.fromPoints() #2::
+	Fehler in der Methode Circle.fromPoints(): Das Feld Circle.location des zur�ckgegebenen Circle-Objekts hat den Wert null<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.fromPoints()_#2.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Circle.getLocation()::
+	Die Methode Circle.getLocation() liefert einen fehlerhaften Wert zur�ck (Point@16d14192)<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.getLocation().html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Point.getDistance() #1::
+	F�r die Punkte P1(0,000000|0,000000) und P2(3,000000|-4,000000) sollte die Methode Point.getDistance() 5,000000 zur�ckgeben, sie liefert aber 0,000000<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Point.getDistance()_#1.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+
+STATISCHER TEST (ERGEBNIS): 100 Punkte
+

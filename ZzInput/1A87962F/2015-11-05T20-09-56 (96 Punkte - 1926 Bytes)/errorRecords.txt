@@ -1,0 +1,6 @@
+DYNAMISCHER TEST (ERGEBNIS): 95 Punkte
+Fehler in Miniprojekt 1 - Point.Point(double initX, double initY)::
+	Der Aufruf von Point(63,520000, -692,960000) sollte dazu f�hren, dass x=63,520000 und y=-692,960000. Nach Aufruf deines Konstruktors ist x=0,000000 und y=0,000000.<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Point.Point(double_initX,_double_initY).html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+
+STATISCHER TEST (ERGEBNIS): 100 Punkte
+

@@ -1,0 +1,6 @@
+DYNAMISCHER TEST (ERGEBNIS): 95 Punkte
+Fehler in Miniprojekt 1 - Circle.containsPoint() #2::
+	Fehler in der Methode Circle.containsPoint(): Ein Kreis mit Mittelpunkt (3,500000|1,000000) und Radius (4,000000) enth�lt den Punkt (-1,000000|-1,000000) nicht, deine Methode liefert jedoch 'true' zur�ck<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.containsPoint()_#2.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+
+STATISCHER TEST (ERGEBNIS): 100 Punkte
+

@@ -1,0 +1,16 @@
+DYNAMISCHER TEST (ERGEBNIS): 70 Punkte
+Fehler in Miniprojekt 1 - Circle.fromPoints() #1::
+	Fehler in der Methode Circle.fromPoints(): Das Feld Circle.location des zur�ckgegebenen Circle-Objekts hat den Wert null<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.fromPoints()_#1.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Circle.fromPoints() #2::
+	Fehler in der Methode Circle.fromPoints(): Das Feld Circle.location des zur�ckgegebenen Circle-Objekts hat den Wert null<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.fromPoints()_#2.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Circle.getCircumference()::
+	Die Methode Circle.getCircumference() gibt bei einem Radius von 47,160000 den Wert 3,141593 zur�ck, sollte jedoch 296,315019 zur�ckgeben<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.getCircumference().html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Circle.getDiameter()::
+	Die Methode Circle.getDiameter() gibt bei einem Radius von 3,200000 den Wert 20,106193 zur�ck, sollte jedoch 6,400000 zur�ckgeben<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.getDiameter().html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Circle.setRadius()::
+	Die Methode Circle.setLocation() setzt das Feld Circle.location nicht korrekt. Nach dem Aufruf von Circle.setLocation(Point@674e5e21) hat Circle.location den Wert Point@4f46c96c<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.setRadius().html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+Fehler in Miniprojekt 1 - Circle.setRadius()::
+	Die Methode Circle.setRadius() setzt das Feld Circle.radius nicht korrekt. Nach dem Aufruf von Circle.setRadius(941,570000) hat Circle.radius den Wert 0,000000<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.setRadius().html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
+
+STATISCHER TEST (ERGEBNIS): 100 Punkte
+

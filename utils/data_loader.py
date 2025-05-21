@@ -21,7 +21,7 @@ class DataLoader:
         return code_snippets
     
     def get_filenames(self):
-        return self.filenames  # Gibt die gespeicherten Dateinamen zurück
+        return self.filenames
 
     def get_parent_dirs(self):
-        return self.parent_dirs  # Gibt die gespeicherten übergeordneten Ordnernamen zurück
+        return self.parent_dirs
