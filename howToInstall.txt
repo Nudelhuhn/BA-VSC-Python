@@ -1,0 +1,9 @@
+to install requirements:
+    install python
+    install python extensions in VSC (Python (optional: Pylance, isort, Python Debugger))
+    open terminal
+    "python -m venv venv"             # to provide project independency create a virtual enviornment
+    "venv\Scripts\activate"           # to activate the virtual enviornment on windows
+        "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass"  # if the activation was not allowed, then try activate it again
+    "source venv/bin/activate"        # to activate the virtual enviornment on Mac/Linux
+    "pip install -r requirements.txt"   # to install the requirements
