@@ -47,7 +47,6 @@ def run_pipeline():
 
 
         # Embedding
-        print("⏳ Embeddings werden berechnet...")
         start = time.time()
         model = EmbeddingModel(config['embedding']['model'])
         embeddings = np.array([model.get_embedding(code) for code in code_snippets])    # np.array needed for .shape method of pca and in general more universal than normal lists
@@ -73,7 +72,7 @@ def run_pipeline():
 
         # interactive plotting (show file name by hovering)
         start = time.time()
-        AdvancedInteractivePlot.ad_int_plot(reduced_embeddings, labels, loader.get_filenames(), loader.get_parent_dirs())
+        AdvancedInteractivePlot.adv_int_plot(reduced_embeddings, labels, loader.get_filenames(), loader.get_parent_dirs())
         print(f"interactive_plot {time.time() - start:.2f} Seconds")
 
 

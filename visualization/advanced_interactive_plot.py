@@ -3,7 +3,7 @@ import plotly.express as px # simple interface for interactive visualization
 
 class AdvancedInteractivePlot:
     @staticmethod
-    def ad_int_plot(embeddings, labels, filenames, parent_dirs):
+    def adv_int_plot(embeddings, labels, filenames, parent_dirs):
         df = pd.DataFrame({
             'filename': filenames,
             'parent_dir': parent_dirs,
