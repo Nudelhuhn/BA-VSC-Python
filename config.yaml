@@ -69,5 +69,5 @@ visualization:
 data:
   file_names: ["Point.java", "Circle.java"]             # file extension of code files to load
   exclude_files: ["Miniprojekt1.java"]  # no clustering needed because they are always the same
-  input_path: "ZzInput"  # input data , e.g. C:\Users\MaxMustermann\Documents\GitHub\BA-VSC-Python\ZzInput
+  input_path: "C:/Users/grego/Desktop/Loesungen/AATEST"  # input data , e.g. C:\Users\MaxMustermann\Documents\GitHub\BA-VSC-Python\ZzInput
   output_path: "ZzOutput"  # output directory for generated results
