@@ -6,6 +6,7 @@ import numpy as np
 import yaml
 import warnings
 from utils.data_loader import DataLoader
+from utils.config_suggester import suggest_config_settings
 from embeddings.embedding_model import EmbeddingModel
 from dimReducer.dimensionality_reducer import DimensionalityReducer
 from clustering.clustering_engine import ClusteringEngine
@@ -13,6 +14,7 @@ from utils.score_binning import bin_scores
 from visualization.advanced_interactive_plot import AdvancedInteractivePlot
 # from visualization.cluster_plotter import ClusterPlotter
 from evaluation.evaluation_metrics import EvaluationMetrics
+from reporting.report_generator import ReportGenerator
 print(f"imports {time.time() - start:.2f} Seconds")
 
 
@@ -41,33 +43,39 @@ def run_pipeline():
 
     # load data
     start = time.time()
-    loader = DataLoader(".java", input_path, config['data']['exclude_files'])
+    loader = DataLoader(".java", input_path, config['data']['exclude_files'], config['data']['exclude_folders'])
     code_snippets = loader.load_code_files(concat=True)
     print(f"data_loader {time.time() - start:.2f} Seconds")
 
 
+    # # dynamic config
+    # start = time.time()
+    # num_solutions = len(code_snippets)
+    # suggested_config = suggest_config_settings(num_solutions)
+    # config['dim_reduction'] = suggested_config['dim_reduction']
+    # config['clustering'] = suggested_config['clustering']
+    # config['data']['score_bins'] = suggested_config['score_bins']
+    # print(f"dynamic config {time.time() - start:.2f} Seconds")
+
+
     # score bins
-    if 'score_bins' in config['data']:
-        scores = loader.get_scores()
-        binned_scores = bin_scores(scores, config['data']['score_bins'])
-        unique_bins = sorted(set(binned_scores))
-    else:
-        unique_bins = ["all"]
+    start = time.time()
+    scores = loader.get_scores()
+    binned_scores = bin_scores(scores, config['data']['score_bins'])
+    unique_bins = sorted(set(binned_scores))
+    print(f"score bins {time.time() - start:.2f} Seconds")
 
 
     # Embedding
     model = EmbeddingModel(config['embedding']['model'])
     
-    all_embeddings, all_labels, all_filenames, all_parent_dirs, all_bins = [], [], [], [], []   # save all information resulting in the loop to display it all in one plot after the loop
-    global_cluster_id = 0   # every cluster gets an unique ID, enables unique colors for each cluster in the plot
+    # save all information resulting in the loop to display it all in one plot after the loop
+    all_embeddings, all_labels, all_filenames, all_parent_dirs, all_bins = [], [], [], [], []
 
     for score_bin in unique_bins:
         print(f"\n=== Processing bin: {score_bin} ===")
 
-        if score_bin == "all":
-            indices = range(len(code_snippets))
-        else:
-            indices = [i for i, b in enumerate(binned_scores) if b == score_bin]
+        indices = [i for i, b in enumerate(binned_scores) if b == score_bin]
 
         if len(indices) < 4:
             print(f"Not enough solutions in bin {score_bin}, skipping...")
@@ -84,6 +92,7 @@ def run_pipeline():
             return
         print(f"Embedding {time.time() - start:.2f} Seconds")
 
+
         # Dimensionality reduction
         start = time.time()
         reducer = DimensionalityReducer(config['dim_reduction']['method'], config['dim_reduction']['params'])
@@ -97,10 +106,6 @@ def run_pipeline():
         labels = clusterer.cluster(reduced_embeddings)
         print(f"Clustering {time.time() - start:.2f} Seconds")
 
-        # remap labels to global IDs
-        labels = [label + global_cluster_id for label in labels]
-        global_cluster_id = max(labels) + 1
-
 
         # save all information resulting in the loop to display it all in one plot after the loop
         all_embeddings.extend(reduced_embeddings)
@@ -108,6 +113,7 @@ def run_pipeline():
         all_filenames.extend(filenames_bin)
         all_parent_dirs.extend(parent_dirs_bin)
         all_bins.extend([score_bin] * len(labels))
+
 
     # interactive plotting (show file name by hovering)
     start = time.time()
@@ -119,7 +125,7 @@ def run_pipeline():
     # start = time.time()
     # ClusterPlotter.plot(reduced_embeddings, labels)
     # print(f"Visualization {time.time() - start:.2f} Seconds")
-    
+
 
     # Evaluation
     start = time.time()
@@ -127,7 +133,16 @@ def run_pipeline():
     print("Evaluation results:", results)
     print(f"Evaluation {time.time() - start:.2f} Seconds")
 
+
+    # Reporting
+    start = time.time()
+    ReportGenerator.generate_report(all_filenames, all_parent_dirs, all_labels, all_bins, config['data']['output_path'])
+    print(f"Report saved to {config['data']['output_path']}")
+    print(f"Reporting {time.time() - start:.2f} Seconds")
+
+
     print(f"complete {time.time() - complete_time} Seconds")
+
 
 if __name__ == "__main__":
     run_pipeline()
