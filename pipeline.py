@@ -43,7 +43,7 @@ def run_pipeline():
 
     # load data
     start = time.time()
-    loader = DataLoader(".java", input_path, config['data']['exclude_files'], config['data']['exclude_folders'])
+    loader = DataLoader(config['data']['files_to_look_for'], input_path, config['data']['exclude_files'], config['data']['exclude_folders'])
     code_snippets = loader.load_code_files(concat=True)
     print(f"data_loader {time.time() - start:.2f} Seconds")
 
@@ -115,10 +115,10 @@ def run_pipeline():
         all_bins.extend([score_bin] * len(labels))
 
 
-    # interactive plotting (show file name by hovering)
-    start = time.time()
-    AdvancedInteractivePlot.adv_int_plot(all_embeddings, all_labels, all_filenames, all_parent_dirs, all_bins)
-    print(f"interactive_plot {time.time() - start:.2f} Seconds")
+    # # interactive plotting (show file name by hovering)
+    # start = time.time()
+    # AdvancedInteractivePlot.adv_int_plot(all_embeddings, all_labels, all_filenames, all_parent_dirs, all_bins)
+    # print(f"interactive_plot {time.time() - start:.2f} Seconds")
 
 
     # # Visualization   # currently not needed if the interactive plotting is used

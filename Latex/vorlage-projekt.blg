@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: vorlage-projekt.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: geralpha.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: chapters/Glossar.aux
+Reallocating 'name_of_file' (item size: 1) to 42 items.
+A level-1 auxiliary file: chapters/Eigenstaendigkeitserklaerung.aux
+Database file #1: literatur.bib
+Warning--I didn't find a database entry for "Nannen:03"
+Warning--I didn't find a database entry for "wiki:listing"
+Warning--I didn't find a database entry for "Cormen:90"
+Warning--I didn't find a database entry for "Malte:97"
+Warning--I didn't find a database entry for "Mosberger:93"
+Warning--I didn't find a database entry for "Cheriton:85"
+Warning--I didn't find a database entry for "Coulouris:02"
+Warning--I didn't find a database entry for "Gottwald:03"
+You've used 2 entries,
+            2768 wiz_defined-function locations,
+            633 strings with 5670 characters,
+and the built_in function-call counts, 930 in all, are:
+= -- 90
+> -- 50
+< -- 0
++ -- 18
+- -- 18
+* -- 79
+:= -- 156
+add.period$ -- 3
+call.type$ -- 2
+change.case$ -- 12
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 31
+empty$ -- 67
+format.name$ -- 20
+if$ -- 191
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 10
+num.names$ -- 6
+pop$ -- 16
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 33
+stack$ -- 0
+substring$ -- 45
+swap$ -- 9
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 8
+width$ -- 4
+write$ -- 22
+(There were 8 warnings)
