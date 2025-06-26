@@ -1,5 +1,111 @@
 ﻿% This file was created with Citavi 7.0.7.1
 
+@misc{Abdelshiheed.17.04.2023,
+ abstract = {This work compares two approaches to provide metacognitive interventions and their impact on preparing students for future learning across Intelligent Tutoring Systems (ITSs). In two consecutive semesters, we conducted two classroom experiments: Exp. 1 used a classic artificial intelligence approach to classify students into different metacognitive groups and provide static interventions based on their classified groups. In Exp. 2, we leveraged Deep Reinforcement Learning (DRL) to provide adaptive interventions that consider the dynamic changes in the student's metacognitive levels. In both experiments, students received these interventions that taught how and when to use a backward-chaining (BC) strategy on a logic tutor that supports a default forward-chaining strategy. Six weeks later, we trained students on a probability tutor that only supports BC without interventions. Our results show that adaptive DRL-based interventions closed the metacognitive skills gap between students. In contrast, static classifier-based interventions only benefited a subset of students who knew how to use BC in advance. Additionally, our DRL agent prepared the experimental students for future learning by significantly surpassing their control peers on both ITSs.},
+ author = {Abdelshiheed, Mark and Hostetter, John Wesley and Barnes, Tiffany and Chi, Min},
+ date = {17.04.2023},
+ title = {Leveraging Deep Reinforcement Learning for Metacognitive Interventions  across Intelligent Tutoring Systems},
+ url = {http://arxiv.org/pdf/2304.09821},
+ file = {Abdelshiheed, Hostetter et al. 17.04.2023 - Leveraging Deep Reinforcement Learning:Attachments/Abdelshiheed, Hostetter et al. 17.04.2023 - Leveraging Deep Reinforcement Learning.pdf:application/pdf}
+}
+
+
+@article{Bobadilla.2024,
+ abstract = {Recent research has shown the great potential of automatic feedback in education. This paper presents SOBO, a bot we designed to automatically provide feedback on code quality to undergraduate students. SOBO has been deployed in a course at the KTH Royal Institute of Technology in Sweden with 130+ students. Overall, SOBO has analyzed 1687 GitHub repositories and produced 8443 tailored code quality feedback messages to students. The quantitative and qualitative results indicate that SOBO effectively nudges students into adopting code quality best practices without interfering with pedagogical objectives or adding a teaching burden. From this experience, we provide guidelines into how to design and deploy teaching bots in programming courses.},
+ author = {Bobadilla, Sofia and Glassey, Richard and Bergel, Alexandre and Monperrus, Martin},
+ year = {2024},
+ title = {SOBO: A Feedback Bot to Nudge Code Quality in Programming Courses},
+ url = {http://arxiv.org/pdf/2303.07187},
+ pages = {68--76},
+ volume = {41},
+ number = {2},
+ issn = {0740-7459},
+ journal = {IEEE Software},
+ doi = {10.1109/ms.2023.3298729},
+ file = {Bobadilla, Glassey et al. 2024 - SOBO A Feedback Bot:Attachments/Bobadilla, Glassey et al. 2024 - SOBO A Feedback Bot.pdf:application/pdf}
+}
+
+
+@article{Gross.2012,
+ abstract = {Designing an Intelligent Tutoring System (ITS) usually requires precise models of the underlying domain, as well as of how a human tutor would respond to student mistakes. As such, the applicability of ITSs is typically restricted to welldefined domains where such a formalization is possible. The extension of ITSs to ill-defined domains constitutes a challenge. In this paper, we propose the provision of feedback based on solution spaces which are automatically clustered by machine learning techniques operating on sets of student solutions. We validated our approach in an expert evaluation with a data set from a programming course. The evaluation confirmed the feasibility of the proposed feedback provision strategies.},
+ author = {Gross, Sebastian and Mokbel, Bassam and Hammer, Barbara and Pinkwart, Niels},
+ year = {2012},
+ title = {Feedback provision strategies in intelligent tutoring systems based on clustered solution spaces},
+ url = {https://dl.gi.de/items/0e896ef0-a966-49e4-807c-c347eb10f86d},
+ pages = {27--38},
+ file = {Gross, Mokbel et al. 2012 - Feedback provision strategies in intelligent:Attachments/Gross, Mokbel et al. 2012 - Feedback provision strategies in intelligent.pdf:application/pdf}
+}
+
+
+@misc{Messer.2023,
+ abstract = {We conducted a systematic literature review on automated grading and feedback tools for programming education. We analysed 121 research papers from 2017 to 2021 inclusive and categorised them based on skills assessed, approach, language paradigm, degree of automation and evaluation techniques. Most papers assess the correctness of assignments in object-oriented languages. Typically, these tools use a dynamic technique, primarily unit testing, to provide grades and feedback to the students or static analysis techniques to compare a submission with a reference solution or with a set of correct student submissions. However, these techniques' feedback is often limited to whether the unit tests have passed or failed, the expected and actual output, or how they differ from the reference solution. Furthermore, few tools assess the maintainability, readability or documentation of the source code, with most using static analysis techniques, such as code quality metrics, in conjunction with grading correctness. Additionally, we found that most tools offered fully automated assessment to allow for near-instantaneous feedback and multiple resubmissions, which can increase student satisfaction and provide them with more opportunities to succeed. In terms of techniques used to evaluate the tools' performance, most papers primarily use student surveys or compare the automatic assessment tools to grades or feedback provided by human graders. However, because the evaluation dataset is frequently unavailable, it is more difficult to reproduce results and compare tools to a collection of common assignments.},
+ author = {Messer, Marcus and Brown, Neil C. C. and K{\"o}lling, Michael and Shi, Miaojing},
+ date = {2024},
+ title = {Automated Grading and Feedback Tools for Programming Education: A Systematic Review},
+ url = {http://arxiv.org/pdf/2306.11722},
+ number = {1},
+ doi = {10.1145/3636515},
+ file = {Messer, Brown et al. 2023 - Automated Grading and Feedback Tools (2):Attachments/Messer, Brown et al. 2023 - Automated Grading and Feedback Tools (2).pdf:application/pdf;Messer, Brown et al. 2023 - Automated Grading and Feedback Tools:Attachments/Messer, Brown et al. 2023 - Automated Grading and Feedback Tools.pdf:application/pdf}
+}
+
+
+@misc{Orvalho.28.06.2022,
+ abstract = {Due to the vast number of students enrolled in Massive Open Online Courses (MOOCs), there has been an increasing number of automated program repair techniques focused on introductory programming assignments (IPAs). Such state-of-the-art techniques use program clustering to take advantage of previous correct student implementations to repair a given new incorrect submission. Usually, these repair techniques use clustering methods since analyzing all available correct student submissions to repair a program is not feasible. The clustering methods use program representations based on several features such as abstract syntax tree (AST), syntax, control flow, and data flow. However, these features are sometimes brittle when representing semantically similar programs.  This paper proposes InvAASTCluster, a novel approach for program clustering that takes advantage of dynamically generated program invariants observed over several program executions to cluster semantically equivalent IPAs. Our main objective is to find a more suitable representation of programs using a combination of the program's semantics, through its invariants, and its structure, through its anonymized abstract syntax tree. The evaluation of InvAASTCluster shows that the proposed program representation outperforms syntax-based representations when clustering a set of different correct IPAs. Furthermore, we integrate InvAASTCluster into a state-of-the-art clustering-based program repair tool and evaluate it on a set of IPAs. Our results show that InvAASTCluster advances the current state-of-the-art when used by clustering-based program repair tools by repairing a larger number of students' programs in a shorter amount of time.},
+ author = {Orvalho, Pedro and Janota, Mikol{\'a}{\v{s}} and Manquinho, Vasco},
+ date = {28.06.2022},
+ title = {InvAASTCluster: On Applying Invariant-Based Program Clustering to  Introductory Programming Assignments},
+ url = {http://arxiv.org/pdf/2206.14175},
+ file = {Orvalho, Janota et al. 28.06.2022 - InvAASTCluster:Attachments/Orvalho, Janota et al. 28.06.2022 - InvAASTCluster.pdf:application/pdf}
+}
+
+
+@article{Paiva.2024,
+ abstract = {Clustering of source code is a technique that can help improve feedback in automated program assessment. Grouping code submissions that contain similar mistakes can, for instance, facilitate the identification of students' difficulties to provide targeted feedback. Moreover, solutions with similar functionality but possibly different coding styles or progress levels can allow personalized feedback to students stuck at some point based on a more developed source code or even detect potential cases of plagiarism. However, existing clustering approaches for source code are mostly inadequate for automated feedback generation or assessment systems in programming education. They either give too much emphasis to syntactical program features, rely on expensive computations over pairs of programs, or require previously collected data. This paper introduces an online approach and implemented tool---AsanasCluster---to cluster source code submissions to programming assignments. The proposed approach relies on program attributes extracted from semantic graph representations of source code, including control and data flow features. The obtained feature vector values are fed into an incremental k-means model. Such a model aims to determine the closest cluster of solutions, as they enter the system, timely, considering clustering is an intermediate step for feedback generation in automated assessment. We have conducted a twofold evaluation of the tool to assess (1) its runtime performance and (2) its precision in separating different algorithmic strategies. To this end, we have applied our clustering approach on a public dataset of real submissions from undergraduate students to programming assignments, measuring the runtimes for the distinct tasks involved: building a model, identifying the closest cluster to a new observation, and recalculating partitions. As for the precision, we partition two groups of programs collected from GitHub. One group contains implementations of two searching algorithms, while the other has implementations of several sorting algorithms. AsanasCluster matches and, in some cases, improves the state-of-the-art clustering tools in terms of runtime performance and precision in identifying different algorithmic strategies. It does so without requiring the execution of the code. Moreover, it is able to start the clustering process from a dataset with only two submissions and continuously partition the observations as they enter the system.},
+ author = {Paiva, Jos{\'e} Carlos and Leal, Jos{\'e} Paulo and Figueira, {\'A}lvaro},
+ year = {2024},
+ title = {Clustering source code from automated assessment of programming assignments},
+ url = {https://link.springer.com/article/10.1007/s41060-024-00554-5?utm_source=chatgpt.com#citeas},
+ pages = {1--12},
+ issn = {2364-4168},
+ journal = {International Journal of Data Science and Analytics},
+ doi = {10.1007/s41060-024-00554-5},
+ file = {Paiva, Leal et al. 2024 - Clustering source code from automated:Attachments/Paiva, Leal et al. 2024 - Clustering source code from automated.pdf:application/pdf}
+}
+
+
+@misc{Pankiewicz.30.06.2023,
+ abstract = {Addressing the challenge of generating personalized feedback for programming assignments is demanding due to several factors, like the complexity of code syntax or different ways to correctly solve a task. In this experimental study, we automated the process of feedback generation by employing OpenAI's GPT-3.5 model to generate personalized hints for students solving programming assignments on an automated assessment platform. Students rated the usefulness of GPT-generated hints positively. The experimental group (with GPT hints enabled) relied less on the platform's regular feedback but performed better in terms of percentage of successful submissions across consecutive attempts for tasks, where GPT hints were enabled. For tasks where the GPT feedback was made unavailable, the experimental group needed significantly less time to solve assignments. Furthermore, when GPT hints were unavailable, students in the experimental condition were initially less likely to solve the assignment correctly. This suggests potential over-reliance on GPT-generated feedback. However, students in the experimental condition were able to correct reasonably rapidly, reaching the same percentage correct after seven submission attempts. The availability of GPT hints did not significantly impact students' affective state.},
+ author = {Pankiewicz, Maciej and Baker, Ryan S.},
+ date = {30.06.2023},
+ title = {Large Language Models (GPT) for automating feedback on programming  assignments},
+ url = {http://arxiv.org/pdf/2307.00150},
+ file = {Pankiewicz, Baker 30.06.2023 - Large Language Models GPT:Attachments/Pankiewicz, Baker 30.06.2023 - Large Language Models GPT.pdf:application/pdf}
+}
+
+
+@article{Scarlatos.,
+ abstract = {Automatically generating feedback via large language models (LLMs) in intelligent tutoring systems and online learning platforms has the potential to improve the learning outcomes of many students. However, both feedback generation and evaluation are challenging: feedback content has to be valid especially in subjects like math, which requires models to understand the problem, the solution, and where the student's error lies. Feedback also has to be pedagogically valid to reflect effective tutoring strategies, such as explaining possible misconceptions and encouraging the student, among other desirable features. In this work, we address both problems of automatically generating and evaluating feedback while considering both correctness and alignment. First, we propose a rubric for evaluating math feedback and show that GPT-4 is able to effectively use it to annotate human-written and LLM-generated feedback. Second, we propose a framework for feedback generation that optimizes both correctness and alignment using reinforcement learning (RL). Specifically, we use GPT-4's annotations to create preferences over feedback pairs in an augmented dataset for training via direct preference optimization (DPO). We show that our methods significantly increase the correctness and alignment of generated feedback with Llama 2, an open-source LLM, qualitatively analyze our generation and evaluation systems using case studies, and outline several areas for future work.},
+ author = {Scarlatos, Alexander and Smith, Digory and Woodhead, Simon and Lan, Andrew},
+ title = {Improving the Validity of Automatically Generated Feedback via Reinforcement Learning},
+ url = {http://arxiv.org/pdf/2403.01304},
+ pages = {280--294},
+ volume = {14829},
+ journal = {In International Conference on Artificial Intelligence in Education (pp. 280-294). Cham: Springer Nature Switzerland (},
+ doi = {10.1007/978-3-031-64302-6{\textunderscore }20},
+ file = {Scarlatos, Smith et al. - Improving the Validity of Automatically:Attachments/Scarlatos, Smith et al. - Improving the Validity of Automatically.pdf:application/pdf}
+}
+
+
+@misc{Tang.21.10.2024,
+ abstract = {Effective personalized feedback is crucial for learning programming. However, providing personalized, real-time feedback in large programming classrooms poses significant challenges for instructors. This paper introduces SPHERE, an interactive system that leverages Large Language Models (LLMs) and structured LLM output review to scale personalized feedback for in-class coding activities. SPHERE employs two key components: an Issue Recommendation Component that identifies critical patterns in students' code and discussion, and a Feedback Review Component that uses a ``strategy-detail-verify'' approach for efficient feedback creation and verification. An in-lab, between-subject study demonstrates SPHERE's effectiveness in improving feedback quality and the overall feedback review process compared to a baseline system using off-the-shelf LLM outputs. This work contributes a novel approach to scaling personalized feedback in programming education, addressing the challenges of real-time response, issue prioritization, and large-scale personalization.},
+ author = {Tang, Xiaohang and Wong, Sam and Huynh, Marcus and He, Zicheng and Yang, Yalong and Chen, Yan},
+ date = {21.10.2024},
+ title = {SPHERE: Scaling Personalized Feedback in Programming Classrooms with  Structured Review of LLM Outputs},
+ url = {http://arxiv.org/pdf/2410.16513},
+ file = {Tang, Wong et al. 21.10.2024 - SPHERE Scaling Personalized Feedback:Attachments/Tang, Wong et al. 21.10.2024 - SPHERE Scaling Personalized Feedback.pdf:application/pdf}
+}
+
+
 @article{Ternikov.2024,
  abstract = {1},
  author = {Ternikov, Andrei and Blyakher, Mikhail},
@@ -11,19 +117,23 @@
  number = {5},
  issn = {2050-7003},
  journal = {Journal of Applied Research in Higher Education},
- doi = {10.1108/JARHE-06-2023-0247}
+ doi = {10.1108/JARHE-06-2023-0247},
+ file = {Ternikov, Blyakher 2024 - Grade inflation and grading process:Attachments/Ternikov, Blyakher 2024 - Grade inflation and grading process.pdf:application/pdf}
 }
 
-% This file was created with Citavi 7.0.7.1
 
-@misc{Messer.2023,
- author = {Messer, Marcus and Brown, Neil C. C. and K{\"o}lling, Michael and Shi, Miaojing},
- date = {2024},
- title = {Automated Grading and Feedback Tools for Programming Education: A Systematic Review},
- url = {http://arxiv.org/pdf/2306.11722},
- number = {1},
- doi = {10.1145/3636515},
- file = {Messer, Brown et al. 2023 - Automated Grading and Feedback Tools (2):Attachments/Messer, Brown et al. 2023 - Automated Grading and Feedback Tools (2).pdf:application/pdf;Messer, Brown et al. 2023 - Automated Grading and Feedback Tools:Attachments/Messer, Brown et al. 2023 - Automated Grading and Feedback Tools.pdf:application/pdf}
+@article{YoussefLahmadiMohammedZakariaeElKhattabiMouniaRahhaliLahcenOughdir.2024,
+ abstract = {In the realm of intelligent tutoring systems, the concept of clustering groups holds immense potential for enhancing the adaptability and efficacy of educational platforms. Clustering techniques play a pivotal role in organizing learners into meaningful groups based on various criteria, such as learning preferences, proficiency levels, and engagement patterns. In this groundbreaking research paper, we meticulously evaluate the performance of clustering algorithms within the context of intelligent tutoring systems. Our study employs three key metrics---Cali{\'n}ski-Harabasz (CH) Index, Silhouette Score, and Diversity Index---to assess the outcomes of clustering processes across diverse datasets. The investigation is specifically tailored to inform the clustering of learners into groups within intelligent tutoring systems. Our analysis spans datasets such as R15, Aggregation, D31, Pathbased, Jain, and Spiral, offering profound insights into the strengths and limitations of clustering methodologies in the context of educational adaptability. By elucidating optimal clustering scenarios, our findings aim to guide the creation of tailored learning groups, fostering personalized and efficient educational experiences for learners within intelligent tutoring systems. This research significantly advances the discourse on clustering strategies, providing valuable insights for the enhancement of intelligent tutoring systems.},
+ author = {{Youssef Lahmadi, Mohammed Zakariae El Khattabi, Mounia Rahhali, Lahcen Oughdir}},
+ year = {2024},
+ title = {Optimizing Adaptive Learning: Insights from K-Means Clustering in Intelligent Tutoring Systems},
+ url = {https://ijisae.org/index.php/IJISAE/article/view/5649?utm_source=chatgpt.com},
+ pages = {1842--1851},
+ volume = {12},
+ number = {3},
+ issn = {2147-6799},
+ journal = {International Journal of Intelligent Systems and Applications in Engineering},
+ file = {Youssef Lahmadi,:Attachments/Youssef Lahmadi,.pdf:application/pdf}
 }
 
 
