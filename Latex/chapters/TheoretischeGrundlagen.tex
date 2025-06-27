@@ -16,23 +16,15 @@ Inspiration für diese Arbeit wurde aus aktuellen Werken entnommen, wie Orvalho 
 
 Diese Quellen und weitere Recherche dienten zum Kennenlernen und zum späteren Einbinden von Algorithmen, die aufgrund ihrer besonderen Eignung zur Clusterung von Programmieraufgaben besonders herausstachen, wie 
 \begin{itemize}
-    \item k-means - eine Methode zur Aufteilung von N Beobachtungen in k Cluster, wobei jede Beobachtung zu dem Cluster mit dem nächstgelegenen Mittelwert gehört, der als Prototyp des Clusters dient, und
-    \item hdbscan - eine Erweiterung des Density-Based Spatial Clustering of Applications with Noise (DBSCAN) Algorithmus, indem es eine Hierarchie von Clustern aufbaut und die stabilen Cluster über unterschiedliche Dichteebenen hinweg extrahiert,
+    \item k-means - eine Methode zur Aufteilung von N Beobachtungen in k Cluster, wobei jede Beobachtung zu dem Cluster mit dem nächstgelegenen Mittelwert gehört, der als Prototyp des Clusters dient (vgl. \cite{MacQueen.1967}), und
+    \item hdbscan - eine Erweiterung des Density-Based Spatial Clustering of Applications with Noise (DBSCAN) Algorithmus, indem es eine Hierarchie von Clustern aufbaut und die stabilen Cluster über unterschiedliche Dichteebenen hinweg extrahiert (vgl. \cite{CampelloRicardoJ.G.B..2013}),
 \end{itemize}
 Weiterhin wurden Verfahren eingebunden die hochdimensionale Vektoren in ihren Dimensionen reduzieren, um sie für weiterführende Prozesse wie z. B. zur Clusterung und Visualisierung der Daten nutzbar zu machen. In dieser Arbeit wurden
 \begin{itemize}
-    \item Principal component analysis (PCA) - ein Verfahren zur Projektion hochdimensionaler Daten in einen lineareren Unterraum mit geringerer Dimension, indem neue Achsen, entlang derer die Daten am stärksten streuen, berechnet werden und stellt die Daten entlang dieser Achsen dar,
-    \item t-distributed stochastic neighbor embedding (t-SNE) - ein Verfahren zur Visualisierung hochdimensionaler Daten, indem es berechnet wie ähnlich Punkte zu ihren Originaldaten sind, um sie entsprechend weit auseinander oder nahe zusammen zu platzieren, und
-    \item Uniform Manifold Approximation and Projection (UMAP) - ein Verfahren welches Topologie und Geometrie nutzt, um skalierbare, strukturtreue EIinbettungen in niedrigere Dimensionen zu erreichen.
+    \item Principal component analysis (PCA) - ein Verfahren zur Projektion hochdimensionaler Daten in einen lineareren Unterraum mit geringerer Dimension, indem neue Achsen, entlang derer die Daten am stärksten streuen, berechnet werden und stellt die Daten entlang dieser Achsen dar (vgl. \cite{KarlPearson.1901}),
+    \item t-distributed stochastic neighbor embedding (t-SNE) - ein Verfahren zur Visualisierung hochdimensionaler Daten, indem es berechnet wie ähnlich Punkte zu ihren Originaldaten sind, um sie entsprechend weit auseinander oder nahe zusammen zu platzieren (vgl. \cite{LaurensvanderMaatenundGeoffreyHinton.2008}), und
+    \item Uniform Manifold Approximation and Projection (UMAP) - ein Verfahren welches Topologie und Geometrie nutzt, um skalierbare, strukturtreue EIinbettungen in niedrigere Dimensionen zu erreichen (vgl. \cite{McInnes.09.02.2018}).
 \end{itemize}
-
-
-\section{Relevanz von KI für Lehrkräfte}
-Eine Studie des MDPI-Journals ergab, dass 92 \% der Lehrkräfte mit KI vertraut sind, und über 54 \% gaben an, KI bei administrativen Aufgaben, wie Notengebung oder Unterrichtsplanung zu nutzen. Laut Technikakzeptanzmodell (TAM) fördert die wahrgenommene Nützlichkeit (Perceived Usefulness, PU) die Verwendung von KI im Unterricht (vgl. \cite{}).
-
-Eine Springer-Studie zeigt, dass KI-Tools die Unterrichtsgestaltung erleichtern und Inhalte ansprechender machen - was Selbstwirksamkeit, Engagement und Motivation der Lehrkräfte steigert (vgl. \cite{}).
-
-Feldstudien mit intelligenten Assistenzsystemen im K-12-Bereich (etwa durch Lumilo-Smartglasses) verdeutlichten, dass KI von Lehrkräften als Ideenquelle und Entscheidungsunterstützung wahrgenommen wird, statt als Ersatz
 
 % Methodik
 % Aufgrund der weltweiten Etablierung und der Bereitstellung von Bibliotheken die die obigen KI-Techniken bereitstellen, wurde für die Programmierung des Systems Python als Programmiersprache benutzt. Darüber hinaus zeichnet sich Python durch eine einfache, lesbare Syntax und eine aktive Entwickler- und Forschungsgemeinschaft aus, was die Entwicklung, Erweiterung und Wartung des Systems erleichtert.

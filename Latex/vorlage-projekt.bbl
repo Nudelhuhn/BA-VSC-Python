@@ -1,10 +1,44 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{TWH{\etalchar{+}}}
+\begin{thebibliography}{{Lau}08}
+
+\bibitem[CMS13]{CampelloRicardoJ.G.B..2013}
+{\sc {Campello, Ricardo J. G. B.}}, {\sc Davoud Moulavi} \btxandlong{}\ {\sc
+  Joerg Sander}: {\em Density-Based Clustering Based on Hierarchical Density
+  Estimates}.
+\newblock \btxpageslong{}\ 160--172. {Springer, Berlin, Heidelberg}, 2013.
+
+\bibitem[JS21]{Jerrim.2021}
+{\sc Jerrim, John} \btxandlong{}\ {\sc Sam Sims}: {\em When is high workload
+  bad for teacher wellbeing? Accounting for the non-linear contribution of
+  specific teaching tasks}.
+\newblock Teaching and Teacher Education, 105:103395, 2021.
+
+\bibitem[{Kar}01]{KarlPearson.1901}
+{\sc {Karl Pearson}}: {\em On lines and planes of closest fit to systems of
+  points in space}, 1901.
+
+\bibitem[{Lau}08]{LaurensvanderMaatenundGeoffreyHinton.2008}
+{\sc {Laurens van der Maaten und Geoffrey Hinton}}: {\em Visualizing Data using
+  t-SNE}, 2008.
+
+\bibitem[Mac67]{MacQueen.1967}
+{\sc MacQueen, J.}: {\em Some methods for classification and analysis of
+  multivariate observations}.
+\newblock \Btxinlong{}\ {\sc {Le Cam}, Lucien~M.} \btxandlong{}\ {\sc Jerzy
+  Neyman}\ (\btxeditorslong{}): {\em Proceedings of the Fifth Berkeley
+  Symposium on Mathematical Statistics and Probability, Volume 1: Statistics},
+  \btxvolumelong{}\ 5.1, \btxpageslong{}\ 281--298. {University of California
+  Press}, 1967.
 
 \bibitem[MBKS]{Messer.2023}
 {\sc Messer, Marcus}, {\sc Neil C.~C. Brown}, {\sc Michael K{\"o}lling}
   \btxandlong{}\ {\sc Miaojing Shi}: {\em Automated Grading and Feedback Tools
   for Programming Education: A Systematic Review}.
+
+\bibitem[MHM]{McInnes.09.02.2018}
+{\sc McInnes, Leland}, {\sc John Healy} \btxandlong{}\ {\sc James Melville}:
+  {\em UMAP: Uniform Manifold Approximation and Projection for Dimension
+  Reduction}.
 
 \bibitem[OJM]{Orvalho.28.06.2022}
 {\sc Orvalho, Pedro}, {\sc Mikol{\'a}{\v{s}} Janota} \btxandlong{}\ {\sc Vasco
@@ -17,12 +51,6 @@
   of programming assignments}.
 \newblock International Journal of Data Science and Analytics, \btxpageslong{}\
   1--12, 2024.
-
-\bibitem[TB24]{Ternikov.2024}
-{\sc Ternikov, Andrei} \btxandlong{}\ {\sc Mikhail Blyakher}: {\em Grade
-  inflation and grading process: does faculty workload matter?}
-\newblock Journal of Applied Research in Higher Education, 16(5):1937--1955,
-  2024.
 
 \bibitem[TWH{\etalchar{+}}]{Tang.21.10.2024}
 {\sc Tang, Xiaohang}, {\sc Sam Wong}, {\sc Marcus Huynh}, {\sc Zicheng He},
