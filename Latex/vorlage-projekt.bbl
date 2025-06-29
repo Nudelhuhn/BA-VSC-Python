@@ -1,11 +1,11 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{{Lau}08}
 
-\bibitem[CMS13]{CampelloRicardoJ.G.B..2013}
+\bibitem[CMS]{CampelloRicardoJ.G.B..}
 {\sc {Campello, Ricardo J. G. B.}}, {\sc Davoud Moulavi} \btxandlong{}\ {\sc
   Joerg Sander}: {\em Density-Based Clustering Based on Hierarchical Density
   Estimates}.
-\newblock \btxpageslong{}\ 160--172. {Springer, Berlin, Heidelberg}, 2013.
+\newblock \btxpageslong{}\ 160--172.
 
 \bibitem[JS21]{Jerrim.2021}
 {\sc Jerrim, John} \btxandlong{}\ {\sc Sam Sims}: {\em When is high workload
@@ -15,11 +15,13 @@
 
 \bibitem[{Kar}01]{KarlPearson.1901}
 {\sc {Karl Pearson}}: {\em On lines and planes of closest fit to systems of
-  points in space}, 1901.
+  points in space}.
+\newblock Philosophical Magazine, 2(11):559--572, 1901.
 
 \bibitem[{Lau}08]{LaurensvanderMaatenundGeoffreyHinton.2008}
 {\sc {Laurens van der Maaten und Geoffrey Hinton}}: {\em Visualizing Data using
-  t-SNE}, 2008.
+  t-SNE}.
+\newblock Journal of Machine Learning Research, 9:2579--2605, 2008.
 
 \bibitem[Mac67]{MacQueen.1967}
 {\sc MacQueen, J.}: {\em Some methods for classification and analysis of

@@ -17,46 +17,48 @@ Warning--I didn't find a database entry for "Mosberger:93"
 Warning--I didn't find a database entry for "Cheriton:85"
 Warning--I didn't find a database entry for "Coulouris:02"
 Warning--I didn't find a database entry for "Gottwald:03"
-Warning--empty booktitle in CampelloRicardoJ.G.B..2013
+Warning--empty booktitle in CampelloRicardoJ.G.B..
+Warning--empty publisher in CampelloRicardoJ.G.B..
+Warning--empty year in CampelloRicardoJ.G.B..
 You've used 10 entries,
             2768 wiz_defined-function locations,
-            684 strings with 7379 characters,
-and the built_in function-call counts, 4466 in all, are:
-= -- 442
+            682 strings with 7337 characters,
+and the built_in function-call counts, 4668 in all, are:
+= -- 469
 > -- 222
 < -- 7
 + -- 77
 - -- 77
-* -- 340
-:= -- 678
-add.period$ -- 16
+* -- 371
+:= -- 712
+add.period$ -- 17
 call.type$ -- 10
 change.case$ -- 57
 chr.to.int$ -- 10
-cite$ -- 11
-duplicate$ -- 185
-empty$ -- 343
+cite$ -- 13
+duplicate$ -- 192
+empty$ -- 352
 format.name$ -- 89
-if$ -- 977
+if$ -- 1011
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 38
+missing$ -- 10
+newline$ -- 40
 num.names$ -- 32
-pop$ -- 97
+pop$ -- 89
 preamble$ -- 1
 purify$ -- 77
 quote$ -- 0
-skip$ -- 187
+skip$ -- 183
 stack$ -- 0
-substring$ -- 171
-swap$ -- 71
+substring$ -- 227
+swap$ -- 68
 text.length$ -- 7
 text.prefix$ -- 3
 top$ -- 0
 type$ -- 80
-warning$ -- 1
-while$ -- 38
+warning$ -- 3
+while$ -- 42
 width$ -- 12
-write$ -- 103
-(There were 9 warnings)
+write$ -- 107
+(There were 11 warnings)
