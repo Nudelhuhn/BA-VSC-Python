@@ -1,11 +1,33 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{{Lau}08}
+\begin{thebibliography}{{You}24}
+
+\bibitem[{Cal}74]{CalinskiT.andHarabaszJ..1974}
+{\sc {Calinski, T. and Harabasz, J.}}: {\em A dendrite method for cluster
+  analysis}.
+\newblock Communications in Statistics, 3(1):1--27, 1974.
 
 \bibitem[CMS]{CampelloRicardoJ.G.B..}
 {\sc {Campello, Ricardo J. G. B.}}, {\sc Davoud Moulavi} \btxandlong{}\ {\sc
   Joerg Sander}: {\em Density-Based Clustering Based on Hierarchical Density
   Estimates}.
 \newblock \btxpageslong{}\ 160--172.
+
+\bibitem[DB79]{Davies.1979}
+{\sc Davies, D.~L.} \btxandlong{}\ {\sc D.~W. Bouldin}: {\em A Cluster
+  Separation Measure}.
+\newblock IEEE Transactions on Pattern Analysis and Machine Intelligence,
+  PAMI-1(2):224--227, 1979.
+
+\bibitem[FGT{\etalchar{+}}]{Feng.19.02.2020}
+{\sc Feng, Zhangyin}, {\sc Daya Guo}, {\sc Duyu Tang}, {\sc Nan Duan}, {\sc
+  Xiaocheng Feng}, {\sc Ming Gong}, {\sc Linjun Shou}, {\sc Bing Qin}, {\sc
+  Ting Liu}, {\sc Daxin Jiang} \btxandlong{}\ {\sc Ming Zhou}: {\em CodeBERT: A
+  Pre-Trained Model for Programming and Natural Languages}.
+
+\bibitem[HBV01]{Halkidi.2001}
+{\sc Halkidi, Maria}, {\sc Yannis Batistakis} \btxandlong{}\ {\sc Michalis
+  Vazirgiannis}: {\em On Clustering Validation Techniques}.
+\newblock Journal of Intelligent Information Systems, 17(2-3):107--145, 2001.
 
 \bibitem[JS21]{Jerrim.2021}
 {\sc Jerrim, John} \btxandlong{}\ {\sc Sam Sims}: {\em When is high workload
@@ -54,10 +76,22 @@
 \newblock International Journal of Data Science and Analytics, \btxpageslong{}\
   1--12, 2024.
 
+\bibitem[Rou87]{Rousseeuw.1987}
+{\sc Rousseeuw, Peter~J.}: {\em Silhouettes: A graphical aid to the
+  interpretation and validation of cluster analysis}.
+\newblock Journal of Computational and Applied Mathematics, 20:53--65, 1987.
+
 \bibitem[TWH{\etalchar{+}}]{Tang.21.10.2024}
 {\sc Tang, Xiaohang}, {\sc Sam Wong}, {\sc Marcus Huynh}, {\sc Zicheng He},
   {\sc Yalong Yang} \btxandlong{}\ {\sc Yan Chen}: {\em SPHERE: Scaling
   Personalized Feedback in Programming Classrooms with Structured Review of LLM
   Outputs}.
+
+\bibitem[{You}24]{YoussefLahmadiMohammedZakariaeElKhattabiMouniaRahhaliLahcenOughdir.2024}
+{\sc {Youssef Lahmadi, Mohammed Zakariae El Khattabi, Mounia Rahhali, Lahcen
+  Oughdir}}: {\em Optimizing Adaptive Learning: Insights from K-Means
+  Clustering in Intelligent Tutoring Systems}.
+\newblock International Journal of Intelligent Systems and Applications in
+  Engineering, 12(3):1842--1851, 2024.
 
 \end{thebibliography}

@@ -20,45 +20,45 @@ Warning--I didn't find a database entry for "Gottwald:03"
 Warning--empty booktitle in CampelloRicardoJ.G.B..
 Warning--empty publisher in CampelloRicardoJ.G.B..
 Warning--empty year in CampelloRicardoJ.G.B..
-You've used 10 entries,
+You've used 16 entries,
             2768 wiz_defined-function locations,
-            682 strings with 7337 characters,
-and the built_in function-call counts, 4668 in all, are:
-= -- 469
-> -- 222
-< -- 7
-+ -- 77
-- -- 77
-* -- 371
-:= -- 712
-add.period$ -- 17
-call.type$ -- 10
-change.case$ -- 57
-chr.to.int$ -- 10
-cite$ -- 13
-duplicate$ -- 192
-empty$ -- 352
-format.name$ -- 89
-if$ -- 1011
+            725 strings with 8705 characters,
+and the built_in function-call counts, 7395 in all, are:
+= -- 745
+> -- 355
+< -- 10
++ -- 125
+- -- 123
+* -- 617
+:= -- 1136
+add.period$ -- 28
+call.type$ -- 16
+change.case$ -- 94
+chr.to.int$ -- 16
+cite$ -- 19
+duplicate$ -- 295
+empty$ -- 549
+format.name$ -- 143
+if$ -- 1576
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 40
-num.names$ -- 32
-pop$ -- 89
+missing$ -- 20
+newline$ -- 63
+num.names$ -- 50
+pop$ -- 125
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 126
 quote$ -- 0
-skip$ -- 183
+skip$ -- 275
 stack$ -- 0
-substring$ -- 227
-swap$ -- 68
-text.length$ -- 7
-text.prefix$ -- 3
+substring$ -- 387
+swap$ -- 94
+text.length$ -- 10
+text.prefix$ -- 6
 top$ -- 0
-type$ -- 80
+type$ -- 128
 warning$ -- 3
-while$ -- 42
-width$ -- 12
-write$ -- 107
+while$ -- 67
+width$ -- 17
+write$ -- 175
 (There were 11 warnings)

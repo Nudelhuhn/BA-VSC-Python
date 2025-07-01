@@ -253,6 +253,7 @@ INPUT .\vorlage-projekt.toc
 INPUT vorlage-projekt.toc
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 OUTPUT vorlage-projekt.toc
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT .\vorlage-projekt.lof
 INPUT .\vorlage-projekt.lof
 INPUT vorlage-projekt.lof
@@ -270,7 +271,6 @@ INPUT .\chapters\EinleitungProblemstellung.tex
 INPUT .\chapters\EinleitungProblemstellung.tex
 INPUT .\chapters\EinleitungProblemstellung.tex
 INPUT chapters\EinleitungProblemstellung.tex
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
@@ -283,6 +283,7 @@ INPUT .\chapters\TheoretischeGrundlagen.tex
 INPUT .\chapters\TheoretischeGrundlagen.tex
 INPUT chapters\TheoretischeGrundlagen.tex
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt9.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT .\chapters\WeitereKapitel.tex
 INPUT .\chapters\WeitereKapitel.tex
@@ -302,7 +303,6 @@ INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.s
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt8.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt9.tfm
 INPUT .\chapters\Beispiel.tex
 INPUT .\chapters\Beispiel.tex
 INPUT .\chapters\Beispiel.tex
