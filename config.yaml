@@ -59,9 +59,9 @@ clustering:
 #     random_state: 42          # ensures reproducible clustering results; default: None
 # ------------------------------------------------------------------------------- #
 
-# visualization:
-#   n_neighbors: 15                # number of neighbors considered for UMAP-based visualization layout
-#   min_dist: 0.1                  # minimum distance between points in the visualization layout
+visualization:
+  n_neighbors: 15                # number of neighbors considered for UMAP-based visualization layout
+  min_dist: 0.1                  # minimum distance between points in the visualization layout
 
 
 data:

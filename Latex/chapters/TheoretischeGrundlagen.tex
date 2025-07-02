@@ -34,7 +34,7 @@ Das Zusammenspiel dieser Methoden führt letztlich zur Unterstützung der Lehrkr
 \subsection{Einbettung (Embedding)}
 Einer der ersten Schritte des Programms ist das Einbetten von Quellcode-Text der Programmierlösungen, dessen Erstellung im späterem Verlauf der Arbeit erklärt wird. Der Quellcode-Text wird in numerische hochdimensionale Vektor-Repräsentationen (Embeddings) umgewandelt. Diese numerischen Vektoren fassen semantische und strukturelle Merkmale des Codes zusammen und machen die Daten für anschließende Verfahren wie Dimensionsreduktion, Clustering und Visualisierung nutzbar. Hier wurde eine erste Erwähnung solch eines Verfahrens in der Arbeit von Orvalho et al. (2022, \cite{Orvalho.28.06.2022}) erfasst. Das dort beschriebene Verfahren CodeBERT stellte sich durch weitere Recherche für diese Arbeit als geeignet heraus. CodeBERT ist ein auf die Transformer-Architektur\footnote{Neuronales Netzwerkmodell, das mithilfe von Self-Attention-Mechanismen die Beziehungen zwischen Elementen in einer Sequenz erfasst und dadurch besonders leistungsfähig für Aufgaben mit Text- oder Code-Daten ist} basiertes Modell, das gleichzeitig mit natürlicher Sprache und Programmiercode (u.a. Java und Python) trainiert wurde. Es verwendet dabei machine learning (ML) wie Masked Language Modeling\footnote{Trainingsmethode, bei der zufällig Wörter im Text verdeckt werden und das Modell lernen soll, diese fehlenden Wörter richtig vorherzusagen} und Replaced Token Detection\footnote{Trainingsmethode, bei der das Modell lernt zu erkennen, welche Wörter im Text durch andere ersetzt wurden, um so bessere Sprachrepräsentationen zu entwickeln.}, um inhaltlich sinnvolle und strukturierte Vektorrepräsentationen (Embeddings) für Code zu erzeugen (vgl. \cite{Feng.19.02.2020}).
 
-\subsection{Dimensionsreduktion (Dimension reduction)}
+\subsection{Dimensionsreduktion}
 Weiterhin wurden Verfahren eingebunden die die durch das Embedding erstellten  hochdimensionale Vektoren in ihren Dimensionen reduzieren, um sie ebenso für weiterführende Prozesse wie z. B. zur Clusterung und besonders zur Visualisierung im zwei- oder dreidimensionalem Raum nutzbar zu machen. In dieser Arbeit wurden folende Verfahren benutzt:
 \begin{itemize}
     \item Principal component analysis (PCA) - projiziert hochdimensionale Daten in einen lineareren Unterraum mit geringerer Dimension, indem neue Achsen, entlang derer die Daten am stärksten streuen, berechnet werden und stellt die Daten entlang dieser Achsen dar (vgl. \cite{KarlPearson.1901}),
@@ -52,12 +52,20 @@ Die Algorithmen dieser Quellen und weitere Recherche dienten zum Kennenlernen un
     \item hdbscan - erweitert des Density-Based Spatial Clustering of Applications with Noise (DBSCAN) Algorithmus, indem es eine Hierarchie von Clustern aufbaut und die stabilen Cluster über unterschiedliche Dichteebenen hinweg extrahiert (vgl. \cite{CampelloRicardoJ.G.B..}),
 \end{itemize}
 
-\section{Evaluierung (Evaluation)}
+\subsection{Visualisierung}
+Zur Visualisierung der zuvor geclusterten studentischen Programmierlösungen wurden die Python-Bibliotheken pandas und plotly.express verwendet:
+\begin{itemize}
+    \item pandas: Dient zur effizienten Verarbeitung und Analyse von tabellarischen Daten. In diesem Fall wurden damit die Cluster-Zuordnungen und die zugehörigen Punktkoordinaten in einer DataFrame-Struktur verwaltet.
+    \item plotly.express: Eine High-Level-Bibliothek für interaktive Diagramme. Sie wurde genutzt, um die studentischen Lösungen als farbige Punkte in einem Streudiagramm darzustellen, wobei die Farbe jeweils das zugehörige Cluster repräsentiert.
+\end{itemize}
+So konnte die Qualität und Trennschärfe der Clusterung visuell überprüft werden.
+
+\subsection{Evaluierung}
 Das Projekt wurde so erstellt, dass für ein beliebigen Clustering-Algorithmus ein Diagramm erstellt wird, in denen farbige Punkte die entsprechenden studentischen Lösungen repäsentieren. Um diesen Prozess zu bewerten wurden Evaluierungsverfahren etabliert. Nach Halkidi et al. 2001 bewerten interne Clustering-Evaluierungsverfahren die Qualität einer Clusterlösung anhand der Dichte innerhalb der Cluster und der Trennung zwischen den Clustern, ohne dabei externe Referenzdaten heranzuziehen (vgl. \cite{Halkidi.2001}). In dieser Arbeit wurden erstmalig Erwähnungen solcher Verfahren in \cite{YoussefLahmadiMohammedZakariaeElKhattabiMouniaRahhaliLahcenOughdir.2024} entdeckt, wobei daraus nur zwei der benutzen Verfahren und erst durch weitere Recherche ein drittes hier eingebunden wurde. Folgende Auflistung beschreibt die benutzten Verfahren:
 \begin{itemize}
     \item Silhouette Score - berechnet für jeden Datenpunkt einen Silhouette-Wert, der die Qualität der Clusterzuordnung anhand der Abstände innerhalb und zwischen Clustern bewertet (vgl. \cite{Rousseeuw.1987})
     \item Caliński-Harabasz Index - bewertet die Clusterqualität anhand des Verhältnisses von Streuung zwischen und innerhalb der Cluster. Das Verfahren wurde ursprünglich von Calinski und Harabasz (1974,  \cite{CalinskiT.andHarabaszJ..1974}) eingefügt, eine Beschreibung findet sich in \cite{Halkidi.2001}.
-    \item Davies-Bouldin-Index - bewertet die Clusterqualität anhand des Verhältnisses von Intra-Cluster-Distanzen zu den Distanzen zwischen den Clustermittelpunkten. Das Verfahren wurde ursprünglich von Davies und Bouldin (1979, \cite{Davies.1979}) eingeführt, eine Beschreibung findet sich beispielsweise in der scikit-learn-Dokumentation\footnote{\url{https://scikit-learn.org/stable/modules/clustering.html\#clustering-performance-evaluation}}.
+    \item Davies-Bouldin Index - bewertet die Clusterqualität anhand des Verhältnisses von Intra-Cluster-Distanzen zu den Distanzen zwischen den Clustermittelpunkten. Das Verfahren wurde ursprünglich von Davies und Bouldin (1979, \cite{Davies.1979}) eingeführt, eine Beschreibung findet sich beispielsweise in der scikit-learn-Dokumentation\footnote{\url{https://scikit-learn.org/stable/modules/clustering.html\#clustering-performance-evaluation}}.
 \end{itemize}
 
 

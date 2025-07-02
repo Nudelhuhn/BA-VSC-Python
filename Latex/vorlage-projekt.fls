@@ -281,16 +281,29 @@ INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT .\chapters\TheoretischeGrundlagen.tex
 INPUT .\chapters\TheoretischeGrundlagen.tex
+INPUT .\chapters\TheoretischeGrundlagen.tex
+INPUT .\chapters\TheoretischeGrundlagen.tex
 INPUT chapters\TheoretischeGrundlagen.tex
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt9.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT .\chapters\VorgehensweiseUndMethodik.tex
+INPUT .\chapters\VorgehensweiseUndMethodik.tex
+INPUT .\chapters\VorgehensweiseUndMethodik.tex
+INPUT .\chapters\VorgehensweiseUndMethodik.tex
+INPUT chapters\VorgehensweiseUndMethodik.tex
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT .\images\Erstes Clustering-Diagramm.pdf
+INPUT .\images\Erstes Clustering-Diagramm.pdf
+INPUT .\images\Erstes Clustering-Diagramm.pdf
+INPUT .\images\Erstes Clustering-Diagramm.pdf
+INPUT .\images\Erstes Clustering-Diagramm.pdf
+INPUT .\images\Erstes Clustering-Diagramm.pdf
 INPUT .\chapters\WeitereKapitel.tex
 INPUT .\chapters\WeitereKapitel.tex
 INPUT .\chapters\WeitereKapitel.tex
 INPUT .\chapters\WeitereKapitel.tex
 INPUT chapters\WeitereKapitel.tex
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
 INPUT .\images\sequence.pdf
 INPUT .\images\sequence.pdf
 INPUT .\images\sequence.pdf
