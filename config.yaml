@@ -10,7 +10,7 @@ dim_reduction:
     n_neighbors: 15         # number of local neighbors considered; default: 15
     min_dist: 0.1           # minimum distance between points in low-dimensional space; default: 0.1
     metric: "euclidean"     # distance metric; options: 'euclidean', 'cosine', 'manhattan'; default: 'euclidean'
-    random_state: 42        # ensures reproducible results; default: None
+    random_state: 42       # ensures reproducible results; default: None
     spread: 1.0             # maximum effective cluster spread; default: 1.0
     learning_rate: 1.0      # learning rate for optimization process; default: 1.0
     init: "spectral"        # initialization method; options: 'spectral', 'random'; default: 'spectral'
@@ -68,7 +68,7 @@ data:
   files_to_look_for: ".java"            # choose files which should be clustered
   exclude_files: ["Miniprojekt1.java"]  # exclude files which should not be clustered
   exclude_folders: ["100 Punkte"]       # exclude folders with solutions which should not be clustered
-  input_path: "C:/Users/grego/Desktop/Loesungen/000TestingSmall000"  # input path of the student programming solutions
+  input_path: "C:/Users/grego/Desktop/Loesungen/000TestingDifferentSolutionSizes000/80"  # input path of the student programming solutions
   output_path: "ZzOutput"               # output path of various pipeline results for the student programming solutions
   score_bins:                           # define clustering layers to prevent similar solution with different evaluation points to be in the same cluster
   - [100, 100]

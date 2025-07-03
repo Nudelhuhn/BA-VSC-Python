@@ -61,16 +61,16 @@ def run_pipeline():
     print(f"Clustering {time.time() - start:.2f} Sekunden")
 
 
-    # # interactive plotting (show file name by hovering)
-    # start = time.time()
-    # AdvancedInteractivePlot.ad_int_plot(reduced_embeddings, labels, loader.get_filenames(), loader.get_parent_dirs())
-    # print(f"interactive_plot {time.time() - start:.2f} Sekunden")
-
-
-    # Visualization
+    # interactive plotting (show file name by hovering)
     start = time.time()
-    ClusterPlotter.plot(reduced_embeddings, labels)
-    print(f"Visualization {time.time() - start:.2f} Sekunden")
+    AdvancedInteractivePlot.ad_int_plot(reduced_embeddings, labels, loader.get_filenames())
+    print(f"interactive_plot {time.time() - start:.2f} Sekunden")
+
+
+    # # Visualization
+    # start = time.time()
+    # ClusterPlotter.plot(reduced_embeddings, labels)
+    # print(f"Visualization {time.time() - start:.2f} Sekunden")
     
 
     # Evaluation

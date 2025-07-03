@@ -1,81 +1,81 @@
 \begin{theindex}
 
-  \item Abbildung, \hyperpage{13}
-  \item Abschnitt, \hyperpage{12}
+  \item Abbildung, \hyperpage{14}
+  \item Abschnitt, \hyperpage{13}
 
   \indexspace
 
-  \item Beispiel, \hyperpage{15}
-  \item Beweis, \hyperpage{15}
+  \item Beispiel, \hyperpage{16}
+  \item Beweis, \hyperpage{16}
 
   \indexspace
 
-  \item Definition, \hyperpage{15}
+  \item Definition, \hyperpage{16}
 
   \indexspace
 
-  \item Echtzeiten, \hyperpage{18}
+  \item Echtzeiten, \hyperpage{19}
 
   \indexspace
 
-  \item Formel, \hyperpage{14}
-  \item Freigabekonsistenz, \hyperpage{17}
+  \item Formel, \hyperpage{15}
+  \item Freigabekonsistenz, \hyperpage{18}
 
   \indexspace
 
-  \item Inkonsistenz, \hyperpage{17}
+  \item Inkonsistenz, \hyperpage{18}
 
   \indexspace
 
-  \item Kapitel, \hyperpage{12}
-  \item Konsistenz, \hyperpage{17}
-    \subitem schwach, \hyperpage{17, 18}
-    \subitem sequentiell, \hyperpage{17}
-    \subitem streng, \hyperpage{18}
-  \item Konsistenzmodelle, \hyperpage{17}
+  \item Kapitel, \hyperpage{13}
+  \item Konsistenz, \hyperpage{18}
+    \subitem schwach, \hyperpage{18, 19}
+    \subitem sequentiell, \hyperpage{18}
+    \subitem streng, \hyperpage{19}
+  \item Konsistenzmodelle, \hyperpage{18}
 
   \indexspace
 
-  \item Lemma, \hyperpage{15}
-  \item Linearisierbarkeit, \hyperpage{17, 18}
-  \item Listing, \hyperpage{13}
-  \item Literatur, \hyperpage{16}
+  \item Lemma, \hyperpage{16}
+  \item Linearisierbarkeit, \hyperpage{18, 19}
+  \item Listing, \hyperpage{14}
+  \item Literatur, \hyperpage{17}
 
   \indexspace
 
-  \item Matrix, \hyperpage{15}
+  \item Matrix, \hyperpage{16}
 
   \indexspace
 
   \item Operation
-    \subitem Lesen, \hyperpage{18}
-    \subitem Schreiben, \hyperpage{18}
-  \item Optimierung, \hyperpage{17}
+    \subitem Lesen, \hyperpage{19}
+    \subitem Schreiben, \hyperpage{19}
+  \item Optimierung, \hyperpage{18}
 
   \indexspace
 
-  \item Quellen, \hyperpage{16}
-  \item Quelltext, \hyperpage{13}
+  \item Quellen, \hyperpage{17}
+  \item Quelltext, \hyperpage{14}
 
   \indexspace
 
-  \item Replikation, \hyperpage{17}
+  \item Replikation, \hyperpage{18}
 
   \indexspace
 
-  \item Satz, \hyperpage{15}
+  \item Satz, \hyperpage{16}
 
   \indexspace
 
-  \item Tabelle, \hyperpage{13}
+  \item Tabelle, \hyperpage{14}
 
   \indexspace
 
-  \item Unterabschnitt, \hyperpage{13}
+  \item Unterabschnitt, \hyperpage{14}
 
   \indexspace
 
-  \item Vektor, \hyperpage{15}
-  \item Verfügbarkeit, \hyperpage{17}
+  \item Vektor, \hyperpage{16}
+  \item Verfügbarkeit, \hyperpage{18}
 
 \end{theindex}
