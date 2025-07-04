@@ -14,22 +14,29 @@
 \contentsline {section}{\numberline {3.1}Themenfindung}{8}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Recherche und Vorbereitung}{8}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Implementierungsverlauf}{8}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Weitere Kapitel}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Bausteine}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Abschnitt}{13}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Unterabschnitt}{14}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Abbildungen und Tabellen}{14}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Listings}{14}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Mathematische Formel}{15}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Sätze, Lemmata, Definitionen, Beweise, Beispiele}{16}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Fußnoten}{17}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Literaturverweise}{17}{section.4.8}%
-\contentsline {chapter}{\numberline {5}Beispiel-Kapitel}{18}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Warum existieren unterschiedliche Konsistenzmodelle?}{18}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Klassifizierung eines Konsistenzmodells}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Linearisierbarkeit (atomic consistency)}{19}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{21}{chapter.6}%
-\contentsline {chapter}{Literaturverzeichnis}{22}{chapter*.15}%
-\contentsline {chapter}{Index}{24}{chapter*.16}%
-\contentsline {chapter}{Glossar}{25}{appendix.A}%
-\contentsline {chapter}{Eigenständigkeitserklärung}{26}{appendix.B}%
+\contentsline {subsection}{\numberline {3.3.1}Erster Implementierungsabschnitt}{8}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Zweiter Implementierungsabschnitt}{11}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Dritter Implementierungsabschnitt}{13}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Forschungsergebnisse}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Rangliste der Evaluationsverfahren}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Clustern unterschiedlicher Dateien in einem Diagramm}{15}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Weitere Kapitel}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Bausteine}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Abschnitt}{17}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Unterabschnitt}{18}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Abbildungen und Tabellen}{18}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Listings}{18}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Mathematische Formel}{19}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Sätze, Lemmata, Definitionen, Beweise, Beispiele}{20}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Fußnoten}{21}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Literaturverweise}{21}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Beispiel-Kapitel}{22}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Warum existieren unterschiedliche Konsistenzmodelle?}{22}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Klassifizierung eines Konsistenzmodells}{23}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Linearisierbarkeit (atomic consistency)}{23}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Zusammenfassung und Ausblick}{25}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Anhang}{26}{chapter.8}%
+\contentsline {chapter}{Literaturverzeichnis}{27}{chapter*.19}%
+\contentsline {chapter}{Index}{29}{chapter*.20}%
+\contentsline {chapter}{Glossar}{30}{appendix.A}%
+\contentsline {chapter}{Eigenständigkeitserklärung}{31}{appendix.B}%

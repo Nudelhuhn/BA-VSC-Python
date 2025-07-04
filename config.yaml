@@ -39,24 +39,24 @@ dim_reduction:
 
 clustering:
 # --- hdbscan ---
-  method: "hdbscan"
-  params:
-    min_cluster_size: 2             # minimum number of points to form a cluster; default: 5
-    min_samples: 1                  # sensitivity for identifying outliers; default: None
-    cluster_selection_epsilon: 0.5  # tolerance parameter for cluster density; default: 0.0
-    metric: "euclidean"             # distance metric for clustering; options: 'euclidean', 'manhattan', 'cosine', etc.; default: 'euclidean'
-    cluster_selection_method: "eom" # method for selecting clusters; options: 'eom', 'leaf'; default: 'eom'
-    alpha: 1.0                      # relative weight of minimum spanning tree edge weight for cluster stability; default: 1.0
-    allow_single_cluster: false     # whether to allow only a single cluster; default: false
+  # method: "hdbscan"
+  # params:
+  #   min_cluster_size: 2             # minimum number of points to form a cluster; default: 5
+  #   min_samples: 1                  # sensitivity for identifying outliers; default: None
+  #   cluster_selection_epsilon: 0.5  # tolerance parameter for cluster density; default: 0.0
+  #   metric: "euclidean"             # distance metric for clustering; options: 'euclidean', 'manhattan', 'cosine', etc.; default: 'euclidean'
+  #   cluster_selection_method: "eom" # method for selecting clusters; options: 'eom', 'leaf'; default: 'eom'
+  #   alpha: 1.0                      # relative weight of minimum spanning tree edge weight for cluster stability; default: 1.0
+  #   allow_single_cluster: false     # whether to allow only a single cluster; default: false
 
-# # --- k-means ---
-#   method: "kmeans"
-#   params:
-#     n_clusters: 5             # number of clusters; required for k-means
-#     init: "k-means++"         # initialization method; options: 'k-means++', 'random'; default: 'k-means++'
-#     n_init: 10                # number of time the k-means algorithm will be run with different centroid seeds; default: 10
-#     max_iter: 300             # maximum number of iterations for a single run; default: 300
-#     random_state: 42          # ensures reproducible clustering results; default: None
+# --- k-means ---
+  method: "kmeans"
+  params:
+    n_clusters: 5             # number of clusters; required for k-means
+    init: "k-means++"         # initialization method; options: 'k-means++', 'random'; default: 'k-means++'
+    n_init: 10                # number of time the k-means algorithm will be run with different centroid seeds; default: 10
+    max_iter: 300             # maximum number of iterations for a single run; default: 300
+    random_state: 42          # ensures reproducible clustering results; default: None
 # ------------------------------------------------------------------------------- #
 
 visualization:
@@ -67,14 +67,14 @@ visualization:
 data:
   files_to_look_for: ".java"            # choose files which should be clustered
   exclude_files: ["Miniprojekt1.java"]  # exclude files which should not be clustered
-  exclude_folders: ["100 Punkte"]       # exclude folders with solutions which should not be clustered
-  input_path: "C:/Users/grego/Desktop/Loesungen/000TestingDifferentSolutionSizes000/80"  # input path of the student programming solutions
+  exclude_folders: ["100______ Punkte"]       # exclude folders with solutions which should not be clustered
+  input_path: "C:/Users/grego/Desktop/Loesungen/000TestingDifferentSolutionSizes000/40"  # input path of the student programming solutions
   output_path: "ZzOutput"               # output path of various pipeline results for the student programming solutions
-  score_bins:                           # define clustering layers to prevent similar solution with different evaluation points to be in the same cluster
-  - [100, 100]
-  - [95, 99]
-  - [90, 94]
-  - [50, 89]
-  - [0, 49]
-  # score_bins:
-  # - [0, 100]
+  # score_bins:                           # define clustering layers to prevent similar solution with different evaluation points to be in the same cluster
+  # - [100, 100]
+  # - [95, 99]
+  # - [90, 94]
+  # - [50, 89]
+  # - [0, 49]
+  score_bins:
+  - [0, 100]

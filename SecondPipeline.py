@@ -1,6 +1,7 @@
 import time
 complete_time = time.time()
 start = time.time()
+import os
 import numpy as np
 import yaml
 import warnings
@@ -36,15 +37,54 @@ def run_pipeline():
     print(f"data_loader {time.time() - start:.2f} Sekunden")
 
 
-    # Embedding
-    print("⏳ Embeddings werden berechnet...")
-    start = time.time()
+    # # Embedding
+    # print("⏳ Embeddings werden berechnet...")
+    # start = time.time()
+    # model = EmbeddingModel(config['embedding']['model'])
+    # embeddings = np.array([model.get_embedding(code) for code in code_snippets])    # np.array needed for .shape method of pca and in general more universal than normal lists
+    # if len(embeddings) - 1 <= 2:                                                    # more than three files have to be embedded
+    #     print("please choose at least four files")
+    #     return
+    # print(f"embedding_model {time.time() - start:.2f} Sekunden")
+
+    # Caching: existiert eine Cache-Datei?
     model = EmbeddingModel(config['embedding']['model'])
-    embeddings = np.array([model.get_embedding(code) for code in code_snippets])    # np.array needed for .shape method of pca and in general more universal than normal lists
-    if len(embeddings) - 1 <= 2:                                                    # more than three files have to be embedded
-        print("please choose at least four files")
-        return
-    print(f"embedding_model {time.time() - start:.2f} Sekunden")
+    cache_path = "cached_embeddings.npy"
+
+    # old caching
+    # if os.path.exists(cache_path):
+    #     embeddings = np.load(cache_path)
+    #     print("✅ Embeddings aus Cache geladen.")
+    # else:
+    #     # Embeddings berechnen (Batch-Verarbeitung)
+    #     print("⏳ Embeddings werden berechnet...")
+    #     start = time.time()
+    #     embeddings = np.array([model.get_embedding(code) for code in code_snippets])
+    #     end = time.time()
+    #     print(f"✅ Embedding-Dauer (Batch): {end - start:.2f} Sekunden")
+
+    #     # In Cache speichern
+    #     np.save(cache_path, embeddings)
+    #     print("💾 Embeddings im Cache gespeichert.")
+
+    # new caching
+    if os.path.exists(cache_path):
+        embeddings_cache = np.load(cache_path)
+        if len(embeddings_cache) >= len(code_snippets):
+            # Nur die benötigten Embeddings laden
+            embeddings = embeddings_cache[:len(code_snippets)]
+            print(f"✅ {len(code_snippets)} Embeddings aus Cache geladen.")
+        else:
+            print("⚠️ Nicht genügend gecachte Embeddings vorhanden. Berechne neu...")
+            embeddings = np.array([model.get_embedding(code) for code in code_snippets])
+            np.save(cache_path, embeddings)
+            print("💾 Embeddings im Cache gespeichert.")
+    else:
+        print("⏳ Embeddings werden berechnet...")
+        embeddings = np.array([model.get_embedding(code) for code in code_snippets])
+        np.save(cache_path, embeddings)
+        print("💾 Embeddings im Cache gespeichert.")
+
 
 
     # Dimensionality reduction

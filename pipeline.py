@@ -68,6 +68,7 @@ def run_pipeline():
 
     # Embedding
     model = EmbeddingModel(config['embedding']['model'])
+    cache_path = "cached_embeddings.npy"
     
     # save all information resulting in the loop to display it all in one plot after the loop
     all_embeddings, all_labels, all_filenames, all_parent_dirs, all_bins = [], [], [], [], []
@@ -86,10 +87,22 @@ def run_pipeline():
         parent_dirs_bin = [loader.get_parent_dirs()[i] for i in indices]
 
         start = time.time()
-        embeddings = np.array([model.get_embedding(code) for code in snippets_bin])    # np.array needed for .shape method of pca and in general more universal than normal lists
-        if len(embeddings) - 1 <= 2:                                                   # more than three files have to be embedded
-            print("please choose at least four files")
-            return
+        if os.path.exists(cache_path):
+            embeddings_cache = np.load(cache_path)
+            if len(embeddings_cache) >= len(snippets_bin):
+                # Nur die benötigten Embeddings laden
+                embeddings = embeddings_cache[:len(snippets_bin)]
+                print(f"✅ {len(snippets_bin)} Embeddings aus Cache geladen.")
+            else:
+                print("⚠️ Nicht genügend gecachte Embeddings vorhanden. Berechne neu...")
+                embeddings = np.array([model.get_embedding(code) for code in snippets_bin])
+                np.save(cache_path, embeddings)
+                print("💾 Embeddings im Cache gespeichert.")
+        else:
+            print("⏳ Embeddings werden berechnet...")
+            embeddings = np.array([model.get_embedding(code) for code in snippets_bin])
+            np.save(cache_path, embeddings)
+            print("💾 Embeddings im Cache gespeichert.")
         print(f"Embedding {time.time() - start:.2f} Seconds")
 
 
@@ -115,10 +128,10 @@ def run_pipeline():
         all_bins.extend([score_bin] * len(labels))
 
 
-    # # interactive plotting (show file name by hovering)
-    # start = time.time()
-    # AdvancedInteractivePlot.adv_int_plot(all_embeddings, all_labels, all_filenames, all_parent_dirs, all_bins)
-    # print(f"interactive_plot {time.time() - start:.2f} Seconds")
+    # interactive plotting (show file name by hovering)
+    start = time.time()
+    AdvancedInteractivePlot.adv_int_plot(all_embeddings, all_labels, all_filenames, all_parent_dirs, all_bins)
+    print(f"interactive_plot {time.time() - start:.2f} Seconds")
 
 
     # # Visualization   # currently not needed if the interactive plotting is used
