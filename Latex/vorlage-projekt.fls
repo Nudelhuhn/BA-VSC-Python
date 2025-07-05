@@ -253,7 +253,6 @@ INPUT .\vorlage-projekt.toc
 INPUT vorlage-projekt.toc
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 OUTPUT vorlage-projekt.toc
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT .\vorlage-projekt.lof
 INPUT .\vorlage-projekt.lof
 INPUT vorlage-projekt.lof
@@ -271,6 +270,7 @@ INPUT .\chapters\EinleitungProblemstellung.tex
 INPUT .\chapters\EinleitungProblemstellung.tex
 INPUT .\chapters\EinleitungProblemstellung.tex
 INPUT chapters\EinleitungProblemstellung.tex
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
@@ -305,6 +305,12 @@ INPUT .\images\Interaktives Clustering-Diagramm.pdf
 INPUT .\images\Interaktives Clustering-Diagramm.pdf
 INPUT .\images\Interaktives Clustering-Diagramm.pdf
 INPUT .\images\Interaktives Clustering-Diagramm.pdf
+INPUT .\images\Clusterung - 40 - Konkateniert - Punktzahl gemischt.pdf
+INPUT .\images\Clusterung - 40 - Konkateniert - Punktzahl gemischt.pdf
+INPUT .\images\Clusterung - 40 - Konkateniert - Punktzahl gemischt.pdf
+INPUT .\images\Clusterung - 40 - Konkateniert - Punktzahl gemischt.pdf
+INPUT .\images\Clusterung - 40 - Konkateniert - Punktzahl gemischt.pdf
+INPUT .\images\Clusterung - 40 - Konkateniert - Punktzahl gemischt.pdf
 INPUT .\chapters\Forschungsergebnisse.tex
 INPUT .\chapters\Forschungsergebnisse.tex
 INPUT .\chapters\Forschungsergebnisse.tex
@@ -322,28 +328,6 @@ INPUT .\images\Clusterung - 160 - gemischte Cluster - zoom.pdf
 INPUT .\images\Clusterung - 160 - gemischte Cluster - zoom.pdf
 INPUT .\images\Clusterung - 160 - gemischte Cluster - zoom.pdf
 INPUT .\images\Clusterung - 160 - gemischte Cluster - zoom.pdf
-INPUT .\chapters\WeitereKapitel.tex
-INPUT .\chapters\WeitereKapitel.tex
-INPUT .\chapters\WeitereKapitel.tex
-INPUT .\chapters\WeitereKapitel.tex
-INPUT chapters\WeitereKapitel.tex
-INPUT .\images\sequence.pdf
-INPUT .\images\sequence.pdf
-INPUT .\images\sequence.pdf
-INPUT .\images\sequence.pdf
-INPUT .\images\sequence.pdf
-INPUT .\images\sequence.pdf
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt8.tfm
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
-INPUT .\chapters\Beispiel.tex
-INPUT .\chapters\Beispiel.tex
-INPUT .\chapters\Beispiel.tex
-INPUT .\chapters\Beispiel.tex
-INPUT chapters\Beispiel.tex
 INPUT .\chapters\ZusammenfassungAusblick.tex
 INPUT .\chapters\ZusammenfassungAusblick.tex
 INPUT .\chapters\ZusammenfassungAusblick.tex
@@ -358,6 +342,7 @@ INPUT .\vorlage-projekt.bbl
 INPUT .\vorlage-projekt.bbl
 INPUT vorlage-projekt.bbl
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT .\vorlage-projekt.ind
 INPUT .\vorlage-projekt.ind
 INPUT vorlage-projekt.ind
@@ -390,16 +375,10 @@ INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
@@ -412,19 +391,13 @@ INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt8.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt8.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

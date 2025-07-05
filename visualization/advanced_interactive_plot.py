@@ -17,7 +17,7 @@ class AdvancedInteractivePlot:
         # decomment for a 2D diagram
         fig = px.scatter(df, x='x', y='y',  # dimensions
                          color=df['cluster'].astype(str),   # cluster labels
-                         hover_data=['filename', 'parent_dir'], # data which is shown if hovered over the point
+                         hover_data=['filename', 'parent_dir', 'score_bin'], # data which is shown if hovered over the point
                          title="Interaktive Cluster-Visualisierung")
         
         # # decomment for a 3D diagram

@@ -119,6 +119,11 @@ def run_pipeline():
         labels = clusterer.cluster(reduced_embeddings)
         print(f"Clustering {time.time() - start:.2f} Seconds")
 
+        # Evaluation
+        start = time.time()
+        results = EvaluationMetrics.evaluate(all_embeddings, all_labels)
+        print("Evaluation results:", results)
+        print(f"Evaluation {time.time() - start:.2f} Seconds")
 
         # save all information resulting in the loop to display it all in one plot after the loop
         all_embeddings.extend(reduced_embeddings)
@@ -138,13 +143,6 @@ def run_pipeline():
     # start = time.time()
     # ClusterPlotter.plot(reduced_embeddings, labels)
     # print(f"Visualization {time.time() - start:.2f} Seconds")
-
-
-    # Evaluation
-    start = time.time()
-    results = EvaluationMetrics.evaluate(all_embeddings, all_labels)
-    print("Evaluation results:", results)
-    print(f"Evaluation {time.time() - start:.2f} Seconds")
 
 
     # Reporting

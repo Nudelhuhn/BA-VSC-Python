@@ -9,20 +9,13 @@ A level-1 auxiliary file: chapters/Glossar.aux
 Reallocating 'name_of_file' (item size: 1) to 42 items.
 A level-1 auxiliary file: chapters/Eigenstaendigkeitserklaerung.aux
 Database file #1: literatur.bib
-Warning--I didn't find a database entry for "Nannen:03"
-Warning--I didn't find a database entry for "wiki:listing"
-Warning--I didn't find a database entry for "Cormen:90"
-Warning--I didn't find a database entry for "Malte:97"
-Warning--I didn't find a database entry for "Mosberger:93"
-Warning--I didn't find a database entry for "Cheriton:85"
-Warning--I didn't find a database entry for "Coulouris:02"
 Warning--I didn't find a database entry for "Gottwald:03"
 Warning--empty booktitle in CampelloRicardoJ.G.B..
 Warning--empty publisher in CampelloRicardoJ.G.B..
 Warning--empty year in CampelloRicardoJ.G.B..
 You've used 16 entries,
             2768 wiz_defined-function locations,
-            725 strings with 8705 characters,
+            712 strings with 8571 characters,
 and the built_in function-call counts, 7395 in all, are:
 = -- 745
 > -- 355
@@ -61,4 +54,4 @@ warning$ -- 3
 while$ -- 67
 width$ -- 17
 write$ -- 175
-(There were 11 warnings)
+(There were 4 warnings)
