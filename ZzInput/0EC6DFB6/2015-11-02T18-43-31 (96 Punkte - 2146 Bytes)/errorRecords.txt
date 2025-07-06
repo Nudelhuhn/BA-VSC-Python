@@ -1,6 +1,0 @@
-DYNAMISCHER TEST (ERGEBNIS): 95 Punkte
-Fehler in Miniprojekt 1 - Circle.getCircumference(): java.lang.StackOverflowError:
-	Dein Programm ruft sich in der Klasse 'Circle' in der Methode 'getCircumference' in Zeile 43 immer wieder mit denselben Parametern auf und gelangt dadurch in eine Endlosschleife.<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.getCircumference().html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
-
-STATISCHER TEST (ERGEBNIS): 100 Punkte
-

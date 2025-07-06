@@ -35,6 +35,7 @@ dim_reduction:
 #     early_exaggeration: 12.0  # controls how tight clusters are in early stages; default: 12.0
 #     angle: 0.5                # trade-off between speed and accuracy (Barnes-Hut only); default: 0.5
 #     verbose: 0                # verbosity level; 0 = silent, 1 = progress messages
+
 # ------------------------------------------------------------------------------- #
 
 clustering:
@@ -57,19 +58,15 @@ clustering:
     n_init: 10                # number of time the k-means algorithm will be run with different centroid seeds; default: 10
     max_iter: 300             # maximum number of iterations for a single run; default: 300
     random_state: 42          # ensures reproducible clustering results; default: None
+
 # ------------------------------------------------------------------------------- #
-
-visualization:
-  n_neighbors: 15                # number of neighbors considered for UMAP-based visualization layout
-  min_dist: 0.1                  # minimum distance between points in the visualization layout
-
 
 data:
   files_to_look_for: ".java"            # choose files which should be clustered
   exclude_files: ["Miniprojekt1.java"]  # exclude files which should not be clustered
-  exclude_folders: ["100______ Punkte"]       # exclude folders with solutions which should not be clustered
+  exclude_folders: ["100 Punkte"]       # exclude folders with solutions which should not be clustered
   input_path: "C:/Users/grego/Desktop/Loesungen/000TestingSmall000"  # input path of the student programming solutions
-  output_path: "ZzOutput"               # output path of various pipeline results for the student programming solutions
+  output_path: "z_Output"               # output path of various pipeline results for the student programming solutions
   score_bins:                           # define clustering layers to prevent similar solution with different evaluation points to be in the same cluster
   - [100, 100]
   - [95, 99]

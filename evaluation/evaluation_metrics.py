@@ -2,12 +2,12 @@ from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bo
 
 class EvaluationMetrics:
     @staticmethod   # static method since no object of this class is needed, because there is no need to save internal states
-    def evaluate(embeddings, labels):
+    def evaluate(reduced_embeddings, labels):
         results = {}
         if len(set(labels)) > 1:    # for useful evaluation there is more than one cluster needed
-            results['silhouette'] = silhouette_score(embeddings, labels)
-            results['calinski_harabasz'] = calinski_harabasz_score(embeddings, labels)
-            results['davies_bouldin'] = davies_bouldin_score(embeddings, labels)
+            results['silhouette'] = silhouette_score(reduced_embeddings, labels)
+            results['calinski_harabasz'] = calinski_harabasz_score(reduced_embeddings, labels)
+            results['davies_bouldin'] = davies_bouldin_score(reduced_embeddings, labels)
         else:
             results['silhouette'] = None
             results['calinski_harabasz'] = None
@@ -20,5 +20,5 @@ class EvaluationMetrics:
 
 # good evaluation scores:
  # silhouette: 0.5 or higher
- # calinski_harabasz: highest compared to the others
- # davies_bouldin: between 0.3 and 0.7
+ # calinski_harabasz: highest of all tests
+ # davies_bouldin: lowest of all tests (good between 0.3 and 0.7)

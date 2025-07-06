@@ -7,8 +7,8 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Interaktives Clustering-Diagramm einer Clusterung von 147 Java-Dateien. Durch das Halten der Maus über die Punkte werden Informationen über sie angezeigt (im Bild wiederholt vergrößert dargestellt). Am rechten Rand sind die Mengen der Cluster angezeigt.}}{12}{figure.caption.18}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Interaktives Clustering-Diagramm einer Clusterung von 80 bzw. 40 konkatenierten Java-Dateien. Die rote Unterstreichung zeigt das Problem gemischert Cluster mit unterschiedlichen Punktzahlen.}}{15}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Clustering-Diagramm einer Clusterung von 320 Java-Dateien. Der eingekreiste Cluster ist ein Circle.java-Cluster.}}{18}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Vergrößerter Circle.java-Cluster aus Abbildung \ref {abb:C-160-gC}}}{19}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Clustering-Diagramm einer Clusterung von 320 Java-Dateien. Der eingekreiste Cluster ist ein Circle.java-Cluster.}}{20}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Vergrößerter Circle.java-Cluster aus Abbildung \ref {abb:C-160-gC}}}{21}{figure.caption.41}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

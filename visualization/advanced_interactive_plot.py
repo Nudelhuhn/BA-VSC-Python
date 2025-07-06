@@ -3,15 +3,15 @@ import plotly.express as px # simple interface for interactive visualization
 
 class AdvancedInteractivePlot:
     @staticmethod
-    def adv_int_plot(embeddings, labels, filenames, parent_dirs, bins):
+    def plot(reduced_embeddings, labels, filenames, parent_dirs, score_bins):
         df = pd.DataFrame({
             'filename': filenames,
             'parent_dir': parent_dirs,
             'cluster': labels,
-            'score_bin': bins,
-            'x': [e[0] for e in embeddings],    # first dimension
-            'y': [e[1] for e in embeddings],    # second dimension
-            # 'z': [e[2] for e in embeddings],    # if a third dimension should be shown, change "n_components" in config.yaml to 3
+            'score_bin': score_bins,
+            'x': [e[0] for e in reduced_embeddings],    # first dimension
+            'y': [e[1] for e in reduced_embeddings],    # second dimension
+            # 'z': [e[2] for e in reduced_embeddings],    # if a third dimension should be shown, change "n_components" in config.yaml to 3
         })
 
         # decomment for a 2D diagram
@@ -28,22 +28,3 @@ class AdvancedInteractivePlot:
         #     title="Interaktive 3D-Cluster-Visualisierung")
         
         fig.show()  # show the finished plot
-
-
-# # old
-# import pandas as pd
-# import plotly.express as px
-
-# class AdvancedInteractivePlot:
-#     @staticmethod
-#     def ad_int_plot(embeddings, labels, filenames):
-#         df = pd.DataFrame({
-#             'filename': filenames,
-#             'cluster': labels,
-#             'x': [e[0] for e in embeddings],
-#             'y': [e[1] for e in embeddings],
-#         })
-
-#         fig = px.scatter(df, x='x', y='y', color=df['cluster'].astype(str),
-#                         hover_data=['filename'], title="Interaktive Cluster-Visualisierung")
-#         fig.show()

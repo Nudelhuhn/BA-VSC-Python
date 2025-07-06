@@ -1,6 +1,0 @@
-DYNAMISCHER TEST (ERGEBNIS): 95 Punkte
-Fehler in Miniprojekt 1 - Circle.getDiameter()::
-	Die Methode Circle.getDiameter() gibt bei einem Radius von 3,200000 den Wert 10,240000 zur�ck, sollte jedoch 6,400000 zur�ckgeben<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.getDiameter().html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
-
-STATISCHER TEST (ERGEBNIS): 100 Punkte
-

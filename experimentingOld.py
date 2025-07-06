@@ -4,7 +4,7 @@ import pandas as pd
 import warnings
 from utils.data_loader import DataLoader
 from embeddings.embedding_model import EmbeddingModel
-from dimReducer.dimensionality_reducer import DimensionalityReducer
+from dimReducer.dimension_reducer import DimensionalityReducer
 from clustering.clustering_engine import ClusteringEngine
 from evaluation.evaluation_metrics import EvaluationMetrics
 import numpy as np

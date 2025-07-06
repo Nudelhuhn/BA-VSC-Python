@@ -10,18 +10,20 @@
 \contentsline {subsection}{\numberline {2.3.3}Gruppierung (Clustering)}{5}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Visualisierung}{6}{subsection.2.3.4}%
 \contentsline {subsection}{\numberline {2.3.5}Evaluierung}{6}{subsection.2.3.5}%
-\contentsline {chapter}{\numberline {3}Vorgehensweise und Methodik}{8}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Vorgehensweise und Implementierung}{8}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Themenfindung}{8}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Recherche und Vorbereitung}{8}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Implementierungsverlauf}{8}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Erster Implementierungsabschnitt}{8}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Zweiter Implementierungsabschnitt}{11}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Dritter Implementierungsabschnitt}{14}{subsection.3.3.3}%
-\contentsline {chapter}{\numberline {4}Forschungsergebnisse}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Rangliste der Evaluationsverfahren}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Clustern unterschiedlicher Dateien in einem Diagramm}{18}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{20}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Anhang}{21}{chapter.6}%
-\contentsline {chapter}{Literaturverzeichnis}{22}{chapter*.33}%
-\contentsline {chapter}{Glossar}{24}{appendix.A}%
-\contentsline {chapter}{Eigenständigkeitserklärung}{25}{appendix.B}%
+\contentsline {section}{\numberline {3.4}Finale Implementierung}{16}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Pipeline}{16}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}Forschungsergebnisse}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Rangliste der Evaluationsverfahren}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Clustern unterschiedlicher Dateien in einem Diagramm}{20}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{22}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Anhang}{23}{chapter.6}%
+\contentsline {chapter}{Literaturverzeichnis}{24}{chapter*.42}%
+\contentsline {chapter}{Glossar}{26}{appendix.A}%
+\contentsline {chapter}{Eigenständigkeitserklärung}{27}{appendix.B}%

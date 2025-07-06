@@ -2,10 +2,10 @@ import os
 
 class ReportGenerator:
     @staticmethod
-    def generate_report(filenames, parent_dirs, labels, bins, output_path):
+    def generate_report(filenames, parent_dirs, labels, score_bins, output_path):
         output_path = os.path.join(output_path, "cluster_report.csv")
         grouped = {}
-        for b, c, p_dir, f in zip(bins, labels, parent_dirs, filenames):
+        for b, c, p_dir, f in zip(score_bins, labels, parent_dirs, filenames):
             if b not in grouped:
                 grouped[b] = {}
             if c not in grouped[b]:

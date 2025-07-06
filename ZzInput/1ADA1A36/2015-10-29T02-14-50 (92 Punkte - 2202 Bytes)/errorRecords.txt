@@ -1,8 +1,0 @@
-DYNAMISCHER TEST (ERGEBNIS): 90 Punkte
-Fehler in Miniprojekt 1 - Circle.fromPoints() #1::
-	Fehler in der Methode Circle.fromPoints(): Das Feld Circle.location des zur�ckgegebenen Circle-Objekts hat den Wert null<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.fromPoints()_#1.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
-Fehler in Miniprojekt 1 - Circle.fromPoints() #2::
-	Fehler in der Methode Circle.fromPoints(): Das Feld Circle.location des zur�ckgegebenen Circle-Objekts hat den Wert null<p><a href="/jack2/resourceProvider?id=#---#trace-Miniprojekt_1_-_Circle.fromPoints()_#2.html#---#">Du kannst dir einen Trace des Testfalles anzeigen lassen.</a></p>
-
-STATISCHER TEST (ERGEBNIS): 100 Punkte
-

@@ -7,7 +7,7 @@ import yaml
 import warnings
 from utils.data_loader import DataLoader
 from embeddings.embedding_model import EmbeddingModel
-from dimReducer.dimensionality_reducer import DimensionalityReducer
+from dimReducer.dimension_reducer import DimensionalityReducer
 from clustering.clustering_engine import ClusteringEngine
 from visualization.advanced_interactive_plot import AdvancedInteractivePlot
 from visualization.cluster_plotter import ClusterPlotter

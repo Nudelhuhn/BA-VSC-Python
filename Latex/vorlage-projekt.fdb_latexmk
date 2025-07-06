@@ -1,21 +1,21 @@
 # Fdb version 4
-["bibtex vorlage-projekt"] 1751743275.41045 "vorlage-projekt.aux" "vorlage-projekt.bbl" "vorlage-projekt" 1751743280.13236 0
+["bibtex vorlage-projekt"] 1751818444.85736 "vorlage-projekt.aux" "vorlage-projekt.bbl" "vorlage-projekt" 1751818447.32786 0
   "./literatur.bib" 1751384715 36231 da511fe5d5f88cdc0bf9806cd86df79f ""
   "C:/Users/grego/AppData/Local/Programs/MiKTeX/bibtex/bst/germbib/geralpha.bst" 1051604844 26838 49fd88f7ad09fc0e5699cf227af2d770 ""
-  "chapters/Eigenstaendigkeitserklaerung.aux" 1751743278 1171 71db12a5d71587ba56b909b1f37cbaf0 "pdflatex"
-  "chapters/Glossar.aux" 1751743278 1152 537780bb6794b5e9694f20962c5ad1e4 "pdflatex"
-  "vorlage-projekt.aux" 1751743278 8644 4e8f58a466d0bebbc0e92849e9a98d6e "pdflatex"
+  "chapters/Eigenstaendigkeitserklaerung.aux" 1751818446 1171 ed9f485796ce1468472d40860dd9e831 "pdflatex"
+  "chapters/Glossar.aux" 1751818446 1152 d9169a11d304adbb499cc3d4c07cd011 "pdflatex"
+  "vorlage-projekt.aux" 1751818446 9717 e79d3e3212e727257a3fc123052d1737 "pdflatex"
   (generated)
   "vorlage-projekt.bbl"
   "vorlage-projekt.blg"
   (rewritten before read)
-["makeindex vorlage-projekt.idx"] 1751740360.17501 "vorlage-projekt.idx" "vorlage-projekt.ind" "vorlage-projekt" 1751743280.13181 0
-  "vorlage-projekt.idx" 1751743277 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex vorlage-projekt.idx"] 1751818376.39986 "vorlage-projekt.idx" "vorlage-projekt.ind" "vorlage-projekt" 1751818447.32743 0
+  "vorlage-projekt.idx" 1751818445 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "vorlage-projekt.ilg"
   "vorlage-projekt.ind"
   (rewritten before read)
-["pdflatex"] 1751743276.00142 "c:/Users/grego/Documents/GitHub/BA-VSC-Python/Latex/vorlage-projekt.tex" "vorlage-projekt.pdf" "vorlage-projekt" 1751743280.13361 0
+["pdflatex"] 1751818445.2228 "c:/Users/grego/Documents/GitHub/BA-VSC-Python/Latex/vorlage-projekt.tex" "vorlage-projekt.pdf" "vorlage-projekt" 1751818447.32876 0
   "C:/Users/grego/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1751032497 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/grego/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1742998138 14064 027f6c6e365c111e4e465a15f8484cd2 ""
   "C:/Users/grego/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1742986574 12036130 97839dc796b67b63346bcd26353d7243 ""
@@ -151,17 +151,17 @@
   "C:/Users/grego/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1730400552 7243 e5dac1240636811edb77568b81818372 ""
   "C:/Users/grego/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1730400552 4545 e3f4de576c914e2000f07f69a891c071 ""
   "C:/Users/grego/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/grego/Documents/GitHub/BA-VSC-Python/Latex/vorlage-projekt.tex" 1751719600 3776 bc9dc3f6c0035c0aaa4fd62fa2b99b4a ""
+  "c:/Users/grego/Documents/GitHub/BA-VSC-Python/Latex/vorlage-projekt.tex" 1751792876 3783 4b6a7d1a688c1550f23bf990ae37453f ""
   "chapters/Anhang.tex" 1751636159 20 4e3108df91e0fe704f24cf011602296a ""
-  "chapters/Eigenstaendigkeitserklaerung.aux" 1751743278 1171 71db12a5d71587ba56b909b1f37cbaf0 "pdflatex"
+  "chapters/Eigenstaendigkeitserklaerung.aux" 1751818446 1171 ed9f485796ce1468472d40860dd9e831 "pdflatex"
   "chapters/Eigenstaendigkeitserklaerung.tex" 1733913705 4522 4994d66ae7aa741f6d69d489f53524b0 ""
   "chapters/EinleitungProblemstellung.tex" 1751366481 3757 b3f5dfeb5aa1151c1e2d37370e8b8116 ""
-  "chapters/Forschungsergebnisse.tex" 1751638673 3810 404f32e85b20988fa05615155282b5d0 ""
-  "chapters/Glossar.aux" 1751743278 1152 537780bb6794b5e9694f20962c5ad1e4 "pdflatex"
+  "chapters/Forschungsergebnisse.tex" 1751818293 3832 2116bc4e7b106d1dff21c4a97199f227 ""
+  "chapters/Glossar.aux" 1751818446 1152 d9169a11d304adbb499cc3d4c07cd011 "pdflatex"
   "chapters/Glossar.tex" 1634139604 504 85f4c7fed771648fb2137faafdd3bd4c ""
   "chapters/Kurzfassung.tex" 1634139604 926 2ec7cf21b8db0455964bf8cb4d5d936a ""
   "chapters/TheoretischeGrundlagen.tex" 1751462793 11390 07920d15531c785f15675b1c1f899057 ""
-  "chapters/VorgehensweiseUndMethodik.tex" 1751743269 18771 4feb0017de6e9cd056c9bdadb5fe9caf ""
+  "chapters/VorgehensweiseUndImplementierung.tex" 1751818436 27110 7d883c5922d38c6178c43f0218bcb9f0 ""
   "chapters/Vorwort.tex" 1733908307 428 d9b99d526429dd5a1179859f13f9e52f ""
   "chapters/ZusammenfassungAusblick.tex" 1634139604 569 eab7fbd95ddc5fb49d65c130d56be68e ""
   "i-studis.cls" 1733908932 63806 935ece31dec97138658e0c8d0e1c102e ""
@@ -171,15 +171,15 @@
   "images/Erstes Clustering-Diagramm.pdf" 1751477000 20951 a95b87a723129e062cbc078925a75e7c ""
   "images/Interaktives Clustering-Diagramm.pdf" 1751554145 40219 b4d0e590b1455d704db0fc9a6583c1b4 ""
   "images/logo-fb-informatik.pdf" 1634139604 391143 2af4a339ba9f2c697ef3fe392b2fcf4d ""
-  "vorlage-projekt.aux" 1751743278 8644 4e8f58a466d0bebbc0e92849e9a98d6e "pdflatex"
-  "vorlage-projekt.bbl" 1751743275 4463 1fbd1e5c48b2b50ea27ca840d79abdf2 "bibtex vorlage-projekt"
-  "vorlage-projekt.ind" 1751740360 0 d41d8cd98f00b204e9800998ecf8427e "makeindex vorlage-projekt.idx"
-  "vorlage-projekt.lof" 1751743278 1496 9625b38bb4c0e879d80a244241a1119c "pdflatex"
-  "vorlage-projekt.lol" 1751743277 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "vorlage-projekt.lot" 1751743278 455 02e846cdabffda668510e4e0fd8cff72 "pdflatex"
-  "vorlage-projekt.out" 1751743278 4357 77f790859b3e06a98f4e92a58e56137e "pdflatex"
-  "vorlage-projekt.tex" 1751719600 3776 bc9dc3f6c0035c0aaa4fd62fa2b99b4a ""
-  "vorlage-projekt.toc" 1751743278 2164 f0552df39d1d501e382d32885f88f49e "pdflatex"
+  "vorlage-projekt.aux" 1751818446 9717 e79d3e3212e727257a3fc123052d1737 "pdflatex"
+  "vorlage-projekt.bbl" 1751818445 4463 1fbd1e5c48b2b50ea27ca840d79abdf2 "bibtex vorlage-projekt"
+  "vorlage-projekt.ind" 1751818376 0 d41d8cd98f00b204e9800998ecf8427e "makeindex vorlage-projekt.idx"
+  "vorlage-projekt.lof" 1751818446 1496 ef70fabf52283d1bda9ba8770d7ae5a5 "pdflatex"
+  "vorlage-projekt.lol" 1751818446 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "vorlage-projekt.lot" 1751818446 455 625dc8bef6a282fa3500937219a02115 "pdflatex"
+  "vorlage-projekt.out" 1751818446 4662 1365fed919c784cb8aed4929f2e8e44e "pdflatex"
+  "vorlage-projekt.tex" 1751792876 3783 4b6a7d1a688c1550f23bf990ae37453f ""
+  "vorlage-projekt.toc" 1751818446 2333 97ed23c25b56b97e6c42d3368b043227 "pdflatex"
   (generated)
   "chapters/Eigenstaendigkeitserklaerung.aux"
   "chapters/Glossar.aux"
