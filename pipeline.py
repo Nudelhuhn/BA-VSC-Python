@@ -56,6 +56,7 @@ def run_pipeline():
 
     # Embedding object
     model = EmbeddingModel(config['embedding']['model'])
+
     cache_path = "cached_embeddings.npy"
     
     # save all information resulting in the loop to display it all in one plot after the loop
@@ -63,12 +64,13 @@ def run_pipeline():
 
     # filter solutions by score bin and prepare corresponding data for clustering
     for score_bin in unique_bins:
-        print(f"\n==== Processing bin: {score_bin} ====")
+        print(f"\n==== Processing score_bin: {score_bin} ====")
 
+        # save indices of binned_scores which score is within the current score_bin 
         indices = [i for i, b in enumerate(binned_scores) if b == score_bin]
 
         if len(indices) < 4:
-            print(f"Not enough solutions in bin {score_bin}, skipping...")
+            print(f"Not enough solutions in score_bin {score_bin}, skipping...")
             continue
 
         snippets_bin = [code_snippets[i] for i in indices]
@@ -81,7 +83,6 @@ def run_pipeline():
         if os.path.exists(cache_path):
             embeddings_cache = np.load(cache_path)
             if len(embeddings_cache) >= len(snippets_bin):
-                # Nur die benötigten Embeddings laden
                 embeddings = embeddings_cache[:len(snippets_bin)]
                 print(f"++ {len(snippets_bin)} embeddings loaded out of cache ++")
             else:

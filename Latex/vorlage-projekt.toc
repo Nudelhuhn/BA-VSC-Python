@@ -19,11 +19,21 @@
 \contentsline {subsection}{\numberline {3.3.3}Dritter Implementierungsabschnitt}{14}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}Finale Implementierung}{16}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Pipeline}{16}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Ablauf in Pipeline}{16}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}\texttt {config.yaml}}{17}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}\texttt {data\_loader.py}}{17}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}\texttt {score\_binning.py}}{17}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}\texttt {embedding\_model.py}}{18}{subsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.4.7}\texttt {dimension\_reducer.py}}{18}{subsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.4.8}\texttt {clustering\_engine.py}}{18}{subsection.3.4.8}%
+\contentsline {subsection}{\numberline {3.4.9}\texttt {evaluation\_metrics.py}}{18}{subsection.3.4.9}%
+\contentsline {subsection}{\numberline {3.4.10}\texttt {advanced\_iteractive\_plot.py}}{18}{subsection.3.4.10}%
+\contentsline {subsection}{\numberline {3.4.11}\texttt {report\_generator.py}}{18}{subsection.3.4.11}%
 \contentsline {chapter}{\numberline {4}Forschungsergebnisse}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Rangliste der Evaluationsverfahren}{19}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Clustern unterschiedlicher Dateien in einem Diagramm}{20}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{22}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Anhang}{23}{chapter.6}%
-\contentsline {chapter}{Literaturverzeichnis}{24}{chapter*.42}%
+\contentsline {chapter}{Literaturverzeichnis}{24}{chapter*.32}%
 \contentsline {chapter}{Glossar}{26}{appendix.A}%
 \contentsline {chapter}{Eigenständigkeitserklärung}{27}{appendix.B}%

@@ -137,7 +137,7 @@ Theoretisch wäre das Programm in der Lage, Embeddings ohne Dimensionsreduktions
 \subsubsection*{Punktzahlenintervalle}
 Um diesem Problem entgegenzuwirken, wurde erneut die Vorgehensweise der wiederholten Prozessschritte mittels einer Schleife angewendet, indem nach Ebenen bzw. Punktzahlenintervallen (Score-Bins) geclustert wird. Es können beliebig viele Intervalle definiert werden (z. B. 0-49, 50-79, 80-89, 90-100), um das Clustering weiter zu präzisieren. Dafür wurde dem \texttt{data\_loader.py}-Modul eine Methode hinzugefügt, die die Punktzahlen aus den Ordnernamen, in denen die Java-Dateien enthalten sind, ausliest.
 
-Weiterhin wurde das Modul \texttt{score\_binning.py} entwickelt, die den ausgelesenen Punktzahlen ein Intervall zuordnet. Anschließend werden in der Pipeline für jedes Intervall bzw. für alle Dateien die zu diesem Bereich gehören, die Prozesschritte ab Embedding wiederholt. Anstatt daraufhin pro Intervall ein Diagramm zu erstellen, wird zur besseren Übersichtlichkeit alle separaten Clusterungen in einem Diagramm visualisiert. Die Ergebnisse der Evaluationsmetriken werden dadurch zwar verfälscht, haben jedoch bereits die geeignetsten Algorithmen-Kombinationen identifiziert und sind daher für den weiteren Verlauf nicht mehr entscheidend.
+Weiterhin wurde das Modul \texttt{score\_binning.py} entwickelt, die den ausgelesenen Punktzahlen ein Intervall zuordnet. Anschließend werden in der Pipeline für jedes Intervall bzw. für alle Dateien die zu diesem Bereich gehören, die Prozesschritte ab Embedding wiederholt. Anstatt daraufhin pro Intervall ein Diagramm zu erstellen, wird zur besseren Übersichtlichkeit alle separaten Clusterungen in einem Diagramm visualisiert. Die Ergebnisse der Evaluationsmetriken könnten dadurch leicht verfälscht.
 
 
 \subsubsection*{Verarbeitung von Cluster-Ergebnissen}
@@ -167,7 +167,7 @@ Die Pipeline besteht zu diesem Zeitpunkt aus folgenden Hauptbestandteilen:
 
 \textbf{Daten laden} $\rightarrow$ \textbf{Punktzahlenintervalle} $\rightarrow$ \textbf{Einbetten} $\rightarrow$ \textbf{Dimensionen reduzieren} $\rightarrow$ \textbf{Clustern} $\rightarrow$ \textbf{Evaluieren} $\rightarrow$ \textbf{Visualisieren} $\rightarrow$ \textbf{Bericht erstellen}
 
-\subsubsection*{Ablauf}
+\subsection{Ablauf in Pipeline}
 Zuerst wird die Konfigurationsdatei eingelesen (Abschnitt \ref{abs:config.yaml}, \# load config).
 
 Danach werden für die Funktionalität des Programms unwichtige Warnungen ignoriert, um die Ausgabe übersichtlich zu halten (\# ignore warnings). Sie beziehen sich auf auf veraltete Parameter, eingeschränkte Parallelverarbeitung durch feste zufällige Status (Random States) und automatische Anpassung von Nachbarparametern bei kleinen Datenmengen.
@@ -191,12 +191,12 @@ Nach der Schleife werden die gesammelten Daten in einem Diagramm visualisiert (A
 Als letztes wird der im Implementierungsverlauf erwähnte Bericht über das Clustering erstellt (Abschnitt \ref{abs:report-generator}, \# Reporting).
 
 
-\subsubsection*{\texttt{config.yaml}}
+\subsection{\texttt{config.yaml}}
 \label{abs:config.yaml}
 Hier sind alle Parameter gehalten, die in der Pipeline für die verschiedenen Algorithmen gebraucht werden. Es sind die drei vorgestellten Dimensionsreduktionsalgorithmen, sowie die beiden Clustering-Algorithmen mit vollständigen möglichen Parametern angegeben. Weitere Einstellungen werden durch den Parameter "data" getroffen, in den neben Punktzahlen-Intervalle (Score-Bins), die gesuchten Dateien, zu exkludierende Dateien, etc. angegeben werden können. Um Algorithmen zu wechseln, müssen sie entsprechend ent- und auskommentiert werden.
 
 
-\subsubsection*{\texttt{data\_loader.py}}
+\subsection{\texttt{data\_loader.py}}
 \label{abs:data-loader}
 Die Klasse nimmt beim Erstellen den Dateinamen, den Pfad zu den studentischen Einreichungen und die zu exkludierenden Datei- und Ordnernamen entegegen. Zudem werden Listen zum speichern aller Dateinamen und Einreichungsordner gespeichert, um sie später im Diagramm anzeigen zu können. Folgende weitere Methoden sind gegeben:
 \begin{itemize}
@@ -206,36 +206,36 @@ Die Klasse nimmt beim Erstellen den Dateinamen, den Pfad zu den studentischen Ei
 \end{itemize}
 
 
-\subsubsection*{\texttt{score\_binning.py}}
+\subsection{\texttt{score\_binning.py}}
 \label{abs:score-binning}
 Die Klasse enthält die statische Methode bin\_scores(), die eine Liste von Punktzahlen aus get\_scores() des \texttt{data\_loader.py}-Moduls nimmt und anhand der definierten score\_bins aus der Konfigurationsdatei jeder Punktzahl ein passendes Label (z. B. \glqq 90-94\grqq) oder \glqq Unassigned\grqq zuweist, falls sie in kein Intervall passt.
 
 
-\subsubsection*{\texttt{embedding\_model.py}}
+\subsection{\texttt{embedding\_model.py}}
 \label{abs:embedding-model}
 Die Klasse nimmt beim Erstellen den Namen des Embedding-Modells entgegen und speichert Tokenizer und Transformermodell (hier CodeBERT). Diese erhalten über die Methode get\_embedding() Code-Schnipsel, zerlegen sie weiter in Einheiten und wandeln sie in einen numerischen Vektor (Embedding) um. Anschließend wird das Embedding in einem Numpy-Array zurückgegeben.
 
 
-\subsubsection*{\texttt{dimension\_reducer.py}}
+\subsection{\texttt{dimension\_reducer.py}}
 \label{abs:dimension-reducer}
 Ein Objekt der Klasse nimmt den Namen des Algorithmus und ein Dictionary mit Parametern entgegen, welche den Algorithmus manipulieren. Die Methode reduce() nimmt Embeddings entgegen, wendet dann den gewählten Algorithmus darauf an und gibt dimensionsreduzierte Embeddings zurück.
 
 
-\subsubsection*{\texttt{clustering\_engine.py}}
+\subsection{\texttt{clustering\_engine.py}}
 \label{abs:clustering-engine}
 Hier werden die dimensionsreduzierten Embeddings aus der Klasse des Moduls \texttt{dimension\_reducer.py} geclustert und deren Cluster-Zugehörigkeit als Labels zurückgegeben. Der Aufbau ist zudem weitestgehend gleich (siehe Abschnitt \ref{abs:dimension-reducer}).
 
 
-\subsubsection*{\texttt{evaluation\_metrics.py}}
+\subsection{\texttt{evaluation\_metrics.py}}
 \label{abs:evaluation-metrics}
 Die Klasse enthält die statische Methode evaluate(), welche die dimensionsreduzierten Embeddings und die Clustering-Labels entgegennimmt. Wenn mehr als ein Label bzw. Cluster vorhanden ist, werden die importieren Evaluationsmetriken darauf angewendet, dessen Ergebnisse in einem Dictionary gespeichert und anschließend zurückgegeben.
 
 
-\subsubsection*{\texttt{advanced\_iteractive\_plot.py}}
+\subsection{\texttt{advanced\_iteractive\_plot.py}}
 \label{abs:advanced-interactive-plot}
 Die Klasse enthält eine statische Methode plot(), die die dimensionsreduzierten Embeddings, Clustering-Labels, Datei- und Ordnernamen und Punktzahlenintervalle entgegennimmt. Danach werden diese Daten in eine Tabellenstruktur (DataFrame) umgewandelt und damit dann ein Streudiagramm erstellt. Durch entsprechendes ent- und auskommentieren, kann zwischen zwei- und dreidimensionalen Diagrammen gewechselt werden.
 
 
-\subsubsection*{\texttt{report\_generator.py}}
+\subsection{\texttt{report\_generator.py}}
 \label{abs:report-generator}
 Die Klasse enthält eine statische Methode generate\_report(), welche die Datei- und Ordnernamen, Clustering-Labels, Punktzahlenintervalle und den Ausgabepfad entgegennimmt. Über eine Schleife wird für jedes Punktzahlenintervall ein neues Dictionary und darin für jeden Cluster eine Liste erstellt. Danach werden diese Container erneut durchgegangen, um damit eine CSV-Datei nacheinander zu füllen. Anschließend wird die Datei im Ausgabepfad abgespeichert.

@@ -1,48 +1,183 @@
 Score-Bin: 0-49
 Cluster 0:
-  - 0D01AAB9 - 2015-11-03T19-55-35 (28 Punkte - 1485 Bytes) - Circle.java
-  - 0D1C6395 - 2015-10-30T09-10-34 (15 Punkte - 1976 Bytes) - Circle.java
+  - 0002CADB - 2015-11-06T10-57-50 (0 Punkte - 2151 Bytes) - Circle.java
+  - 0002CADB - 2015-11-06T11-42-15 (0 Punkte - 2042 Bytes) - Circle.java
+  - 0D1C6395 - 2015-10-30T08-46-54 (0 Punkte - 1951 Bytes) - Point.java
+  - 0EA5EE55 - 2015-11-01T18-06-30 (45 Punkte - 2048 Bytes) - Circle.java
+  - 1A3DD208 - 2015-11-03T21-40-43 (28 Punkte - 1485 Bytes) - Point.java
+  - 1B43CBBC - 2015-11-02T17-32-42 (0 Punkte - 2053 Bytes) - Circle.java
+  - 1B43CBBC - 2015-11-02T17-59-58 (0 Punkte - 2154 Bytes) - Circle.java
+  - 1B58B9DB - 2016-04-19T10-19-19 (28 Punkte - 1576 Bytes) - Circle.java
+  - 1D642272 - 2015-11-05T20-23-57 (15 Punkte - 5975 Bytes) - Point.java
+  - 2BD66907 - 2015-10-31T16-09-13 (49 Punkte - 1640 Bytes) - Point.java
 Cluster 1:
-  - 0B87094E - 2015-11-03T13-16-47 (0 Punkte - 1983 Bytes) - Circle.java
-  - 0D1C6395 - 2015-10-30T09-13-13 (15 Punkte - 1976 Bytes) - Point.java
+  - 0002CADB - 2015-11-06T10-57-52 (0 Punkte - 2151 Bytes) - Point.java
+  - 0002CADB - 2015-11-06T11-15-32 (0 Punkte - 2079 Bytes) - Point.java
+  - 0002CADB - 2015-11-06T11-20-26 (15 Punkte - 2079 Bytes) - Point.java
+  - 0B87094E - 2015-11-03T13-16-47 (0 Punkte - 1983 Bytes) - Point.java
+  - 0D1C6395 - 2015-10-30T09-01-34 (15 Punkte - 1976 Bytes) - Circle.java
+  - 0F46F117 - 2015-11-03T12-37-03 (1 Punkte - 59 Bytes) - Point.java
+  - 1B43CBBC - 2015-11-02T16-40-54 (0 Punkte - 2053 Bytes) - Point.java
+  - 1B43CBBC - 2015-11-02T17-53-19 (0 Punkte - 2168 Bytes) - Point.java
+  - 1B43CBBC - 2015-11-04T08-42-18 (0 Punkte - 2058 Bytes) - Point.java
+  - 1B58B9DB - 2016-04-19T10-40-34 (0 Punkte - 1777 Bytes) - Point.java
+  - 1B58B9DB - 2016-04-19T10-48-57 (0 Punkte - 1752 Bytes) - Point.java
+  - 1B58B9DB - 2016-04-19T10-53-43 (36 Punkte - 1705 Bytes) - Point.java
+  - 1E718745 - 2015-11-03T14-35-32 (15 Punkte - 1814 Bytes) - Circle.java
+  - 2BA88B9F - 2015-11-03T00-59-20 (0 Punkte - 1620 Bytes) - Circle.java
+  - 2BD66907 - 2015-10-31T15-00-01 (28 Punkte - 1485 Bytes) - Circle.java
+  - 2BD66907 - 2015-10-31T15-17-57 (28 Punkte - 1485 Bytes) - Circle.java
+  - 2BD66907 - 2015-10-31T16-04-10 (28 Punkte - 1485 Bytes) - Circle.java
+  - 2BD66907 - 2015-10-31T23-53-18 (0 Punkte - 1741 Bytes) - Circle.java
 Cluster 2:
-  - 0D1C6395 - 2015-10-30T08-42-22 (28 Punkte - 1485 Bytes) - Point.java
+  - 0D1C6395 - 2015-10-30T08-42-22 (28 Punkte - 1485 Bytes) - Circle.java
+  - 0D1C6395 - 2015-10-30T09-13-13 (15 Punkte - 1976 Bytes) - Circle.java
+  - 0E81BE73 - 2015-11-06T08-34-49 (28 Punkte - 1485 Bytes) - Point.java
+  - 1B58B9DB - 2016-04-19T11-15-32 (45 Punkte - 1723 Bytes) - Point.java
+  - 1B58B9DB - 2016-04-19T11-31-37 (0 Punkte - 1954 Bytes) - Circle.java
+  - 1B58B9DB - 2016-04-19T11-39-07 (0 Punkte - 1959 Bytes) - Circle.java
+  - 1BA9059A - 2015-10-29T17-11-17 (28 Punkte - 1485 Bytes) - Point.java
+  - 1C32C026 - 2015-11-03T10-30-27 (0 Punkte - 1861 Bytes) - Point.java
+  - 1D642272 - 2015-11-05T18-32-24 (15 Punkte - 2087 Bytes) - Circle.java
+  - 1D642272 - 2015-11-05T19-08-49 (15 Punkte - 3341 Bytes) - Circle.java
+  - 1D642272 - 2015-11-05T20-29-12 (15 Punkte - 5996 Bytes) - Circle.java
+  - 1D642272 - 2015-11-05T20-34-36 (15 Punkte - 5515 Bytes) - Circle.java
+  - 2CE09FC4 - 2015-10-28T15-27-48 (45 Punkte - 1557 Bytes) - Point.java
 Cluster 3:
-  - 0D1C6395 - 2015-10-30T09-01-34 (15 Punkte - 1976 Bytes) - Point.java
-  - 0E81BE73 - 2015-11-06T08-34-49 (28 Punkte - 1485 Bytes) - Circle.java
+  - 0002CADB - 2015-11-06T11-13-23 (0 Punkte - 2078 Bytes) - Circle.java
+  - 0002CADB - 2015-11-06T11-18-31 (0 Punkte - 2079 Bytes) - Circle.java
+  - 0D01AAB9 - 2015-11-03T19-55-35 (28 Punkte - 1485 Bytes) - Point.java
+  - 0D1C6395 - 2015-10-30T09-10-34 (15 Punkte - 1976 Bytes) - Point.java
+  - 0E81BE73 - 2015-11-02T12-31-48 (28 Punkte - 1485 Bytes) - Circle.java
+  - 1B58B9DB - 2016-04-19T10-45-13 (0 Punkte - 1731 Bytes) - Circle.java
+  - 1B58B9DB - 2016-04-19T10-51-17 (0 Punkte - 1730 Bytes) - Circle.java
+  - 1B58B9DB - 2016-04-19T11-07-31 (0 Punkte - 1741 Bytes) - Circle.java
+  - 1B58B9DB - 2016-04-19T11-24-28 (0 Punkte - 1849 Bytes) - Circle.java
+  - 1D642272 - 2015-11-05T19-06-29 (0 Punkte - 6018 Bytes) - Point.java
+  - 1D642272 - 2015-11-05T20-30-59 (15 Punkte - 5996 Bytes) - Point.java
+  - 1DC5CE33 - 2015-11-03T15-49-55 (28 Punkte - 1485 Bytes) - Point.java
 Cluster 4:
-  - 0D1C6395 - 2015-10-30T08-46-54 (0 Punkte - 1951 Bytes) - Circle.java
-  - 0E81BE73 - 2015-11-02T12-31-48 (28 Punkte - 1485 Bytes) - Point.java
+  - 1B58B9DB - 2016-04-19T11-34-32 (0 Punkte - 1976 Bytes) - Point.java
+  - 1B58B9DB - 2016-04-19T11-41-00 (0 Punkte - 1984 Bytes) - Point.java
+  - 1C32C026 - 2015-11-03T10-10-56 (0 Punkte - 4998 Bytes) - Circle.java
+  - 1D642272 - 2015-11-02T18-48-09 (0 Punkte - 2064 Bytes) - Point.java
+  - 2B2AF3C1 - 2015-12-30T11-59-42 (28 Punkte - 1485 Bytes) - Circle.java
+  - 2BA88B9F - 2015-11-03T01-01-43 (49 Punkte - 1750 Bytes) - Point.java
+  - 2BD66907 - 2015-10-31T15-08-53 (28 Punkte - 1485 Bytes) - Point.java
+  - 2BD66907 - 2015-10-31T15-58-44 (28 Punkte - 1485 Bytes) - Point.java
+  - 2BD66907 - 2015-11-01T00-20-44 (0 Punkte - 1857 Bytes) - Point.java
 
 Score-Bin: 50-89
 Cluster 0:
-  - 00B8A219 - 2015-11-01T20-46-16 (82 Punkte - 1937 Bytes) - Circle.java
-  - 00B8A219 - 2015-11-04T07-43-30 (83 Punkte - 1985 Bytes) - Circle.java
-  - 00B8A219 - 2015-11-04T08-02-58 (87 Punkte - 2045 Bytes) - Circle.java
-  - 0D1E3D74 - 2015-10-31T09-50-29 (87 Punkte - 1932 Bytes) - Point.java
+  - 00B8A219 - 2015-11-01T20-46-16 (82 Punkte - 1937 Bytes) - Point.java
+  - 02D2C9E1 - 2015-11-05T15-01-57 (75 Punkte - 1848 Bytes) - Point.java
+  - 0D1E3D74 - 2015-10-31T09-50-29 (87 Punkte - 1932 Bytes) - Circle.java
+  - 0FD1A213 - 2015-10-29T13-47-17 (87 Punkte - 1865 Bytes) - Circle.java
+  - 0FD1A213 - 2015-11-02T20-19-22 (87 Punkte - 1904 Bytes) - Circle.java
+  - 1ADA1A36 - 2015-10-29T01-37-00 (70 Punkte - 1867 Bytes) - Circle.java
+  - 1ADA1A36 - 2015-10-29T01-58-44 (83 Punkte - 2082 Bytes) - Circle.java
+  - 1B11755F - 2016-04-05T13-50-24 (83 Punkte - 1984 Bytes) - Point.java
+  - 1BA9059A - 2015-10-29T17-50-14 (87 Punkte - 2037 Bytes) - Point.java
+  - 1EC02594 - 2015-10-28T15-05-39 (75 Punkte - 1960 Bytes) - Point.java
+  - 1EC02594 - 2015-10-28T15-14-47 (79 Punkte - 1962 Bytes) - Point.java
+  - 2BA88B9F - 2015-11-03T01-16-45 (62 Punkte - 1780 Bytes) - Circle.java
+  - 2BD66907 - 2015-11-01T00-01-34 (70 Punkte - 1739 Bytes) - Circle.java
+  - 2BD66907 - 2015-11-01T00-08-32 (75 Punkte - 1776 Bytes) - Circle.java
 Cluster 1:
-  - 00B8A219 - 2015-11-01T21-16-01 (83 Punkte - 1882 Bytes) - Point.java
-  - 0B832453 - 2015-11-03T22-54-20 (58 Punkte - 1585 Bytes) - Point.java
+  - 00B8A219 - 2015-11-01T21-16-01 (83 Punkte - 1882 Bytes) - Circle.java
+  - 00B8A219 - 2015-11-04T07-53-05 (83 Punkte - 2019 Bytes) - Circle.java
+  - 02D2C9E1 - 2015-11-02T10-11-18 (87 Punkte - 1778 Bytes) - Circle.java
+  - 0B832453 - 2015-11-03T22-54-20 (58 Punkte - 1585 Bytes) - Circle.java
+  - 0D1E3D74 - 2015-11-03T13-43-52 (79 Punkte - 2000 Bytes) - Point.java
+  - 0FD1A213 - 2015-11-02T20-17-08 (87 Punkte - 1902 Bytes) - Point.java
+  - 1ADA1A36 - 2015-10-29T01-26-42 (70 Punkte - 1867 Bytes) - Point.java
+  - 1ADA1A36 - 2015-10-29T01-55-57 (83 Punkte - 2129 Bytes) - Point.java
+  - 1ADA1A36 - 2015-11-06T12-11-52 (83 Punkte - 2428 Bytes) - Circle.java
+  - 1B11755F - 2016-04-05T13-54-36 (83 Punkte - 1986 Bytes) - Circle.java
+  - 1B11755F - 2016-04-05T14-00-50 (83 Punkte - 1985 Bytes) - Circle.java
+  - 1B11755F - 2016-04-05T14-07-20 (83 Punkte - 1991 Bytes) - Circle.java
+  - 1EC02594 - 2015-10-28T15-04-56 (75 Punkte - 1766 Bytes) - Circle.java
+  - 1EC02594 - 2015-10-28T15-10-45 (79 Punkte - 1963 Bytes) - Circle.java
+  - 1EC02594 - 2015-10-28T15-28-50 (87 Punkte - 1972 Bytes) - Circle.java
+  - 2BD66907 - 2015-10-31T23-55-04 (66 Punkte - 1742 Bytes) - Point.java
+  - 2BD66907 - 2015-11-01T00-05-38 (70 Punkte - 1779 Bytes) - Point.java
+  - 2BD66907 - 2015-11-01T00-22-30 (83 Punkte - 1858 Bytes) - Circle.java
 Cluster 2:
-  - 0D1E3D74 - 2015-10-30T22-53-51 (70 Punkte - 1924 Bytes) - Point.java
-  - 0E81BE73 - 2015-11-02T12-34-29 (75 Punkte - 1810 Bytes) - Circle.java
+  - 0D1E3D74 - 2015-10-31T09-44-57 (83 Punkte - 1932 Bytes) - Point.java
+  - 0E81BE73 - 2016-04-18T18-47-31 (87 Punkte - 1841 Bytes) - Circle.java
+  - 0EA5EE55 - 2015-10-28T20-53-44 (58 Punkte - 1845 Bytes) - Point.java
+  - 1B11755F - 2016-04-05T14-18-20 (79 Punkte - 1975 Bytes) - Circle.java
+  - 1B11755F - 2016-04-05T14-26-10 (83 Punkte - 2023 Bytes) - Circle.java
+  - 1B11755F - 2016-04-05T14-34-38 (87 Punkte - 2048 Bytes) - Circle.java
+  - 1B58B9DB - 2016-04-19T11-25-55 (53 Punkte - 1872 Bytes) - Point.java
+  - 1BA9059A - 2015-10-29T17-19-09 (83 Punkte - 1857 Bytes) - Circle.java
+  - 1BA9059A - 2015-10-29T17-33-37 (75 Punkte - 1970 Bytes) - Circle.java
+  - 1BA9059A - 2015-10-29T17-42-29 (79 Punkte - 1966 Bytes) - Circle.java
+  - 1C317D42 - 2015-10-28T15-07-23 (66 Punkte - 1751 Bytes) - Circle.java
+  - 1C32C026 - 2015-11-05T22-14-48 (79 Punkte - 1855 Bytes) - Circle.java
+  - 2CE09FC4 - 2015-10-28T15-34-37 (53 Punkte - 1613 Bytes) - Circle.java
+  - 2CE09FC4 - 2015-10-28T20-45-44 (83 Punkte - 1734 Bytes) - Circle.java
 Cluster 3:
-  - 00B8A219 - 2015-11-04T07-53-05 (83 Punkte - 2019 Bytes) - Point.java
-  - 0D1E3D74 - 2015-10-31T09-44-57 (83 Punkte - 1932 Bytes) - Circle.java
-  - 0E81BE73 - 2016-04-18T18-47-31 (87 Punkte - 1841 Bytes) - Point.java
+  - 00B8A219 - 2015-11-04T07-43-30 (83 Punkte - 1985 Bytes) - Point.java
+  - 00B8A219 - 2015-11-04T08-02-58 (87 Punkte - 2045 Bytes) - Point.java
+  - 0D1E3D74 - 2015-10-30T22-53-51 (70 Punkte - 1924 Bytes) - Circle.java
+  - 0E81BE73 - 2015-11-02T12-34-29 (75 Punkte - 1810 Bytes) - Point.java
+  - 0EA5EE55 - 2015-10-28T20-51-52 (58 Punkte - 1845 Bytes) - Circle.java
+  - 1B11755F - 2016-04-05T13-59-28 (79 Punkte - 1980 Bytes) - Point.java
+  - 1B11755F - 2016-04-05T14-02-53 (83 Punkte - 1982 Bytes) - Point.java
+  - 1B11755F - 2016-04-05T14-15-29 (83 Punkte - 1991 Bytes) - Point.java
+  - 1B11755F - 2016-04-05T14-23-02 (79 Punkte - 2015 Bytes) - Point.java
+  - 1BA9059A - 2015-10-29T17-38-01 (87 Punkte - 1964 Bytes) - Point.java
+  - 1C317D42 - 2015-10-28T15-11-23 (79 Punkte - 1753 Bytes) - Point.java
+  - 1EC02594 - 2015-10-28T15-00-08 (75 Punkte - 1766 Bytes) - Point.java
+  - 2CE09FC4 - 2015-10-30T11-17-30 (87 Punkte - 1878 Bytes) - Point.java
 Cluster 4:
-  - 0D1E3D74 - 2015-11-03T13-43-52 (79 Punkte - 2000 Bytes) - Circle.java
+  - 1B11755F - 2016-04-05T14-28-09 (87 Punkte - 2020 Bytes) - Point.java
+  - 1B11755F - 2016-04-05T14-36-49 (87 Punkte - 2062 Bytes) - Point.java
+  - 1B58B9DB - 2016-04-19T11-48-19 (66 Punkte - 1912 Bytes) - Circle.java
+  - 1BA9059A - 2015-10-29T17-31-20 (83 Punkte - 1970 Bytes) - Point.java
+  - 2C31A022 - 2015-10-31T12-24-34 (83 Punkte - 1827 Bytes) - Circle.java
+  - 2CE09FC4 - 2015-10-28T15-44-45 (83 Punkte - 1757 Bytes) - Point.java
+
+Score-Bin: 90-94
+Cluster 0:
+  - 1B11755F - 2016-04-05T14-38-04 (92 Punkte - 2173 Bytes) - Circle.java
+  - 2CE09FC4 - 2015-10-30T11-19-20 (92 Punkte - 1875 Bytes) - Circle.java
+Cluster 1:
+  - 1ADA1A36 - 2015-10-29T02-14-50 (92 Punkte - 2202 Bytes) - Point.java
+  - 2CE09FC4 - 2015-10-30T11-23-11 (92 Punkte - 1895 Bytes) - Point.java
+Cluster 2:
+  - 2A609B27 - 2016-02-17T14-24-13 (92 Punkte - 2014 Bytes) - Circle.java
+Cluster 3:
+  - 2B4F8852 - 2015-10-30T10-01-08 (92 Punkte - 2067 Bytes) - Point.java
+  - 2CE09FC4 - 2015-10-30T11-27-40 (92 Punkte - 1915 Bytes) - Point.java
+Cluster 4:
+  - 2A609B27 - 2016-02-17T14-26-50 (92 Punkte - 2014 Bytes) - Point.java
+  - 2CE09FC4 - 2015-10-30T11-25-22 (92 Punkte - 1915 Bytes) - Circle.java
 
 Score-Bin: 95-99
 Cluster 0:
-  - 00B8A219 - 2015-11-04T08-34-05 (96 Punkte - 2067 Bytes) - Circle.java
+  - 1ADA1A36 - 2015-10-29T20-17-08 (96 Punkte - 2337 Bytes) - Circle.java
+  - 1EC02594 - 2015-10-28T15-30-48 (96 Punkte - 1960 Bytes) - Point.java
+  - 2B032EEB - 2015-11-01T19-05-50 (96 Punkte - 2213 Bytes) - Point.java
 Cluster 1:
-  - 00B8A219 - 2015-11-04T08-28-13 (96 Punkte - 2076 Bytes) - Point.java
-  - 0C21C639 - 2015-11-02T15-35-51 (96 Punkte - 1872 Bytes) - Point.java
+  - 00B8A219 - 2015-11-04T08-28-13 (96 Punkte - 2076 Bytes) - Circle.java
+  - 0EC6DFB6 - 2015-11-02T18-36-10 (96 Punkte - 2148 Bytes) - Point.java
+  - 1ADA1A36 - 2015-10-29T20-24-04 (96 Punkte - 2142 Bytes) - Point.java
+  - 2BA88B9F - 2015-11-05T23-40-08 (96 Punkte - 1943 Bytes) - Point.java
+  - 2CE09FC4 - 2015-10-30T11-40-32 (96 Punkte - 1867 Bytes) - Circle.java
 Cluster 2:
-  - 0E81BE73 - 2015-11-05T17-28-43 (96 Punkte - 1841 Bytes) - Point.java
+  - 00B8A219 - 2015-11-04T08-34-05 (96 Punkte - 2067 Bytes) - Point.java
+  - 0D1C6395 - 2015-10-30T09-24-00 (96 Punkte - 1981 Bytes) - Point.java
+  - 0E81BE73 - 2016-04-18T18-51-51 (96 Punkte - 1892 Bytes) - Point.java
+  - 0EC6DFB6 - 2015-11-02T18-43-31 (96 Punkte - 2146 Bytes) - Circle.java
+  - 1ADA1A36 - 2015-11-02T21-28-55 (96 Punkte - 2144 Bytes) - Circle.java
+  - 2BDC7C2F - 2015-10-28T15-37-31 (96 Punkte - 2114 Bytes) - Point.java
 Cluster 3:
-  - 0D1C6395 - 2015-10-30T09-24-00 (96 Punkte - 1981 Bytes) - Circle.java
+  - 0C21C639 - 2015-11-02T15-35-51 (96 Punkte - 1872 Bytes) - Circle.java
+  - 0E81BE73 - 2015-11-05T17-28-43 (96 Punkte - 1841 Bytes) - Circle.java
 Cluster 4:
-  - 0E81BE73 - 2016-04-18T18-51-51 (96 Punkte - 1892 Bytes) - Circle.java
+  - 1A87962F - 2015-11-05T20-09-56 (96 Punkte - 1926 Bytes) - Circle.java
+  - 1ADA1A36 - 2015-11-02T21-31-27 (96 Punkte - 2144 Bytes) - Point.java
+  - 2A609B27 - 2016-02-24T18-14-24 (96 Punkte - 1955 Bytes) - Circle.java
 

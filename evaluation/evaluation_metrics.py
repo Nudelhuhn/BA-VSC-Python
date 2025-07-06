@@ -1,7 +1,7 @@
 from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score # evaluation metrics of clustering
 
 class EvaluationMetrics:
-    @staticmethod   # static method since no object of this class is needed, because there is no need to save internal states
+    @staticmethod
     def evaluate(reduced_embeddings, labels):
         results = {}
         if len(set(labels)) > 1:    # for useful evaluation there is more than one cluster needed

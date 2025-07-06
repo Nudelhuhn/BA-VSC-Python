@@ -26,7 +26,7 @@ dim_reduction:
 #   method: "tsne"
 #   params:
 #     n_components: 2           # target dimensions after reduction; default: 2
-#     perplexity: 30.0          # number of effective nearest neighbors; typical between 5 and 50; default: 30.0
+#     perplexity: 30.0          # number of effective nearest neighbors; typical between 5 and 50; must be higher than sample size; default: 30.0
 #     learning_rate: 200.0      # learning rate for t-SNE optimization; typical: 10-1000; default: 200.0
 #     n_iter: 1000              # number of optimization iterations; default: 1000
 #     metric: "euclidean"       # distance metric for pairwise distances; options: 'euclidean', 'cosine', 'manhattan'; default: 'euclidean'
@@ -65,7 +65,7 @@ data:
   files_to_look_for: ".java"            # choose files which should be clustered
   exclude_files: ["Miniprojekt1.java"]  # exclude files which should not be clustered
   exclude_folders: ["100 Punkte"]       # exclude folders with solutions which should not be clustered
-  input_path: "C:/Users/grego/Desktop/Loesungen/000TestingSmall000"  # input path of the student programming solutions
+  input_path: "C:/Users/grego/Desktop/Loesungen/000TestingMedium000"  # input path of the student programming solutions
   output_path: "z_Output"               # output path of various pipeline results for the student programming solutions
   score_bins:                           # define clustering layers to prevent similar solution with different evaluation points to be in the same cluster
   - [100, 100]

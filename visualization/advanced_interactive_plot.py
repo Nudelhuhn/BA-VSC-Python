@@ -18,7 +18,7 @@ class AdvancedInteractivePlot:
         fig = px.scatter(df, x='x', y='y',  # dimensions
                          color=df['cluster'].astype(str),   # cluster labels
                          hover_data=['filename', 'parent_dir', 'score_bin'], # data which is shown if hovered over the point
-                         title="Interaktive Cluster-Visualisierung")
+                         title="Interaktive Cluster-Visualisierung")    # title of the plot
         
         # # decomment for a 3D diagram
         # fig = px.scatter_3d(
@@ -27,4 +27,4 @@ class AdvancedInteractivePlot:
         #     hover_data=['filename', 'parent_dir', 'score_bin'],
         #     title="Interaktive 3D-Cluster-Visualisierung")
         
-        fig.show()  # show the finished plot
+        fig.show()
