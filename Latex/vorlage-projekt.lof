@@ -3,13 +3,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Zweidimensionales Clustering-Diagramm einer Clusterung von 147 Java-Dateien. Die unterschiedlichen Farben kennzeichnen die Zugehörigkeit der Punkte zu einem Cluster. Am rechten Rand sind die benutzten Farben in einer Farbskala angeordnet.}}{12}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Interaktives Clustering-Diagramm einer Clusterung von 147 Java-Dateien. Durch das Halten der Maus über die Punkte werden Informationen über sie angezeigt (im Bild wiederholt vergrößert dargestellt). Am rechten Rand sind die Mengen der Cluster angezeigt.}}{12}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Interaktives Clustering-Diagramm einer Clusterung von 80 bzw. 40 konkatenierten Java-Dateien. Die rote Unterstreichung zeigt das Problem gemischert Cluster mit unterschiedlichen Punktzahlen.}}{15}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Zweidimensionales Clustering-Diagramm einer Clusterung von 147 Java-Dateien. Die unterschiedlichen Farben kennzeichnen die Zugehörigkeit der Punkte zu einem Cluster. Am rechten Rand sind die benutzten Farben in einer Farbskala angeordnet.}}{11}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Interaktives Clustering-Diagramm einer Clusterung von 147 Java-Dateien. Durch das Halten der Maus über die Punkte werden Informationen über sie angezeigt (im Bild wiederholt vergrößert dargestellt). Am rechten Rand sind die Mengen der Cluster angezeigt.}}{12}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Interaktives Clustering-Diagramm einer Clusterung von 80 bzw. 40 konkatenierten Java-Dateien. Die rote Unterstreichung zeigt das Problem gemischerter Cluster mit unterschiedlichen Punktzahlen.}}{14}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Clustering-Diagramm einer Clusterung von 320 Java-Dateien. Der eingekreiste Cluster ist ein Circle.java-Cluster.}}{20}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Vergrößerter Circle.java-Cluster aus Abbildung \ref {abb:C-160-gC}}}{21}{figure.caption.31}%
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Zweiter Implementierungsabschnitt - Clustering-Diagramm einer Clusterung von 320 Java-Dateien. Der eingekreiste Cluster ist ein Circle.java-Cluster.}}{20}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Zweiter Implementierungsabschnitt - Vergrößerter Circle.java-Cluster aus Abbildung \ref {abb:ZIa-C-160-gC}}}{21}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Programmieraufagbe aus dem Jahr 2015 des paluno - The Ruhr Institute for Software Technology von Prof. Dr. Michael Goedicke, erste Seite}}{22}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Programmieraufagbe aus dem Jahr 2015 des paluno - The Ruhr Institute for Software Technology von Prof. Dr. Michael Goedicke, zweite Seite}}{23}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Finale Implementierung - Clusterung von rund 1000 Dateien. Pro Farbe wird weiter durch Punktzahlenintervalle unterschieden}}{25}{figure.caption.35}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

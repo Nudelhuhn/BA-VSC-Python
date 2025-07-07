@@ -1,0 +1,22 @@
+\chapter{Fazit und Ausblick}
+
+Im Rahmen dieser Arbeit wurde ein Verfahren zur KI-gestützten Clusterung von studentischen Programmierlösungen entwickelt und prototypisch umgesetzt. Ziel war es, Lehrkräfte an Hochschulen bei der Bewertung und Feedbackgenerierung für Programmieraufgaben zu entlasten, indem ähnliche Einreichungen automatisch gruppiert und so der Korrekturaufwand reduziert werden kann. Die entwickelte modulare Python-Pipeline, liest Java-Dateien ein, überführt sie mittels CodeBERT in numerische Vektorrepräsentationen (Embeddings), überträgt diese durch Dimensionsreduktionsalgorithmen in niedrigere Dimensionen und clustert sie. Die Clustering-Ergebnisse werden abschließend visuell aufbereitet und durch Evaluationsmetriken bewertet.
+
+Ein wesentlicher Schwerpunkt dieser Arbeit lag auf der technischen Umsetzung und dem iterativen Ausbau der Pipeline. Dabei wurde deutlich, dass insbesondere bei größeren und ungleichen Datensätzen Herausforderungen bei der Cluster-Konsistenz auftreten können. Durch die Einführung von Punktzahlenintervallen und der Möglichkeit zur Konkatenation von Einreichungen konnte die Clusterqualität verbessert werden.
+
+\section*{Erkenntnisse}
+Die Evaluationsergebnisse zeigen, dass die Kombination aus UMAP als Dimensionsreduktionsverfahren und k-Means als Clustering-Algorithmus in den meisten Testszenarien die besten Ergebnisse lieferte. Dies deckt sich mit Erkenntnissen aus verwandten Arbeiten, in denen UMAP aufgrund seiner stabilen Strukturtreue und Skalierbarkeit für hochdimensionale Daten empfohlen wird (vgl. \cite{McInnes.09.02.2018}). Gleichzeitig wurde angedeutet, dass experimentell die Clustering-Algorithmen bzw. deren Parameter an die Datenmenge angepasst werden müssen.
+
+Ein weiteres zentrales Ergebnis ist, dass die alleinige Clusterung nach syntaktischen und semantischen Merkmalen nicht ausreicht, um vollständig homogen bewertbare Cluster zu bilden. Daher wurden Clusterung präzisierende Punktzahlenintervalle integriert, die mehr Spielraum und damit eine höhere Relevanz für weiterführendes Feedback ermöglichen sollen.
+
+\section*{Ausblick und weiterführende Arbeiten}
+Die vorliegende Arbeit bildet die Grundlage für eine Reihe weiterführender Forschungs- und Entwicklungsarbeiten. Insbesondere folgende Aspekte bieten sich für eine Vertiefung an:
+
+\begin{itemize}
+    \item \textbf{Automatisierte Feedbackgenerierung:} Aufbauend auf den erzeugten Clustern könnten künftig Verfahren zur automatischen Feedbackgenerierung entwickelt werden. Denkbar ist der Einsatz von Large Language Models (LLMs) wie GPT-4 oder Codex, um auf Basis der Cluster ein repräsentatives Feedback-Template zu erstellen und dieses auf die übrigen Cluster-Mitglieder zu übertragen. Erste Ansätze hierzu finden sich bei Tang et al. (2024) (vgl. \cite{Tang.21.10.2024}).
+    \item \textbf{Integration dynamischer Metriken:} Die verwendeten internen Evaluationsmetriken bewerten lediglich die Clusterstruktur. In einer praxisnahen Feedback-Pipeline könnten zusätzlich domänenspezifische Metriken wie Codequalität, Laufzeitverhalten oder Einhaltung von Programmierkonventionen berücksichtigt werden, wie es Paiva et al. (2024) mit AsanasCluster vorschlagen (vgl. \cite{Paiva.2024}).
+    \item \textbf{Skalierung und Deployment als Web-Service:} Um das entwickelte System hochschulweit nutzbar zu machen, könnte eine Integration in bestehende Lernmanagementsysteme (z.\,B.\ Moodle, Stud.IP) über Online-Dienste erfolgen. Die Arbeit von Orvalho et al. (2022) mit InvAASTCluster zeigt, dass eine derartige Veröffentlichung die Akzeptanz und Nutzbarkeit in der Lehre deutlich erhöhen kann (vgl. \cite{Orvalho.28.06.2022}).
+\end{itemize}
+
+\section*{Rückblick}
+Rückblickend wurde ein erheblicher Teil der Arbeitszeit für die iterative Implementierung der Pipeline, Fehlerbehebung sowie das Testen der verschiedenen Algorithmen und Module verwendet, der in Relation zur restlichen Arbeit ungeplant mehr Zeit in Anspruch nahm als erwartet. Weiterhin kann hätte durch breitere Tests und die Integrierung weiterer Algorithmen, noch wesentlich mehr Forschung in diesem Kontext betrieben werden. Trotz dieser Herausforderungen konnte ein funktionales Programm entwickelt werden, die die wesentlichen Anforderungen des Themas erfüllt und als Grundlage für weiterführende Arbeiten dient.

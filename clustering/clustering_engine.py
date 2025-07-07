@@ -11,7 +11,7 @@ class ClusteringEngine:
             import hdbscan
             model = hdbscan.HDBSCAN(**self.params)
         else:
-            raise ValueError(f"Unsupported dimensionality reduction algorithm: {self.algorithm}")
+            raise ValueError(f"Unsupported clustering algorithm: {self.algorithm}")
 
         labels = model.fit_predict(reduced_embeddings)  # compute cluster centers and predict cluster index for each sample; combination of fit() and predict()
         return labels

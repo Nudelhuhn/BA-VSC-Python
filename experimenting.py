@@ -85,7 +85,7 @@ def run_experiments():
 
     # filter solutions by score bin and prepare corresponding data for clustering
     for score_bin in unique_bins:
-        print(f"\n=== Processing score_bin: {score_bin} ===")
+        print(f"\n==== Processing score_bin: {score_bin} ====")
         # save indices of binned_scores which score is within the current score_bin
         indices = [i for i, b in enumerate(binned_scores) if b == score_bin]
         if len(indices) < 4:
@@ -149,10 +149,10 @@ def run_experiments():
 
     # Evaluation
     for key, data in results_per_combination.items():
-        embeddings_all = np.array(data["embeddings"])
-        labels_all = np.array(data["labels"])
+        all_embeddings = np.array(data["embeddings"])
+        all_labels = np.array(data["labels"])
         
-        metrics = EvaluationMetrics.evaluate(embeddings_all, labels_all)
+        metrics = EvaluationMetrics.evaluate(all_embeddings, all_labels)
 
         result = {
             "combination": key,

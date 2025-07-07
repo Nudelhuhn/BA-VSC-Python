@@ -2,38 +2,39 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung und Problemstellung}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Theoretische Grundlagen}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Entwicklungswerkzeuge}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Künstliche Intelligenz}{3}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Verwendete Algorithmen}{4}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Einbettung (Embedding)}{4}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Dimensionsreduktion}{5}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Gruppierung (Clustering)}{5}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Visualisierung}{6}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Evaluierung}{6}{subsection.2.3.5}%
-\contentsline {chapter}{\numberline {3}Vorgehensweise und Implementierung}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Themenfindung}{8}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Recherche und Vorbereitung}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Implementierungsverlauf}{8}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Erster Implementierungsabschnitt}{8}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Zweiter Implementierungsabschnitt}{11}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Dritter Implementierungsabschnitt}{14}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Finale Implementierung}{16}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Pipeline}{16}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Ablauf in Pipeline}{16}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}\texttt {config.yaml}}{17}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}\texttt {data\_loader.py}}{17}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}\texttt {score\_binning.py}}{17}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}\texttt {embedding\_model.py}}{18}{subsection.3.4.6}%
-\contentsline {subsection}{\numberline {3.4.7}\texttt {dimension\_reducer.py}}{18}{subsection.3.4.7}%
-\contentsline {subsection}{\numberline {3.4.8}\texttt {clustering\_engine.py}}{18}{subsection.3.4.8}%
-\contentsline {subsection}{\numberline {3.4.9}\texttt {evaluation\_metrics.py}}{18}{subsection.3.4.9}%
-\contentsline {subsection}{\numberline {3.4.10}\texttt {advanced\_iteractive\_plot.py}}{18}{subsection.3.4.10}%
-\contentsline {subsection}{\numberline {3.4.11}\texttt {report\_generator.py}}{18}{subsection.3.4.11}%
+\contentsline {section}{\numberline {2.1}Künstliche Intelligenz}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Verwendete Algorithmen}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Einbettung (Embedding)}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Dimensionsreduktion}{4}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Gruppierung (Clustering)}{5}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Visualisierung}{5}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Evaluierung}{5}{subsection.2.2.5}%
+\contentsline {chapter}{\numberline {3}Vorgehensweise und Implementierung}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Themenfindung}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Recherche und Vorbereitung}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Entwicklungswerkzeuge}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Implementierungsverlauf}{8}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Erster Implementierungsabschnitt}{8}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Zweiter Implementierungsabschnitt}{11}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Dritter Implementierungsabschnitt}{13}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Finale Implementierung}{15}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Pipeline}{15}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Ablauf in Pipeline}{15}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}\texttt {config.yaml}}{16}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}\texttt {data\_loader.py}}{17}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}\texttt {score\_binning.py}}{17}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}\texttt {embedding\_model.py}}{17}{subsection.3.5.6}%
+\contentsline {subsection}{\numberline {3.5.7}\texttt {dimension\_reducer.py}}{17}{subsection.3.5.7}%
+\contentsline {subsection}{\numberline {3.5.8}\texttt {clustering\_engine.py}}{17}{subsection.3.5.8}%
+\contentsline {subsection}{\numberline {3.5.9}\texttt {evaluation\_metrics.py}}{18}{subsection.3.5.9}%
+\contentsline {subsection}{\numberline {3.5.10}\texttt {advanced\_iteractive\_plot.py}}{18}{subsection.3.5.10}%
+\contentsline {subsection}{\numberline {3.5.11}\texttt {report\_generator.py}}{18}{subsection.3.5.11}%
 \contentsline {chapter}{\numberline {4}Forschungsergebnisse}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Rangliste der Evaluationsverfahren}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Clustern unterschiedlicher Dateien in einem Diagramm}{20}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Zusammenfassung und Ausblick}{22}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Anhang}{23}{chapter.6}%
-\contentsline {chapter}{Literaturverzeichnis}{24}{chapter*.32}%
-\contentsline {chapter}{Glossar}{26}{appendix.A}%
-\contentsline {chapter}{Eigenständigkeitserklärung}{27}{appendix.B}%
+\contentsline {section}{\numberline {4.1}Ergebnisse - Zweiter Implementierungsabschnitt}{19}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Rangliste der Evaluationsmetriken}{19}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Clustern unterschiedlicher Dateien in einem Diagramm}{20}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Ergebnisse - Finale Implementierung}{21}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Fazit und Ausblick}{28}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Anhang}{30}{chapter.6}%
+\contentsline {chapter}{Literaturverzeichnis}{37}{chapter*.42}%
+\contentsline {chapter}{Eigenständigkeitserklärung}{39}{appendix.A}%

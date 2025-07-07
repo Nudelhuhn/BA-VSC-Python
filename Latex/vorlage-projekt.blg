@@ -4,54 +4,52 @@ The top-level auxiliary file: vorlage-projekt.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: geralpha.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
-Reallocating 'name_of_file' (item size: 1) to 21 items.
-A level-1 auxiliary file: chapters/Glossar.aux
 Reallocating 'name_of_file' (item size: 1) to 42 items.
 A level-1 auxiliary file: chapters/Eigenstaendigkeitserklaerung.aux
 Database file #1: literatur.bib
-Warning--I didn't find a database entry for "Gottwald:03"
+Warning--I didn't find a database entry for "CalinskiT.andHarabaszJ..1974"
 Warning--empty booktitle in CampelloRicardoJ.G.B..
 Warning--empty publisher in CampelloRicardoJ.G.B..
 Warning--empty year in CampelloRicardoJ.G.B..
-You've used 16 entries,
+You've used 17 entries,
             2768 wiz_defined-function locations,
-            712 strings with 8571 characters,
-and the built_in function-call counts, 7395 in all, are:
-= -- 745
-> -- 355
+            718 strings with 8849 characters,
+and the built_in function-call counts, 8135 in all, are:
+= -- 816
+> -- 409
 < -- 10
-+ -- 125
-- -- 123
-* -- 617
-:= -- 1136
-add.period$ -- 28
-call.type$ -- 16
-change.case$ -- 94
-chr.to.int$ -- 16
-cite$ -- 19
-duplicate$ -- 295
-empty$ -- 549
-format.name$ -- 143
-if$ -- 1576
++ -- 147
+- -- 145
+* -- 686
+:= -- 1259
+add.period$ -- 30
+call.type$ -- 17
+change.case$ -- 104
+chr.to.int$ -- 17
+cite$ -- 20
+duplicate$ -- 320
+empty$ -- 589
+format.name$ -- 165
+if$ -- 1730
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 20
-newline$ -- 63
-num.names$ -- 50
-pop$ -- 125
+missing$ -- 22
+newline$ -- 67
+num.names$ -- 53
+pop$ -- 134
 preamble$ -- 1
-purify$ -- 126
+purify$ -- 138
 quote$ -- 0
-skip$ -- 275
+skip$ -- 299
 stack$ -- 0
-substring$ -- 387
-swap$ -- 94
+substring$ -- 415
+swap$ -- 107
 text.length$ -- 10
-text.prefix$ -- 6
+text.prefix$ -- 5
 top$ -- 0
-type$ -- 128
+type$ -- 136
 warning$ -- 3
-while$ -- 67
-width$ -- 17
-write$ -- 175
+while$ -- 73
+width$ -- 20
+write$ -- 187
 (There were 4 warnings)

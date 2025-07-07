@@ -11,7 +11,25 @@ Zu Beginn wurden diverse Quellen herausgesucht, die sich im Rahmen dieses Themas
 
 Andere Methoden wie der Caliński-Harabasz Index oder der Silhouette Score wurden erwähnt, die zur Evaluation des Clusterings dienen. Es wurde klar, dass der Verlauf von studentischen Programmierlösungen bis zu nutzbaren Daten zur Feedbackgenerierung ein mehrschrittiger Prozess ist.
 
-Der folgende Abschnitt, beschreibt die Entstehung des Programms bzw. einer Pipeline, die die benötigten Prozessschritte beeinhaltet, um dies zu erreichen.
+Die folgenden Abschnitte, beschreiben die Entstehung des Programms bzw. einer Pipeline, die die benötigten Prozessschritte beeinhaltet, um dies zu erreichen.
+
+\section{Entwicklungswerkzeuge}
+Das Projekt wurde über die frei verfügbare Entwicklungsumgebung Visual Studio Code (VSC) implementiert und über Git verwaltet. Aufgrund der weltweiten Etablierung und die dadurch gegebene vielfältige Auswahl an Bibliotheken und online verfügbare Hilfestellungen, fiel die Wahl der Programmiersprache auf Python. Weiterhin wurde das Textsatzsystem LaTeX unter einer von der Hochschule Trier bereitgestellten Vorlagen zum Verfassen wissenschaftlicher Arbeiten\footnote{\url{https://www.hochschule-trier.de/informatik}} genutzt. Folgend eine Auflistung von Erweiterungen die VSC notwendigerweise oder unterstützend hinzugefügt wurden.
+\begin{itemize}
+    \item Notwendig:
+        \begin{itemize}
+            \item LaTeX Workshop (Kompilierung, Vorschau, Autovervollständigung)
+            \item Python
+            \item Pylance (effizienter language Server für Python)
+        \end{itemize}
+    \item Unterstützend:
+        \begin{itemize}
+            \item LaTeX language support (Syntax-Highlighting und Sprache für .tex-Dateien)
+            \item Python Debugger
+            \item isort (automatische Sortierung von Python-Imports)
+            \item Git Graph (Visualisierung von Arbeitsverlauf)
+        \end{itemize}
+\end{itemize}
 
 
 \section{Implementierungsverlauf}
@@ -26,15 +44,15 @@ Der Datensatz an denen das Programm fortlaufend getestet wurde, bestand aus mehr
 
 Das Programm musste also in der Lage sein Ordner zu durchsuchen und Java-Dateien zu erkennen. Dies ermöglichte eine Methode des ersten implementierten Moduls \texttt{data\_loader.py}. Es extrahierte Quellcode-Text und speicherte pro Datei Code-Schnipsel (Code Snippets) in eine Liste und gab diese an die Pipeline zurück.
 
-Anfangs entstanden durch problematische Zeichen innerhald der Java-Dateien Fehlermeldungen, welche jedoch einfachheitshalber ignoriert werden.
+Anfangs entstanden durch problematische Zeichen innerhalb der Java-Dateien Fehlermeldungen, welche jedoch einfachheitshalber ignoriert werden.
 
 
 \subsubsection*{Vektorrepräsentation}
-Als nächstes folgte ein Modul zum einbetten dieser Code Snippets bzw. zum dessen repräsentieren durch hochdimensionale Vektoren. Dies war notwendig um sie für Clustering-Algorithmen vorzubereiten. 
+Als nächstes folgte ein Modul zum Einbetten dieser Code Snippets bzw. zum dessen repräsentieren durch hochdimensionale Vektoren. Dies war notwendig, um sie für Clustering-Algorithmen vorzubereiten. 
 
 Dafür wurde das Modul \texttt{embedding\_model.py} erstellt, welches vortrainierte Sprachmodelle aus der Transformers-Bibliothek\footnote{\url{https://huggingface.co/docs/transformers}} von Python (hier CodeBERT) und passende Tokenizer, die den Code vorbereitend für den Transformer in Tokens zerlegt, importiert.
 
-Anhand einer Methode werden die Code Snippets in numerische Vektoren umwandelt (Embeddings). Alle enstandenen Embeddings wurde anschließend jeweils an die Pipeline zurückgegeben und in eine Liste abgespeichert.
+Anhand einer Methode werden die Code Snippets in numerische Vektoren umwandelt (Embeddings). Alle entstandenen Embeddings wurde anschließend jeweils an die Pipeline zurückgegeben und in eine Liste abgespeichert.
 
 
 \subsubsection*{Clustering}
@@ -48,9 +66,9 @@ Anschließend wurde ein Evaluationsverfahren eingebaut, um die Qualität der Clu
 \subsubsection*{Tests, Optimierungen und Dokumentation}
 Jedes implementierte Modul wurde einzeln getestet. Dazu wurden das Ergebnis und die Zeit, welche für den jeweiligen Prozessschritt notwendig waren durch print-Anweisungen ausgegeben. Dabei stellte sich heraus, dass Embedding und besonders Imports relativ viel Zeit in Anspruch nahmen.
 
-Da die zu testenden Datensätze teilweise aus mehreren hunderten Dateien bestanden, wurde dazu caching der Embeddings eingeführt, um das Testen des Zusammenspiels der einzelnen Module zu beschleunigen. Versuche die Imports durch lazy loading zu beschleunigen waren in diesem Fall nur geringfügig merkbar.
+Da die zu testenden Datensätze teilweise aus mehreren hunderten Dateien bestanden, wurde dazu Caching der Embeddings eingeführt, um das Testen des Zusammenspiels der einzelnen Module zu beschleunigen. Versuche die Imports durch Lazy Loading zu beschleunigen waren in diesem Fall nur geringfügig merkbar.
 
-Des Weiteren wurde eine Requirements.txt-Datei erstellt. Diese beeinhaltet sämltiche Information über die aktuell im Projekt benutzen Versionen der importierten Bibliotheken. Sie sorgt, dass für andere Nutzende gleiche Bedingungen wie auch in der Entwicklung herrschen, um ein lauffähiges Programm zu gewährleisten.
+Des Weiteren wurde eine Requirements.txt-Datei erstellt. Diese beinhaltet sämtliche Information über die aktuell im Projekt benutzen Versionen der importierten Bibliotheken. Sie sorgt, dass für andere Nutzende gleiche Bedingungen wie auch in der Entwicklung herrschen, um ein lauffähiges Programm zu gewährleisten.
 
 Die noch später hinzugefügte Datei HowToInstall.txt dient zusätzlich als Schritt-für-Schritt-Anleitung. Weiterhin wurde eine config.yaml-Datei hinzugefügt. Diese diente als zentrale Ansprechquelle der Pipeline für Parameter.
 
@@ -62,9 +80,9 @@ Dieser Prozessschritt findet zwischen Embedding und Clustering statt. Er reduzie
 
 
 \subsubsection*{Visualisierung}
-Schließlich wurde noch das Modul \texttt{cluster\_plotter.py} implementiert, welches anhand der dimensionsreduzierten Embeddings und der aus dem Clustering hervorgegangenen Labels ein statisches Diagramm (engl. plot) in einem separatem Fenster erstellt (Beispiel-Clusterung in Abbildung \ref{abb:E-CD}). Hierfür wurden aus der Matplotlibs Bibliothek die Plotting-Module pyplot\footnote{\url{https://matplotlib.org/stable/api/pyplot_summary.html}} und \texttt{mpl\_toolkits.mplot3d}\footnote{\url{https://matplotlib.org/stable/gallery/mplot3d/2dcollections3d.html\#sphx-glr-gallery-mplot3d-2dcollections3d-py}} importiert, die für 2D- und 3D-Visualisierung (falls gewünscht) zuständig sind.
+Schließlich wurde noch das Modul \texttt{cluster\_plotter.py} implementiert, welches anhand der dimensionsreduzierten Embeddings und der aus dem Clustering hervorgegangenen Labels ein statisches Diagramm (engl. plot) in einem separaten Fenster erstellt (Beispiel-Clusterung in Abbildung \ref{abb:E-CD}). Hierfür wurden aus der Matplotlibs Bibliothek die Plotting-Module pyplot\footnote{\url{https://matplotlib.org/stable/api/pyplot_summary.html}} und \texttt{mpl\_toolkits.mplot3d}\footnote{\url{https://matplotlib.org/stable/gallery/mplot3d/2dcollections3d.html\#sphx-glr-gallery-mplot3d-2dcollections3d-py}} importiert, die für 2D- und 3D-Visualisierung (falls gewünscht) zuständig sind.
 
-Die zuvor erstellten Module gleichten sich durch ihre einheitlichen Klassenstruktur, da jedoch für dieses Modul keine Zwischenspeicherung von Zuständen anhand einer Instanz notwendig war, wurden dessen Methoden statisch definiert.
+Die zuvor erstellten Module glichen sich durch ihre einheitlichen Klassenstruktur, da jedoch für dieses Modul keine Zwischenspeicherung von Zuständen anhand einer Instanz notwendig war, wurden dessen Methoden statisch definiert.
 
 
 \subsubsection*{Pipeline}
@@ -84,9 +102,9 @@ Die Pipeline besteht zu diesem Zeitpunkt aus folgendem Ablauf:
 \subsubsection*{Interaktive Diagramme}
 In Abbildung \ref{abb:I-CD} sind zwar farbige Punkte in unterschiedlicher Anzahl pro Cluster zu erkennen, jedoch wurden keine Labels angezeigt, die Informationen über die Punkte anzeigen sollten. Als vorbereitender Schritt für weiterführende Prozesse zur automatischen Feedbackgenerierung, müssen sie zumindest zum Testen visuell zuordenbar sein.
 
-Aus diesem Grund wurde ein weiteres Modul zur Visualisierung implementiert. Das entstandene Modul \texttt{interactive\_plot.py} nahm dafür wieder Embeddings, Labels und zustätzlich noch den Namen der aktuellen Java-Datei entgegen, die im \texttt{data\_loader.py}-Modul gespeichert wurde.
+Aus diesem Grund wurde ein weiteres Modul zur Visualisierung implementiert. Das entstandene Modul \texttt{interactive\_plot.py} nahm dafür wieder Embeddings, Labels und zusätzlich noch den Namen der aktuellen Java-Datei entgegen, die im \texttt{data\_loader.py}-Modul gespeichert wurde.
 
-Dazu wurden aus der Python-Bibliothek die Module Pandas\footnote{\url{https://pandas.pydata.org/docs/}} und Plotly Express\footnote{\url{https://plotly.com/python/plotly-express/}} importiert, die einerseits zur Erstellung von Tabellenstrukturen (DataFrames) und andererseits für einfache und interaktiave Diagramme zuständig sind. Ausgeführt, öffnete sich ein Fenster im Webbrowser mit einem von der Gestalung her ähnlichem Diagramm wie in der statischen Variante (\ref{abb:E-CD}).
+Dazu wurden aus der Python-Bibliothek die Module Pandas\footnote{\url{https://pandas.pydata.org/docs/}} und Plotly Express\footnote{\url{https://plotly.com/python/plotly-express/}} importiert, die einerseits zur Erstellung von Tabellenstrukturen (DataFrames) und andererseits für einfache und interaktive Diagramme zuständig sind. Ausgeführt, öffnete sich ein Fenster im Webbrowser mit einem von der Gestaltung her ähnlichem Diagramm wie in der statischen Variante (\ref{abb:E-CD}).
 
 \begin{figure} %[hbtp]
 	\centering
@@ -97,39 +115,39 @@ Dazu wurden aus der Python-Bibliothek die Module Pandas\footnote{\url{https://pa
 
 
 \subsubsection*{Probleme bei der Cluster-Konsistenz und getroffene Maßnahmen}
-Beim mehrmaligen Austesten verschiedener Dateimengen und Überprüfen der ausgegeben Punkte, fiel auf, dass Cluster bei größeren Datenmengen nicht mehr konsistent sind, obwohl akzeptable Ergebnisse im Evaluationsmetriken erreicht wurden. Genauer genommen wurden vereinzelt unterschiedliche Dateien in einem gemeinsamen Cluster platziert (gezeigt in \ref{abs:C-u-D-i-e-D} in Abschnitt Forschungsergebnisse). So kamen beispielsweise Point.java-Dateien in einem Cluster mit sonst nur Circle.java-Dateien vor.
+Beim mehrmaligen Austesten verschiedener Dateimengen und Überprüfen der ausgegebenen Punkte, fiel auf, dass Cluster bei größeren Datenmengen nicht mehr konsistent sind, obwohl akzeptable Ergebnisse im Evaluationsmetriken erreicht wurden. Genauer genommen wurden vereinzelt unterschiedliche Dateien in einem gemeinsamen Cluster platziert (gezeigt in \ref{abs:C-u-D-i-e-D} in Abschnitt Forschungsergebnisse). So kamen beispielsweise Point.java-Dateien in einem Cluster mit sonst nur Circle.java-Dateien vor.
 
-Da Clustering-Algorithmen nach ähnlicher Syntax und Semantik clustern, kann solch ein Verhalten durchaus vor kommen, ist hier jedoch nicht von praktischen Nutzen. Andererseits könnten ebenso Fehler in den Algorithmen oder Inkonsistenzen in den gegebenen Datensätzen die fehlerhafte Clusterung verursachen. Selbst Dateien die abhängig von der gestellten Aufgabe zu den Einreichungen bereits gegeben waren, nicht bearbeitet werden sollten und überall identisch waren, wurden in verschiedenen Clustern angeordnet.
+Da Clustering-Algorithmen nach ähnlicher Syntax und Semantik clustern, kann solch ein Verhalten durchaus vorkommen, ist hier jedoch nicht von praktischem Nutzen. Andererseits könnten ebenso Fehler in den Algorithmen oder Inkonsistenzen in den gegebenen Datensätzen die fehlerhafte Clusterung verursachen. Selbst Dateien die abhängig von der gestellten Aufgabe zu den Einreichungen bereits gegeben waren, nicht bearbeitet werden sollten und überall identisch waren, wurden in verschiedenen Clustern angeordnet.
 
 Als erste Maßnahme gegen dieses Problem, wurden die nicht zu bearbeitenden Dateien ignoriert, indem nicht mehr allgemein nach.java-Dateien gesucht wird, sondern nur noch nach bestimmten Namen. 
 
-Im weiterem Verlauf wurde zudem in der Pipeline eine Schleife ergänzt, die die Prozesse ab Embedding bis zur Visualisierung für die gewünschten, in der Konfigurationsdatei festgelegten Namen bzw. Java-Dateien wiederholt. Dadurch werden gemischte Cluster verhindert und für jede unterschiedene Java-Datei ein Diagramm erstellt.
+Im weiteren Verlauf wurde zudem in der Pipeline eine Schleife ergänzt, die die Prozesse ab Embedding bis zur Visualisierung für die gewünschten, in der Konfigurationsdatei festgelegten Namen bzw. Java-Dateien wiederholt. Dadurch werden gemischte Cluster verhindert und für jede unterschiedene Java-Datei ein Diagramm erstellt.
 
-Weiterhin ist beim Testen einer niedriger Anzahl von Dateien (\(n \leq 4\)) aufgefallen, dass der Embedding-Algorithmus nicht mehr funtkioniert, jedoch ist solche eine Clusterung ohnehin nicht von Nutzen.
+Weiterhin ist beim Testen einer niedrigen Anzahl von Dateien (\(n \leq 4\)) aufgefallen, dass der Embedding-Algorithmus nicht mehr funtkioniert, jedoch ist solche eine Clusterung ohnehin nicht von Nutzen.
 
 
 \subsubsection*{Experimentierungspipeline}
 Um die Evaluationsmetriken einfach testen zu können, wurde eine separate Experimentierungspipeline erstellt. Der Vorteil bestand darin, dass die verschiedenen Kombinationen der Dimensionsreduktions- und Clustering-Algorithmen mit ihren Parametern über Dictionaries innerhalb der Pipeline definiert wurden. Die Evaluationsergebnisse wurden anschließend in einer CSV-Datei im Projektverzeichnis festgehalten.
 
-In den Tabellen \ref{tab:EI-EV-20} und \ref{tab:EI-EV-160} im Abschnitt Forschungsergebnisse wurde gezeigt, welche Algorithmen-Kombination für verschiedene Dateimengen geeignet sind.
+In den Tabellen \ref{tab:ZIa-EI-EV-20} und \ref{tab:ZIa-EI-EV-160} im Abschnitt Forschungsergebnisse wurde gezeigt, welche Algorithmen-Kombination für verschiedene Dateimengen geeignet sind.
 
 
 \subsubsection*{Visuelle Erweiterung}
-Um den Punkten im Diagramm mehr Informationen entnehmen zu können, wurde neben den Dateinamen nun noch der Name des Einreichungsordners hinzugefügt. Da die erreichten Punktzahlen der Einreichungen Teil des Ordnernames sind, konnten die Clusterungen jetzt besser nachvollzogen und überprüft werden. Weiterhin wurde das \texttt{interactive\_plot.py}-Modul um die Option das Diagramm als dreidimensionale Umgebung darzustellen erweitert. Sollten mehrere Cluster im 2D-Diagramm aufeinanderliegen, so kann die dritte Achse bessere Einsicht gewährleisten.
+Um den Punkten im Diagramm mehr Informationen entnehmen zu können, wurde neben den Dateinamen nun noch der Name des Einreichungsordners hinzugefügt. Da die erreichten Punktzahlen der Einreichungen Teil des Ordnernamens sind, konnten die Clusterungen jetzt besser nachvollzogen und überprüft werden. Weiterhin wurde das \texttt{interactive\_plot.py}-Modul um die Option das Diagramm als dreidimensionale Umgebung darzustellen erweitert. Sollten mehrere Cluster im 2D-Diagramm aufeinanderliegen, so kann die dritte Achse bessere Einsicht gewährleisten.
 
 
 \subsection{Dritter Implementierungsabschnitt}
 \subsubsection*{Konkatenation gesuchter Dateien}
-Auch wenn für jede durch Namen getrennte Art Datei ein separates Diagramm erstellt wird, besteht die Möglichkeit dass die vollständige Einreichung bzw. Lösung zu den gestellten Aufgaben gesamt betrachtet werden sollte, da es sonst zu verminderter Information führen könnte. Um die Dateien als ein Ganzes zu betrachten, wurde das \texttt{data\_loader.py}-Modul um eine Konkatenations-Funktionalität ergänzt. Die entstandene Methode konkateniert alle gesuchten Java-Dateien eines Einreichungsordners. Der im Diagramm gezeigte Dateiname eines Punktes, setzt sich nun aus den konkatenierten Namen der Dateien zusammen. Die Schleife in der Pipeline die die Prozessschritte für jede gesuchte Art Datei wiederholte, wurde daraufhin entfernt.
+Auch wenn für jede durch Namen getrennte Art Datei ein separates Diagramm erstellt wird, besteht die Möglichkeit, dass die vollständige Einreichung bzw. Lösung zu den gestellten Aufgaben gesamt betrachtet, werden sollte, da es sonst zu verminderter Information führen könnte. Um die Dateien als ein Ganzes zu betrachten, wurde das \texttt{data\_loader.py}-Modul um eine Konkatenationsfunktionalität ergänzt. Die entstandene Methode konkateniert alle gesuchten Java-Dateien eines Einreichungsordners. Der im Diagramm gezeigte Dateiname eines Punktes, setzt sich nun aus den konkatenierten Namen der Dateien zusammen. Die Schleife in der Pipeline die die Prozessschritte für jede gesuchte Art Datei wiederholte, wurde daraufhin entfernt.
 
 
 \subsubsection*{Probleme bei der Cluster-Visualisierung und Punktzuordnung}
-Theoretisch wäre das Programm in der Lage, Embeddings ohne Dimensionsreduktionsalgorithmen zu verarbeiten. Zum Testen wird jedoch weiterhin eine geeignete Visualisierung verwendet, bei der allerdings durch die Anzeige der Ordnernamen pro Punkt ein weiteres Probleme auffiel. So werden konkatenierte Dateien in einen Cluster gesteckt, dessen Ordnernamen sich durch stark variierende Punktzahlen unterscheiden, wie in Abbildung \ref{abb:C-40-K-Pg} zu sehen ist. Auch hier kann solch ein Verahlten durchaus vorkommen, ist aber nicht von praktischen Nutzen, da sich das zu generierende Feedback nach den erreichten Punktzahlen unterscheiden sollte. 
+Theoretisch wäre das Programm in der Lage, Embeddings ohne Dimensionsreduktionsalgorithmen zu verarbeiten. Zum Testen wird jedoch weiterhin eine geeignete Visualisierung verwendet, bei der allerdings durch die Anzeige der Ordnernamen pro Punkt ein weiteres Problem auffiel. So werden konkatenierte Dateien in einem Cluster gesteckt, dessen Ordnernamen sich durch stark variierende Punktzahlen unterscheiden, wie in Abbildung \ref{abb:C-40-K-Pg} zu sehen ist. Auch hier kann solch ein Verahlten durchaus vorkommen, ist aber nicht von praktischem Nutzen, da sich das zu generierende Feedback nach den erreichten Punktzahlen unterscheiden sollte. 
 
 \begin{figure} %[hbtp]
 	\centering
 	\includegraphics[width=1.0\textwidth]{images/Clusterung - 40 - Konkateniert - Punktzahl gemischt.pdf}
-	\caption{Interaktives Clustering-Diagramm einer Clusterung von 80 bzw. 40 konkatenierten Java-Dateien. Die rote Unterstreichung zeigt das Problem gemischert Cluster mit unterschiedlichen Punktzahlen.}
+	\caption{Interaktives Clustering-Diagramm einer Clusterung von 80 bzw. 40 konkatenierten Java-Dateien. Die rote Unterstreichung zeigt das Problem gemischerter Cluster mit unterschiedlichen Punktzahlen.}
 	\label{abb:C-40-K-Pg}
 \end{figure}
 
@@ -137,7 +155,7 @@ Theoretisch wäre das Programm in der Lage, Embeddings ohne Dimensionsreduktions
 \subsubsection*{Punktzahlenintervalle}
 Um diesem Problem entgegenzuwirken, wurde erneut die Vorgehensweise der wiederholten Prozessschritte mittels einer Schleife angewendet, indem nach Ebenen bzw. Punktzahlenintervallen (Score-Bins) geclustert wird. Es können beliebig viele Intervalle definiert werden (z. B. 0-49, 50-79, 80-89, 90-100), um das Clustering weiter zu präzisieren. Dafür wurde dem \texttt{data\_loader.py}-Modul eine Methode hinzugefügt, die die Punktzahlen aus den Ordnernamen, in denen die Java-Dateien enthalten sind, ausliest.
 
-Weiterhin wurde das Modul \texttt{score\_binning.py} entwickelt, die den ausgelesenen Punktzahlen ein Intervall zuordnet. Anschließend werden in der Pipeline für jedes Intervall bzw. für alle Dateien die zu diesem Bereich gehören, die Prozesschritte ab Embedding wiederholt. Anstatt daraufhin pro Intervall ein Diagramm zu erstellen, wird zur besseren Übersichtlichkeit alle separaten Clusterungen in einem Diagramm visualisiert. Die Ergebnisse der Evaluationsmetriken könnten dadurch leicht verfälscht.
+Weiterhin wurde das Modul \texttt{score\_binning.py} entwickelt, die den ausgelesenen Punktzahlen ein Intervall zuordnet. Anschließend werden in der Pipeline für jedes Intervall bzw. für alle Dateien, die zu diesem Bereich gehören, die Prozessschritte ab Embedding wiederholt. Anstatt daraufhin pro Intervall ein Diagramm zu erstellen, wird zur besseren Übersichtlichkeit alle separaten Clusterungen in einem Diagramm visualisiert. Die Ergebnisse der Evaluationsmetriken könnten dadurch leicht verfälscht.
 
 
 \subsubsection*{Verarbeitung von Cluster-Ergebnissen}
@@ -158,10 +176,9 @@ Um die Dateimenge weiter einzugrenzen, wurde ein zusätzlicher Parameter der Kon
   \dots
 \end{itemize}
 
-Im folgendem Abschnitt wird die finale Implementierung bzw. dessen Module vorgestellt.
+Im folgenden Abschnitt wird die finale Implementierung bzw. dessen Module vorgestellt.
 
 \section{Finale Implementierung}
-In Abbildung \ref{abb:C-160-gC} ist die Ordnerstruktur des Projekts zu sehen. Cache-Dateien, welche automatisch von VSC generiert wurden, wurden nicht mit aufgelistet.
 \subsection{Pipeline}
 Die Pipeline besteht zu diesem Zeitpunkt aus folgenden Hauptbestandteilen:
 
@@ -170,11 +187,11 @@ Die Pipeline besteht zu diesem Zeitpunkt aus folgenden Hauptbestandteilen:
 \subsection{Ablauf in Pipeline}
 Zuerst wird die Konfigurationsdatei eingelesen (Abschnitt \ref{abs:config.yaml}, \# load config).
 
-Danach werden für die Funktionalität des Programms unwichtige Warnungen ignoriert, um die Ausgabe übersichtlich zu halten (\# ignore warnings). Sie beziehen sich auf auf veraltete Parameter, eingeschränkte Parallelverarbeitung durch feste zufällige Status (Random States) und automatische Anpassung von Nachbarparametern bei kleinen Datenmengen.
+Danach werden für die Funktionalität des Programms unwichtige Warnungen ignoriert, um die Ausgabe übersichtlich zu halten (\# ignore warnings). Sie beziehen sich auf veraltete Parameter, eingeschränkte Parallelverarbeitung durch feste zufällige Status (Random States) und automatische Anpassung von Nachbarparametern bei kleinen Datenmengen.
 
 Als nächstes wird der Eingabepfad bestimmt, indem der Pfad der studentischen Einreichungen mit dem des aktuellen Projekts vereint wird (\# dynamically determine path).
 
-Dieser Pfad wird daraufhin neben anderen Parametern zum laden der studentischen Einreichungen genutzt und als Code-Schnipsel abgespeichert (Abschnitt \ref{abs:data-loader}, \# load data).
+Dieser Pfad wird daraufhin neben anderen Parametern zum Laden der studentischen Einreichungen genutzt und als Code-Schnipsel abgespeichert (Abschnitt \ref{abs:data-loader}, \# load data).
 
 Danach werden die Punktzahlenintervall vorbereitet (Abschnitt \ref{abs:score-binning}, \# score bins). Die aus den Einreichungsorder extrahierten Punktzahlen werden einem Punktzahlenintervall eingeordnet und sortiert diese dann alphabetisch.
 
@@ -190,6 +207,8 @@ Nach der Schleife werden die gesammelten Daten in einem Diagramm visualisiert (A
 
 Als letztes wird der im Implementierungsverlauf erwähnte Bericht über das Clustering erstellt (Abschnitt \ref{abs:report-generator}, \# Reporting).
 
+Sämtliche Module inklusive der Pipeline sind im Anhand gegeben.
+
 
 \subsection{\texttt{config.yaml}}
 \label{abs:config.yaml}
@@ -198,7 +217,7 @@ Hier sind alle Parameter gehalten, die in der Pipeline für die verschiedenen Al
 
 \subsection{\texttt{data\_loader.py}}
 \label{abs:data-loader}
-Die Klasse nimmt beim Erstellen den Dateinamen, den Pfad zu den studentischen Einreichungen und die zu exkludierenden Datei- und Ordnernamen entegegen. Zudem werden Listen zum speichern aller Dateinamen und Einreichungsordner gespeichert, um sie später im Diagramm anzeigen zu können. Folgende weitere Methoden sind gegeben:
+Die Klasse nimmt beim Erstellen den Dateinamen, den Pfad zu den studentischen Einreichungen und die zu exkludierenden Datei- und Ordnernamen entgegen. Zudem werden Listen zum Speichern aller Dateinamen und Einreichungsordner gespeichert, um sie später im Diagramm anzeigen zu können. Folgende weitere Methoden sind gegeben:
 \begin{itemize}
 	\item load\_code\_files(): Lädt alle passenden Dateien aus den Einreichungsordnern, liest deren Inhalt, speichert Datei-, Einreichungsordner- und Überordnernamen und entscheidet, ob die Inhalte der Dateien zusammengeführt werden sollen.
 	\item get\_scores(): Liest aus den Ordnernamen die Punktzahl heraus und gibt sie als Liste zurück.
@@ -233,7 +252,7 @@ Die Klasse enthält die statische Methode evaluate(), welche die dimensionsreduz
 
 \subsection{\texttt{advanced\_iteractive\_plot.py}}
 \label{abs:advanced-interactive-plot}
-Die Klasse enthält eine statische Methode plot(), die die dimensionsreduzierten Embeddings, Clustering-Labels, Datei- und Ordnernamen und Punktzahlenintervalle entgegennimmt. Danach werden diese Daten in eine Tabellenstruktur (DataFrame) umgewandelt und damit dann ein Streudiagramm erstellt. Durch entsprechendes ent- und auskommentieren, kann zwischen zwei- und dreidimensionalen Diagrammen gewechselt werden.
+Die Klasse enthält eine statische Methode plot(), die die dimensionsreduzierten Embeddings, Clustering-Labels, Datei- und Ordnernamen und Punktzahlenintervalle entgegennimmt. Danach werden diese Daten in eine Tabellenstruktur (DataFrame) umgewandelt und damit dann ein Streudiagramm erstellt. Durch entsprechendes Ent- und Auskommentieren, kann zwischen zwei- und dreidimensionalen Diagrammen gewechselt werden.
 
 
 \subsection{\texttt{report\_generator.py}}

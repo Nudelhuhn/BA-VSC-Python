@@ -188,9 +188,6 @@ INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend
 INPUT .\vorlage-projekt.aux
 INPUT .\vorlage-projekt.aux
 INPUT vorlage-projekt.aux
-INPUT .\chapters\Glossar.aux
-INPUT .\chapters\Glossar.aux
-INPUT chapters\Glossar.aux
 INPUT .\chapters\Eigenstaendigkeitserklaerung.aux
 INPUT .\chapters\Eigenstaendigkeitserklaerung.aux
 INPUT chapters\Eigenstaendigkeitserklaerung.aux
@@ -214,11 +211,11 @@ INPUT .\images\logo-fb-informatik.pdf
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\grego\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\chapters\Vorwort.tex
-INPUT .\chapters\Vorwort.tex
-INPUT .\chapters\Vorwort.tex
-INPUT .\chapters\Vorwort.tex
-INPUT chapters\Vorwort.tex
+INPUT .\chapters\Kurzfassung.tex
+INPUT .\chapters\Kurzfassung.tex
+INPUT .\chapters\Kurzfassung.tex
+INPUT .\chapters\Kurzfassung.tex
+INPUT chapters\Kurzfassung.tex
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -243,11 +240,6 @@ INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT .\chapters\Kurzfassung.tex
-INPUT .\chapters\Kurzfassung.tex
-INPUT .\chapters\Kurzfassung.tex
-INPUT .\chapters\Kurzfassung.tex
-INPUT chapters\Kurzfassung.tex
 INPUT .\vorlage-projekt.toc
 INPUT .\vorlage-projekt.toc
 INPUT vorlage-projekt.toc
@@ -280,19 +272,19 @@ INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt9.tfm
 INPUT .\chapters\TheoretischeGrundlagen.tex
 INPUT .\chapters\TheoretischeGrundlagen.tex
 INPUT .\chapters\TheoretischeGrundlagen.tex
 INPUT .\chapters\TheoretischeGrundlagen.tex
 INPUT chapters\TheoretischeGrundlagen.tex
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt9.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT .\chapters\VorgehensweiseUndImplementierung.tex
-INPUT .\chapters\VorgehensweiseUndImplementierung.tex
-INPUT .\chapters\VorgehensweiseUndImplementierung.tex
-INPUT .\chapters\VorgehensweiseUndImplementierung.tex
-INPUT chapters\VorgehensweiseUndImplementierung.tex
+INPUT .\chapters\VorgehensweiseImplementierung.tex
+INPUT .\chapters\VorgehensweiseImplementierung.tex
+INPUT .\chapters\VorgehensweiseImplementierung.tex
+INPUT .\chapters\VorgehensweiseImplementierung.tex
+INPUT chapters\VorgehensweiseImplementierung.tex
 INPUT .\images\Erstes Clustering-Diagramm.pdf
 INPUT .\images\Erstes Clustering-Diagramm.pdf
 INPUT .\images\Erstes Clustering-Diagramm.pdf
@@ -328,30 +320,43 @@ INPUT .\images\Clusterung - 160 - gemischte Cluster - zoom.pdf
 INPUT .\images\Clusterung - 160 - gemischte Cluster - zoom.pdf
 INPUT .\images\Clusterung - 160 - gemischte Cluster - zoom.pdf
 INPUT .\images\Clusterung - 160 - gemischte Cluster - zoom.pdf
-INPUT .\chapters\ZusammenfassungAusblick.tex
-INPUT .\chapters\ZusammenfassungAusblick.tex
-INPUT .\chapters\ZusammenfassungAusblick.tex
-INPUT .\chapters\ZusammenfassungAusblick.tex
-INPUT chapters\ZusammenfassungAusblick.tex
+INPUT .\images\Miniprojekt-1-S.1.pdf
+INPUT .\images\Miniprojekt-1-S.1.pdf
+INPUT .\images\Miniprojekt-1-S.1.pdf
+INPUT .\images\Miniprojekt-1-S.1.pdf
+INPUT .\images\Miniprojekt-1-S.1.pdf
+INPUT .\images\Miniprojekt-1-S.1.pdf
+INPUT .\images\Miniprojekt-1-S.2.pdf
+INPUT .\images\Miniprojekt-1-S.2.pdf
+INPUT .\images\Miniprojekt-1-S.2.pdf
+INPUT .\images\Miniprojekt-1-S.2.pdf
+INPUT .\images\Miniprojekt-1-S.2.pdf
+INPUT .\images\Miniprojekt-1-S.2.pdf
+INPUT .\images\Clusterung - 1000.pdf
+INPUT .\images\Clusterung - 1000.pdf
+INPUT .\images\Clusterung - 1000.pdf
+INPUT .\images\Clusterung - 1000.pdf
+INPUT .\images\Clusterung - 1000.pdf
+INPUT .\images\Clusterung - 1000.pdf
+INPUT .\chapters\FazitAusblick.tex
+INPUT .\chapters\FazitAusblick.tex
+INPUT .\chapters\FazitAusblick.tex
+INPUT .\chapters\FazitAusblick.tex
+INPUT chapters\FazitAusblick.tex
 INPUT .\chapters\Anhang.tex
 INPUT .\chapters\Anhang.tex
 INPUT .\chapters\Anhang.tex
 INPUT .\chapters\Anhang.tex
 INPUT chapters\Anhang.tex
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt8.tfm
 INPUT .\vorlage-projekt.bbl
 INPUT .\vorlage-projekt.bbl
 INPUT vorlage-projekt.bbl
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
-INPUT .\vorlage-projekt.ind
-INPUT .\vorlage-projekt.ind
-INPUT vorlage-projekt.ind
-INPUT .\chapters\Glossar.tex
-INPUT .\chapters\Glossar.tex
-OUTPUT chapters\Glossar.aux
-INPUT .\chapters\Glossar.tex
-INPUT .\chapters\Glossar.tex
-INPUT chapters\Glossar.tex
 INPUT .\chapters\Eigenstaendigkeitserklaerung.tex
 INPUT .\chapters\Eigenstaendigkeitserklaerung.tex
 OUTPUT chapters\Eigenstaendigkeitserklaerung.aux
@@ -361,9 +366,6 @@ INPUT chapters\Eigenstaendigkeitserklaerung.tex
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx9.tfm
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti9.tfm
 INPUT vorlage-projekt.aux
-INPUT .\chapters\Glossar.aux
-INPUT .\chapters\Glossar.aux
-INPUT chapters\Glossar.aux
 INPUT .\chapters\Eigenstaendigkeitserklaerung.aux
 INPUT .\chapters\Eigenstaendigkeitserklaerung.aux
 INPUT chapters\Eigenstaendigkeitserklaerung.aux
@@ -391,12 +393,16 @@ INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt8.pfb
+INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt8.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt9.pfb
 INPUT C:\Users\grego\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb

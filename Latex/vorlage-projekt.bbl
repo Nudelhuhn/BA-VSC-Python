@@ -1,10 +1,17 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{{You}24}
+\begin{thebibliography}{BLWW21}
 
-\bibitem[{Cal}74]{CalinskiT.andHarabaszJ..1974}
-{\sc {Calinski, T. and Harabasz, J.}}: {\em A dendrite method for cluster
-  analysis}.
-\newblock Communications in Statistics, 3(1):1--27, 1974.
+\bibitem[BLWW21]{Bartneck.2021}
+{\sc Bartneck, Christoph}, {\sc Christoph L{\"u}tge}, {\sc Alan Wagner}
+  \btxandlong{}\ {\sc Sean Welsh}: {\em What Is AI?}
+\newblock An Introduction to Ethics in Robotics and AI, \btxpageslong{}\ 5--16,
+  2021.
+
+\bibitem[CHTB20]{Coombs.2020}
+{\sc Coombs, Crispin}, {\sc Donald Hislop}, {\sc Stanimira~K. Taneva}
+  \btxandlong{}\ {\sc Sarah Barnard}: {\em The strategic impacts of Intelligent
+  Automation for knowledge and service work: An interdisciplinary review}.
+\newblock The Journal of Strategic Information Systems, 29(4):101600, 2020.
 
 \bibitem[CMS]{CampelloRicardoJ.G.B..}
 {\sc {Campello, Ricardo J. G. B.}}, {\sc Davoud Moulavi} \btxandlong{}\ {\sc

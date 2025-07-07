@@ -89,7 +89,6 @@
 
 %------------------ Vorwort, Kurzfassung, Verzeichnisse ------------------------
 \frontmatter
-\input{chapters/Vorwort}								% Vorwort (optional)
 \input{chapters/Kurzfassung}							% Kurzfassung/Abstract
 \tableofcontents										% Inhaltsverzeichnis
 \listoffigures											% Abbildungsverzeichnis (optional)
@@ -101,21 +100,19 @@
 \mainmatter
 \input{chapters/EinleitungProblemstellung}
 \input{chapters/TheoretischeGrundlagen}
-\input{chapters/VorgehensweiseUndImplementierung}
+\input{chapters/VorgehensweiseImplementierung}
 \input{chapters/Forschungsergebnisse}
-\input{chapters/ZusammenfassungAusblick}
+\input{chapters/FazitAusblick}
 \input{chapters/Anhang}
 
 
 %------------------ Literaturverzeichnis & Index -------------------------------
 \backmatter
 \bibliography{literatur}								% Literaturverzeichnis (literatur.bib)
-\printindex												% Index (optional)
 
 
 %------------------ Anhänge ----------------------------------------------------
 \begin{appendix}
-	\include{chapters/Glossar}							% Glossar (optional)
 	\include{chapters/Eigenstaendigkeitserklaerung}		% Eigenständigkeitserklärung
 \end{appendix}
 
