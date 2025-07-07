@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex vorlage-projekt"] 1751921642.82338 "vorlage-projekt.aux" "vorlage-projekt.bbl" "vorlage-projekt" 1751922679.25377 0
+["bibtex vorlage-projekt"] 1751923320.98018 "vorlage-projekt.aux" "vorlage-projekt.bbl" "vorlage-projekt" 1751923454.71726 0
   "./literatur.bib" 1751878820 32241 1cbcd35cb80091b1be1145e82b0264c7 ""
   "C:/Users/grego/AppData/Local/Programs/MiKTeX/bibtex/bst/germbib/geralpha.bst" 1051604844 26838 49fd88f7ad09fc0e5699cf227af2d770 ""
-  "chapters/Eigenstaendigkeitserklaerung.aux" 1751922678 1172 f55aab000defbf440098e5bbebecdfab "pdflatex"
-  "vorlage-projekt.aux" 1751922678 17306 c64e6de07b1197eed36e61cc519bbb57 "pdflatex"
+  "chapters/Eigenstaendigkeitserklaerung.aux" 1751923453 1172 f55aab000defbf440098e5bbebecdfab "pdflatex"
+  "vorlage-projekt.aux" 1751923453 17306 72bde9394a27847aad5e7828a4a93abf "pdflatex"
   (generated)
   "vorlage-projekt.bbl"
   "vorlage-projekt.blg"
   (rewritten before read)
-["makeindex vorlage-projekt.idx"] 1751910617.11318 "vorlage-projekt.idx" "vorlage-projekt.ind" "vorlage-projekt" 1751922679.25337 0
-  "vorlage-projekt.idx" 1751922677 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex vorlage-projekt.idx"] 1751910617.11318 "vorlage-projekt.idx" "vorlage-projekt.ind" "vorlage-projekt" 1751923454.71681 0
+  "vorlage-projekt.idx" 1751923452 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "vorlage-projekt.ilg"
   "vorlage-projekt.ind"
   (rewritten before read)
-["pdflatex"] 1751922676.77614 "c:/Users/grego/Documents/GitHub/BA-VSC-Python/Latex/vorlage-projekt.tex" "vorlage-projekt.pdf" "vorlage-projekt" 1751922679.25443 0
+["pdflatex"] 1751923451.89842 "c:/Users/grego/Documents/GitHub/BA-VSC-Python/Latex/vorlage-projekt.tex" "vorlage-projekt.pdf" "vorlage-projekt" 1751923454.71795 0
   "C:/Users/grego/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1751032497 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/grego/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1742998138 14064 027f6c6e365c111e4e465a15f8484cd2 ""
   "C:/Users/grego/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1742986574 12036130 97839dc796b67b63346bcd26353d7243 ""
@@ -155,8 +155,8 @@
   "C:/Users/grego/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1730400552 4545 e3f4de576c914e2000f07f69a891c071 ""
   "C:/Users/grego/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/Users/grego/Documents/GitHub/BA-VSC-Python/Latex/vorlage-projekt.tex" 1751922038 3617 22dd56d1d7e43d61af1c48770e92debf ""
-  "chapters/Anhang.tex" 1751873076 15340 ffd3a5db385e3023e968fe9584392f79 ""
-  "chapters/Eigenstaendigkeitserklaerung.aux" 1751922678 1172 f55aab000defbf440098e5bbebecdfab "pdflatex"
+  "chapters/Anhang.tex" 1751923451 16094 7fb8684f258c337a1cb05733518ffbbe ""
+  "chapters/Eigenstaendigkeitserklaerung.aux" 1751923453 1172 f55aab000defbf440098e5bbebecdfab "pdflatex"
   "chapters/Eigenstaendigkeitserklaerung.tex" 1751915633 2701 ef646b3dd16eba7812ec578e0024ccb5 ""
   "chapters/EinleitungProblemstellung.tex" 1751922676 3706 273ae30258eeca56a2b1e17cfd561012 ""
   "chapters/FazitAusblick.tex" 1751921962 4388 b0f6c3cd859b93df8a37fb44190c78ee ""
@@ -174,15 +174,15 @@
   "images/Miniprojekt-1-S.1.pdf" 1751873198 236397 1009ddbf6b09312b837854b7cfce895d ""
   "images/Miniprojekt-1-S.2.pdf" 1751873198 203125 1934c25c01fe1978b018310ee7f827f7 ""
   "images/logo-fb-informatik.pdf" 1634139604 391143 2af4a339ba9f2c697ef3fe392b2fcf4d ""
-  "vorlage-projekt.aux" 1751922678 17306 c64e6de07b1197eed36e61cc519bbb57 "pdflatex"
-  "vorlage-projekt.bbl" 1751921643 4853 b7b6e2ade3c95997306b47f96fec8fbc "bibtex vorlage-projekt"
+  "vorlage-projekt.aux" 1751923453 17306 72bde9394a27847aad5e7828a4a93abf "pdflatex"
+  "vorlage-projekt.bbl" 1751923321 4853 b7b6e2ade3c95997306b47f96fec8fbc "bibtex vorlage-projekt"
   "vorlage-projekt.ind" 1751910617 0 d41d8cd98f00b204e9800998ecf8427e "makeindex vorlage-projekt.idx"
-  "vorlage-projekt.lof" 1751922678 2195 8ff8a6b778f1aafe913eea5fdb547bc5 "pdflatex"
-  "vorlage-projekt.lol" 1751922678 1103 60946627aa29106c8fa346dadce99ca2 "pdflatex"
-  "vorlage-projekt.lot" 1751922678 1253 a5041550b82b3ef9bc95016fb1b9de79 "pdflatex"
-  "vorlage-projekt.out" 1751922678 6649 88c09327c2cd374839a4e60169c475eb "pdflatex"
+  "vorlage-projekt.lof" 1751923453 2195 8ff8a6b778f1aafe913eea5fdb547bc5 "pdflatex"
+  "vorlage-projekt.lol" 1751923453 1103 c1396c0c4397f467cb46bcdaf60b7d51 "pdflatex"
+  "vorlage-projekt.lot" 1751923453 1253 a5041550b82b3ef9bc95016fb1b9de79 "pdflatex"
+  "vorlage-projekt.out" 1751923453 6649 88c09327c2cd374839a4e60169c475eb "pdflatex"
   "vorlage-projekt.tex" 1751922038 3617 22dd56d1d7e43d61af1c48770e92debf ""
-  "vorlage-projekt.toc" 1751922678 3492 5c894151c3541013e196983a3546825a "pdflatex"
+  "vorlage-projekt.toc" 1751923453 3492 5c894151c3541013e196983a3546825a "pdflatex"
   (generated)
   "chapters/Eigenstaendigkeitserklaerung.aux"
   "vorlage-projekt.aux"
